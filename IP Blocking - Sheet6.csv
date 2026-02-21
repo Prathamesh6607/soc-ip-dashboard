@@ -1,0 +1,220 @@
+Date,Shift Member Name,Blocked IP Address,Reason for Blocking,Time of Blocking,Approval Status,Remarks/Additional Notes,Abusive Percentage(AbuseIPDB),Status(Blocked / Pending)
+YYYY-MM-DD,[Name],[IP Address],"[E.g., Malicious Activity]",HH:MM AM/PM,,[Notes or follow-up actions],,
+02-01-2026,Harsh Navgale,44.232.229.247,Cloudflare.IP,10.04 PM ,Approved,NA,0,Blocked
+02-01-2026,Harsh Navgale,35.167.79.216,Cloudflare.IP,10.04 PM ,Approved,NA,0,Blocked
+02-01-2026,Harsh Navgale,47.128.122.130,Cloudflare.IP,10.04 PM ,Approved,NA,87,Blocked
+02-01-2026,Harsh Navgale,125.166.117.64,Cloudflare.IP,10.04 PM ,Approved,NA,39,Blocked
+02-01-2026,Harsh Navgale,202.178.120.157,Cloudflare.IP,10.04 PM ,Approved,NA,100,Blocked
+02-01-2026,Harsh Navgale,66.92.14.45,Cloudflare.IP,10.04 PM ,Approved,NA,0,Blocked
+02-01-2026,Harsh Navgale,185.117.225.202,Cloudflare.IP,10.04 PM ,Approved,NA,36,Blocked
+02-01-2026,Harsh Navgale,35.163.187.192,Cloudflare.IP,10.04 PM ,Approved,NA,0,Blocked
+02-01-2026,Harsh Navgale,157.66.55.50,Cloudflare.IP,10.04 PM ,Approved,NA,100,Blocked
+02-01-2026,Harsh Navgale,44.254.24.202,Cloudflare.IP,10.04 PM ,Approved,NA,0,Blocked
+02-01-2026,Harsh Navgale,16.146.245.11,Cloudflare.IP,10.04 PM ,Approved,NA,0,Blocked
+02-01-2026,Puniyat Jangir,103.92.43.96,Cloudflare.IP,4:58:00 PM,Approved,NA,0,Blocked
+02-01-2026,Puniyat Jangir,182.64.163.189,Cloudflare.IP,1:30:00 PM,Approved,NA,0,Blocked
+02-01-2026,Puniyat Jangir,4.241.216.217,Cloudflare.IP,1:30:00 PM,Approved,NA,100,Blocked
+02-01-2026,Puniyat Jangir,20.89.56.154,Cloudflare.IP,1:30:00 PM,Approved,NA,100,Blocked
+02-01-2026,Tanmay Kudale,103.131.71.180,Cloudflare.IP,1:43:00 AM,Denied,Monitor further,12,Blocked
+02-01-2026,Tanmay Kudale,77.243.90.245,Cloudflare.IP,1:43:00 AM,Approved,NA,0,Blocked
+02-01-2026,Tanmay Kudale,31.134.0.11,Cloudflare.IP,1:43:00 AM,Approved,NA,21,Blocked
+02-01-2026,Tanmay Kudale,52.10.39.203,Cloudflare.IP,1:43:00 AM,Approved,NA,0,Blocked
+02-01-2026,Tanmay Kudale,16.146.245.11,Cloudflare.IP,1:43:00 AM,Approved,NA,0,Blocked
+02-01-2026,Tanmay Kudale,85.203.21.20,Cloudflare.IP,1:43:00 AM,Approved,NA,100,Blocked
+02-01-2026,Tanmay Kudale,85.203.21.36,Cloudflare.IP,1:43:00 AM,Approved,NA,100,Blocked
+02-01-2026,Tanmay Kudale,193.37.32.154,Cloudflare.IP,1:43:00 AM,Approved,NA,100,Blocked
+02-02-2026,Tanmay Kudale,157.15.40.58,Cloudflare.IP,5:13:00 AM,Approved,NA,100,Blocked
+02-02-2026,Tanmay Kudale,157.66.55.46,Cloudflare.IP,5:13:00 AM,Approved,NA,100,Blocked
+02-02-2026,Tanmay Kudale,43.135.115.233,Cloudflare.IP,5:13:00 AM,Approved,NA,100,Blocked
+02-02-2026,Tanmay Kudale,43.173.175.120,Cloudflare.IP,5:13:00 AM,Approved,NA,93,Blocked
+02-02-2026,Tanmay Kudale,85.203.21.34,Cloudflare.IP,5:13:00 AM,Approved,NA,92,Blocked
+02-02-2026,Tanmay Kudale,5.182.206.177,Cloudflare.IP,5:13:00 AM,Approved,NA,85,Blocked
+02-03-2026,Tanmay Kudale,46.250.174.214,Cloudflare.IP,2:19:00 AM,Approved,NA,27,Blocked
+02-03-2026,Tanmay Kudale,91.239.208.131,Cloudflare.IP,2:19:00 AM,Approved,NA,65,Blocked
+02-03-2026,Tanmay Kudale,98.93.170.73,Cloudflare.IP,2:19:00 AM,Approved,NA,100,Blocked
+02-03-2026,Tanmay Kudale,34.148.63.212,Cloudflare.IP,2:19:00 AM,Approved,NA,100,Blocked
+02-03-2026,Tanmay Kudale,34.74.11.231,Cloudflare.IP,2:19:00 AM,Approved,NA,100,Blocked
+02-03-2026,Tanmay Kudale,91.107.255.76,Cloudflare.IP,2:19:00 AM,Approved,NA,68,Blocked
+02-03-2026,Tanmay Kudale,95.135.92.245,Cloudflare.IP,2:19:00 AM,Approved,NA,43,Blocked
+02-03-2026,Prathamesh Pendkar,138.199.39.182,Datacamp Limited,12:29:00 PM,Approved,NA,100,Blocked
+02-03-2026,Prathamesh Pendkar,91.107.148.120,Hetzner Online GmbH,12:29:00 PM,Approved,NA,69,Blocked
+02-03-2026,Prathamesh Pendkar,95.135.92.245,JSC Ukrtelecom,12:29:00 PM,Approved,NA,43,Blocked
+02-03-2026,Harsh Navgale,202.178.120.157,Cloudflare.IP,9:01:00 PM,Approved,NA,100,Blocked
+02-03-2026,Harsh Navgale,140.245.109.245,Cloudflare.IP,9:01:00 PM,Approved,NA,100,Blocked
+02-03-2026,Harsh Navgale,152.58.28.121,Cloudflare.IP,9:01:00 PM,Approved,NA,0,Blocked
+02-03-2026,Shivangi Soni,158.220.108.215,Cloudflare.IP,9:01:00 PM,Approved,NA,NA,Blocked
+02-03-2026,Shivangi Soni,2401:4900:1c17:dcfa:3de2:21a1:7827:465,Cloudflare.IP,9:01:00 PM,Approved,NA,NA,Blocked
+02-03-2026,Shivangi Soni,206.189.14.205,Cloudflare.IP,9:01:00 PM,Approved,NA,0,Blocked
+02-03-2026,Shivangi Soni,2a02:c207:2295:8357::1,Cloudflare.IP,9:01:00 PM,Approved,NA,NA,Blocked
+02-03-2026,Tejas Kulkarni,5.38.54.110,Cloudflare.IP,2:20:00 AM,Denied,NA,100,Denied
+02-03-2026,Tejas Kulkarni,5.82.245.99,Cloudflare.IP,3:20:00 AM,Denied,NA,100,Denied
+02-03-2026,Tejas Kulkarni,202.178.120.157,Cloudflare.IP,4:20:00 AM,Denied,NA,100,Denied
+02-03-2026,Tejas Kulkarni,51.15.205.90,Cloudflare.IP,5:20:00 AM,Denied,NA,100,Denied
+02-03-2026,Tejas Kulkarni,51.159.180.142,Cloudflare.IP,6:20:00 AM,Denied,NA,100,Denied
+02-03-2026,Tejas Kulkarni,51.171.201.53,Cloudflare.IP,7:20:00 AM,Denied,NA,100,Denied
+02-03-2026,Tejas Kulkarni,51.195.104.141,Cloudflare.IP,8:20:00 AM,Denied,NA,100,Denied
+02-03-2026,Tejas Kulkarni,51.235.103.132,Cloudflare.IP,9:20:00 AM,Denied,NA,100,Denied
+02-03-2026,Tejas Kulkarni,51.235.206.106,Cloudflare.IP,10:20:00 AM,Denied,NA,100,Denied
+02-03-2026,Tejas Kulkarni,51.235.240.31,Cloudflare.IP,11:20:00 AM,Denied,NA,100,Denied
+02-04-2026,Puniyat Jangir,110.224.206.139,Cloudflare.IP,2:06:00 PM,Approved,NA,0,Blocked
+02-04-2026,Puniyat Jangir,178.128.86.27,Cloudflare.IP,2:06:00 PM,Approved,NA,0,Blocked
+02-04-2026,Shivangi Soni,134.185.88.124,Cloudflare.IP,9:35:00 PM,Approved,NA,100,Blocked
+02-04-2026,Shivangi Soni,47.129.56.43,Cloudflare.IP,9:35:00 PM,Approved,NA,100,Blocked
+02-04-2026,Shivangi Soni,144.91.126.77,Cloudflare.IP,9:35:00 PM,Approved,NA,100,Blocked
+02-04-2026,Shivangi Soni,91.107.158.206,Cloudflare.IP,9:35:00 PM,Approved,NA,77,Blocked
+02-04-2026,Shivangi Soni,95.135.92.120,Cloudflare.IP,9:35:00 PM,Approved,NA,23,Blocked
+02-04-2026,Shivangi Soni,95.135.92.242,Cloudflare.IP,9:35:00 PM,Approved,NA,36,Blocked
+02-04-2026,Shivangi Soni,98.80.230.181,Cloudflare.IP,9:35:00 PM,Approved,NA,14,Blocked
+02-04-2026,Shivangi Soni,4.190.201.130,Cloudflare.IP,9:35:00 PM,Approved,NA,100,Blocked
+02-04-2026,Shivangi Soni,15.204.155.25,Cloudflare.IP,9:35:00 PM,Approved,NA,100,Blocked
+02-05-2026,Tanmay Kudale,2401:4900:5fbb:66a6::631:1e15,Cloudflare.IP,1:32:00 PM,Approved,NA,0,Blocked
+02-05-2026,Tanmay Kudale,2401:4900:8fd8:9ab2:cd9d:df7c:274b:66e9,Cloudflare.IP,1:32:00 PM,Approved,NA,0,Blocked
+02-05-2026,Tanmay Kudale,152.32.134.166,Cloudflare.IP,1:32:00 PM,Approved,NA,100,Blocked
+02-05-2026,Tanmay Kudale,152.32.211.69,Cloudflare.IP,1:32:00 PM,Approved,NA,100,Blocked
+02-05-2026,Tanmay Kudale,43.154.140.188,Cloudflare.IP,1:32:00 PM,Approved,NA,100,Blocked
+02-05-2026,Tanmay Kudale,123.58.213.118,Cloudflare.IP,1:32:00 PM,Approved,NA,100,Blocked
+02-05-2026,Tanmay Kudale,4.194.107.19,Cloudflare.IP,1:32:00 PM,Approved,NA,100,Blocked
+02-05-2026,Tanmay Kudale,223.233.83.194,Cloudflare.IP,1:32:00 PM,Approved,NA,0,Blocked
+02-06-2026,Tejas Kulkarni,159.65.8.51,Cloudflare.IP,5:43:00 AM,Approved,NA,100,Approved
+02-06-2026,Tejas Kulkarni,165.227.227.121,Cloudflare.IP,5:43:00 AM,Approved,NA,24,Approved
+02-06-2026,Tanmay Kudale,152.32.211.69,Cloudflare.IP,2:00:00 PM,Pending,NA,100,Pending
+02-06-2026,Tanmay Kudale,85.203.21.16,Cloudflare.IP,2:00:00 PM,Pending,NA,100,Pending
+02-06-2026,Tanmay Kudale,51.75.151.149,Cloudflare.IP,2:00:00 PM,Pending,NA,100,Pending
+02-06-2026,Tanmay Kudale,193.37.32.29,Cloudflare.IP,2:00:00 PM,Pending,NA,100,Pending
+02-06-2026,Tanmay Kudale,193.37.32.195,Cloudflare.IP,2:00:00 PM,Pending,NA,100,Pending
+02-06-2026,Tanmay Kudale,193.37.32.15,Cloudflare.IP,2:00:00 PM,Pending,NA,100,Pending
+02-06-2026,Tanmay Kudale,173.239.196.165,Cloudflare.IP,2:00:00 PM,Pending,NA,92,Pending
+02-06-2026,Harsh Navgale,51.68.236.114,Cloudflare.IP,8:31:00 PM,Approved,NA,0,Blocked
+02-06-2026,Harsh Navgale,20.204.24.253,Cloudflare.IP,8:31:00 PM,Approved,NA,37,Blocked
+02-06-2026,Harsh Navgale,15.204.155.25,Cloudflare.IP,8:31:00 PM,Approved,NA,100,Blocked
+02-06-2026,Harsh Navgale,20.220.62.160,Cloudflare.IP,8:31:00 PM,Approved,NA,100,Blocked
+02-06-2026,Harsh Navgale,20.65.101.77,Cloudflare.IP,8:31:00 PM,Approved,NA,100,Blocked
+02-06-2026,Harsh Navgale,20.196.222.98,Cloudflare.IP,8:31:00 PM,Approved,NA,100,Blocked
+02-06-2026,Harsh Navgale,20.94.87.22,Cloudflare.IP,8:31:00 PM,Approved,NA,100,Blocked
+02-06-2026,Harsh Navgale,20.151.200.8,Cloudflare.IP,8:31:00 PM,Approved,NA,100,Blocked
+02-06-2026,Harsh Navgale,138.246.253.24,Cloudflare.IP,8:31:00 PM,Approved,NA,0,Blocked
+02-06-2026,Harsh Navgale,20.65.101.77,Cloudflare.IP,8:31:00 PM,Approved,NA,100,Blocked
+02-06-2026,Harsh Navgale,20.220.148.239,Cloudflare.IP,8:31:00 PM,Approved,NA,100,Blocked
+02-06-2026,Harsh Navgale,4.204.244.206,Cloudflare.IP,8:31:00 PM,Approved,NA,100,Blocked
+02-07-2026,Tanmay Kudale,118.193.44.169,Cloudflare.IP,1:38:00 PM,Pending,NA,100,Pending
+02-07-2026,Tanmay Kudale,103.218.241.7,Cloudflare.IP,1:38:00 PM,Pending,NA,100,Pending
+02-07-2026,Tanmay Kudale,13.75.6.133,Cloudflare.IP,1:38:00 PM,Pending,NA,100,Pending
+02-07-2026,Tanmay Kudale,85.203.21.16,Cloudflare.IP,1:38:00 PM,Pending,NA,100,Pending
+02-07-2026,Tanmay Kudale,185.247.137.157,Cloudflare.IP,1:38:00 PM,Pending,NA,100,Pending
+02-07-2026,Tanmay Kudale,152.32.212.149,Cloudflare.IP,1:38:00 PM,Pending,NA,100,Pending
+02-07-2026,Prathamesh Pendkar,182.64.162.96,BHARTI TELENET LTD. NEW DELHI,12:03:00 PM,Approved,NA,0,Blocked
+02-08-2026,Prathamesh Pendkar,136.119.129.236,Google LLC,4:45:00 AM,Approved,NA,100,Blocked
+02-08-2026,Prathamesh Pendkar,34.86.177.154,Google LLC,4:45:00 AM,Pending,NA,18,Pending
+02-08-2026,Prathamesh Pendkar,54.190.26.155,"Amazon.com, Inc.",4:45:00 AM,Pending,NA,38,Pending
+02-08-2026,Prathamesh Pendkar,118.193.57.62,UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED,4:45:00 AM,Approved,NA,100,Blocked
+02-08-2026,Prathamesh Pendkar,31.14.72.6,AVAST Software s.r.o.,4:45:00 AM,Approved,NA,67,Blocked
+02-09-2026,Prathamesh Pendkar,45.129.86.225,VCCL Cloud Private Limited,5:20:00 AM,Denied,NA,0,Denied
+02-09-2026,Prathamesh Pendkar,45.80.107.202 ,FINE GROUP SERVERS SOLUTIONS LLC,5:20:00 AM,Approved,NA,29,Blocked
+02-09-2026,Prathamesh Pendkar,185.212.115.102,FINE GROUP SERVERS SOLUTIONS LLC,5:20:00 AM,Approved,NA,18,Blocked
+02-09-2026,Prathamesh Pendkar,140.235.169.212,SharePolicy LLC,5:20:00 AM,Approved,NA,35,Blocked
+02-09-2026,Prathamesh Pendkar,140.235.2.178,DirectBackup LLC,5:20:00 AM,Approved,NA,17,Blocked
+02-09-2026,Prathamesh Pendkar,45.80.107.65,FINE GROUP SERVERS SOLUTIONS LLC,5:20:00 AM,Approved,NA,26,Blocked
+02-09-2026,Prathamesh Pendkar,193.163.92.108,FINE GROUP SERVERS SOLUTIONS LLC,5:20:00 AM,Approved,NA,23,Blocked
+02-09-2026,Prathamesh Pendkar,199.96.165.116,MyridWeb LLC,5:20:00 AM,Approved,NA,22,Blocked
+02-09-2026,Prathamesh Pendkar,216.40.73.120,PureKernel LLC,5:20:00 AM,Approved,NA,21,Blocked
+02-09-2026,Prathamesh Pendkar,193.233.219.148,Quality Network US LLC,5:20:00 AM,Approved,NA,21,Blocked
+02-09-2026,Prathamesh Pendkar,212.87.216.108,FINE GROUP SERVERS SOLUTIONS LLC,5:20:00 AM,Approved,NA,22,Blocked
+02-10-2025,Varad Mene,171.78.174.103,"AIRTELBROADBAND-AS-AP Bharti Airtel Ltd., Telemedia Services",12:01:00 PM,Blocked,NA,0,Blocked
+02-10-2025,Tanmay Kudale,101.36.119.97,UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED,21:06PM,Pending,NA,3,Pending
+02-10-2025,Tanmay Kudale,118.193.47.230,UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED,21:06PM,Pending,NA,3,Pending
+02-10-2025,Shivangi Soni,51.75.151.149,Cloudflare.IP,5:20:00 AM,Approved,NA,100,Blocked
+02-10-2025,Shivangi Soni, 98.142.247.13,Cloudflare.IP,5:20:00 AM,Approved,NA,21,Blocked
+02-11-2025,Harsh Navgale,20.208.32.128,Cloudflare.IP,11:30:00 AM,Approved,NA,100,Approved
+02-12-2025,Harsh Navgale,158.158.49.160,Cloudflare.IP,11:30:00 AM,Approved,NA,100,Approved
+02-13-2025,Harsh Navgale,45.157.54.18,Cloudflare.IP,11:30:00 AM,Approved,NA,100,Approved
+02-14-2025,Harsh Navgale,122.180.244.204,Cloudflare.IP,11:30:00 AM,Approved,NA,0,Blocked
+02-15-2025,Harsh Navgale,122.169.87.105,Cloudflare.IP,11:30:00 AM,Approved,NA,0,Approved
+02-16-2025,Harsh Navgale,83.147.19.246,Cloudflare.IP,11:30:00 AM,Approved,NA,38,Approved
+02-11-2026,Tejas Kulkarni,160.179.71.108,Cloudflare.IP,8:13:00 PM,Pending,NA,26,Pending
+02-11-2026,Tejas Kulkarni,122.169.87.105,Cloudflare.IP,8:13:00 PM,Pending,NA,0,Pending
+02-12-2026,Harsh Navgale,185.199.157.2,Cloudflare.IP,1:36:00 PM,Approved,NA,55,Pending
+02-12-2026,Harsh Navgale,152.32.214.234,Cloudflare.IP,1:36:00 PM,Approved,NA,0,Pending
+02-12-2026,Puniyat Jangir,52.160.166.64,Cloudflare.IP,1:36:00 PM,Pending,NA,0,Pending
+02-12-2025,Tanmay Kudale,103.78.195.193,Cloudflare.IP,7:24:00 PM,Pending,NA,100,Pending
+02-12-2025,Tanmay Kudale,157.20.32.166,Cloudflare.IP,7:24:00 PM,Pending,NA,100,Pending
+02-12-2025,Tanmay Kudale,188.166.210.237,Cloudflare.IP,7:24:00 PM,Pending,NA,100,Pending
+02-12-2025,Tanmay Kudale,161.97.73.38,Cloudflare.IP,9:11:00 PM,Pending,NA,0,Pending
+02-12-2025,Tanmay Kudale,122.169.87.4,Cloudflare.IP,9:11:00 PM,Pending,NA,0,Pending
+02-12-2025,Tanmay Kudale,2a02:c207:2306:8260::1,Cloudflare.IP,9:11:00 PM,Pending,NA,0,Pending
+02-12-2025,Tanmay Kudale,101.32.49.171,Cloudflare.IP,9:11:00 PM,Pending,NA,100,Pending
+02-12-2025,Tanmay Kudale,54.39.104.60,Cloudflare.IP,9:11:00 PM,Pending,NA,100,Pending
+02-12-2025,Tejas Kulkarni,40.89.152.156,Cloudflare.IP,9:21:00 PM,Approved,NA,100,Blocked
+02-12-2025,Tejas Kulkarni,20.215.220.221,Cloudflare.IP,9:21:00 PM,Denied,To monitor further,64,Pending
+02-12-2025,Tejas Kulkarni,20.204.24.255,Cloudflare.IP,9:21:00 PM,Denied,To monitor further,49,Pending
+02-12-2025,Tejas Kulkarni,20.204.24.247,Cloudflare.IP,9:21:00 PM,Denied,To monitor further,48,Pending
+02-12-2025,Tejas Kulkarni,20.204.24.250,Cloudflare.IP,9:21:00 PM,Denied,To monitor further,42,Pending
+02-12-2025,Shivangi Soni,20.111.32.128,Cloudflare.IP,4:00:00 AM,Approved,NA,100,Blocked
+02-12-2025,Shivangi Soni,98.142.247.13,Cloudflare.IP,4:00:00 AM,Approved,NA,100,Blocked
+02-12-2025,Shivangi Soni,51.75.151.149,Cloudflare.IP,4:00:00 AM,Approved,NA,100,Blocked
+02-12-2025,Shivangi Soni,20.111.32.128,Cloudflare.IP,4:00:00 AM,Approved,NA,100,Blocked
+02-12-2025,Shivangi Soni,20.199.186.0,Cloudflare.IP,4:00:00 AM,Approved,NA,100,Blocked
+02-12-2025,Shivangi Soni,20.100.195.100,Cloudflare.IP,4:00:00 AM,Approved,NA,100,Blocked
+02-12-2025,Shivangi Soni,40.89.152.156,Cloudflare.IP,4:00:00 AM,Approved,NA,100,Blocked
+02-12-2025,Shivangi Soni,202.178.120.157,Cloudflare.IP,4:00:00 AM,Approved,NA,100,Blocked
+02-12-2025,Shivangi Soni,141.98.11.239,Cloudflare.IP,4:00:00 AM,Approved,NA,100,Blocked
+02-12-2025,Shivangi Soni,45.157.54.17,Cloudflare.IP,4:00:00 AM,Approved,NA,100,Blocked
+02-12-2025,Shivangi Soni,46.161.27.222,Cloudflare.IP,4:00:00 AM,Approved,NA,100,Blocked
+02-12-2025,Shivangi Soni,62.164.177.243,Cloudflare.IP,4:00:00 AM,Approved,NA,100,Blocked
+02-13-2025,Tanmay Kudale,20.111.48.18,Cloudflare.IP,5:47:00 PM,Approved,NA,100,Blocked
+02-13-2025,Tanmay Kudale,85.203.21.62,Cloudflare.IP,5:47:00 PM,Approved,NA,100,Blocked
+02-13-2025,Tanmay Kudale,152.69.212.11,Cloudflare.IP,5:47:00 PM,Approved,NA,100,Blocked
+02-13-2025,Tanmay Kudale,20.234.88.224,Cloudflare.IP,5:47:00 PM,Approved,NA,100,Blocked
+02-13-2025,Tanmay Kudale,106.219.165.134,Cloudflare.IP,8:15:00 PM,Approved,NA,0,Blocked
+02-13-2025,Tanmay Kudale,139.59.125.122,Cloudflare.IP,8:15:00 PM,Approved,NA,36,Blocked
+02-15-2026,Prathamesh Pendkar,62.60.130.210,Cloudflare.IP,8:10:00 PM,Approved,NA,100,Blocked
+02-15-2026,Prathamesh Pendkar,91.199.163.58,Cloudflare.IP,9:10:00 PM,Approved,NA,100,Blocked
+02-15-2026,Prathamesh Pendkar,192.53.123.118,Cloudflare.IP,10:10:00 PM,Approved,NA,100,Blocked
+02-15-2026,Prathamesh Pendkar,20.245.76.155,Cloudflare.IP,11:10:00 PM,Approved,NA,82,Blocked
+02-15-2026,Prathamesh Pendkar,20.245.52.25,Cloudflare.IP,12:10:00 AM,Approved,NA,71,Blocked
+02-16-2026,Krish Sharma,185.177.72.38,Cloudflare.IP,12:00:00 PM,Approved,NA,100,Blocked
+02-16-2026,Prathamesh Pendkar,43.205.88.147,Cloudflare.IP,1:51:00 PM,Approved,NA,0,Approved
+02-16-2026,Prathamesh Pendkar,13.232.163.0,Cloudflare.IP,2:51:00 PM,Approved,NA,0,Approved
+02-16-2026,Prathamesh Pendkar,13.126.217.57,Cloudflare.IP,3:51:00 PM,Approved,NA,0,Approved
+02-16-2026,Prathamesh Pendkar,3.109.160.144,Cloudflare.IP,4:51:00 PM,Approved,NA,0,Approved
+02-16-2026,Prathamesh Pendkar,3.111.133.166,Cloudflare.IP,5:51:00 PM,Approved,NA,0,Approved
+02-16-2026,Prathamesh Pendkar,13.203.191.246,Cloudflare.IP,6:51:00 PM,Approved,NA,0,Approved
+02-16-2026,Prathamesh Pendkar,13.203.115.188,Cloudflare.IP,7:51:00 PM,Approved,NA,0,Approved
+02-16-2026,Prathamesh Pendkar,106.219.163.136,Bharti Airtel Limited,8:59:00 PM,Approved,NA,0,Blocked
+02-16-2026,Prathamesh Pendkar,160.178.45.103,MarocTelecomASDL,8:59:00 PM,Approved,NA,74,Blocked
+02-16-2026,Prathamesh Pendkar,16.147.29.132,"Amazon.com, Inc.",8:59:00 PM,Pending,NA,32,Pending
+02-16-2026,Prathamesh Pendkar,135.84.180.228,Astute Internet,8:59:00 PM,Pending,NA,16,Pending
+02-16-2026,Prathamesh Pendkar,51.195.130.155,OVH Ltd,8:59:00 PM,Approved,NA,12,Blocked
+02-17-2026,Tejas Kulkarni,223.233.82.227,Cloudflare.IP,10:14:00 AM,Approved,NA,0,Blocked
+02-17-2026,Tejas Kulkarni,165.245.177.221,Cloudflare.IP,10:14:00 AM,Approved,NA,99,Blocked
+02-17-2026,Prathamesh Pendkar,161.118.253.118,500 Oracle Parkway,7:21:00 PM,Approved,NA,100,Blocked
+02-17-2026,Prathamesh Pendkar,20.238.121.35,Microsoft Corporation,8:21:00 PM,Approved,NA,100,Blocked
+02-17-2026,Prathamesh Pendkar,40.112.95.11,Microsoft Corporation,9:21:00 PM,Approved,NA,100,Blocked
+02-17-2026,Prathamesh Pendkar,2407:3640:2291:9176::1,Contabo Asia Private Limited,10:21:00 PM,Approved,NA,88,Blocked
+02-18-2026,Tanmay Kudale,20.24.204.137,Cloudflare.IP,10:31:00 AM,Pending,NA,0,Pending
+02-18-2026,Tanmay Kudale,147.93.155.87,Cloudflare.IP,1:17:00 PM,Pending,NA,0,Pending
+02-18-2026,Tanmay Kudale,40.172.254.31,Cloudflare.IP,1:17:00 PM,Pending,NA,0,Pending
+02-18-2026,Prathamesh Pendkar,4.194.217.214,Microsoft Corporation,8:49:00 PM,Pending,NA,100,Pending
+02-18-2026,Prathamesh Pendkar,185.177.72.30,FBW NETWORKS SAS,8:49:00 PM,Pending,NA,100,Pending
+02-18-2026,Prathamesh Pendkar,134.199.156.239,"DigitalOcean, LLC",8:49:00 PM,Pending,NA,100,Pending
+02-18-2026,Prathamesh Pendkar,20.203.136.132,Microsoft Corporation,8:49:00 PM,Pending,NA,100,Pending
+02-18-2026,Prathamesh Pendkar,119.235.221.209,PT. Mora Telematika Indonesia,8:49:00 PM,Pending,NA,100,Pending
+02-18-2026,Prathamesh Pendkar,157.66.54.26,CV Mico Digital Indonesia,8:49:00 PM,Pending,NA,100,Pending
+02-18-2026,Prathamesh Pendkar,43.173.178.148,ACEVILLE PTE.LTD.,8:49:00 PM,Pending,NA,59,Pending
+02-18-2026,Prathamesh Pendkar,91.227.17.30,LLC Eximius,8:49:00 PM,Pending,NA,51,Pending
+02-18-2026,Prathamesh Pendkar,2803:9810:4eb9:dc10:12df:3fe8:19:5879,Starlink Brazil Serviços de Internet Ltd,8:49:00 PM,Pending,NA,37,Pending
+02-19-2026,Tanmay Kudale,64.236.176.150,Cloudflare.IP,2:00:00 PM,Pending,NA,0,Pending
+02-19-2026,Tanmay Kudale,4.232.90.25,Cloudflare.IP,2:00:00 PM,Pending,NA,100,Pending
+02-19-2026,Tanmay Kudale,172.213.16.18,Cloudflare.IP,2:00:00 PM,Pending,NA,100,Pending
+02-19-2026,Tanmay Kudale,20.166.38.178 ,Cloudflare.IP,2:00:00 PM,Pending,NA,100,Pending
+02-19-2026,Tanmay Kudale,168.63.78.209,Cloudflare.IP,2:00:00 PM,Pending,NA,100,Pending
+02-19-2026,Tanmay Kudale,64.236.176.150,Cloudflare.IP,2:00:00 PM,Pending,NA,0,Pending
+02-19-2026,Tanmay Kudale,45.63.9.29,Cloudflare.IP,2:00:00 PM,Pending,NA,100,Pending
+02-19-2026,Tanmay Kudale,193.233.221.101,Cloudflare.IP,2:00:00 PM,Pending,NA,15,Pending
+02-19-2026,Tanmay Kudale,217.145.225.137,Cloudflare.IP,2:00:00 PM,Pending,NA,13,Pending
+02-19-2026,Tanmay Kudale,167.253.48.254,Cloudflare.IP,2:00:00 PM,Pending,NA,24,Pending
+02-19-2026,Tanmay Kudale,91.132.124.151,Cloudflare.IP,2:00:00 PM,Pending,NA,4,Pending2026-02-20,SOC Analyst,2602:fb54:1200::16e,Malicious Activity,12:00 PM,,Approved by SOC,,
+2026-02-21,Pankaj Sir,134.209.56.230,Malicious Activity,05:27 PM,,Approved by SOC | Shift: Afternoon,,
+2026-02-21,Pankaj Sir,188.166.220.167,Malicious Activity,05:27 PM,,Approved by SOC | Shift: Afternoon,,
+2026-02-21,Pankaj Sir,119.13.56.187,Malicious Activity,05:27 PM,,Approved by SOC | Shift: Afternoon,,
+2026-02-21,Pankaj Sir,2602:fb54:1200::16e,Malicious Activity,05:27 PM,,Approved by SOC | Shift: Afternoon,,
+2026-02-21,Pankaj Sir,91.224.92.126,Malicious Activity,05:27 PM,,Approved by SOC | Shift: Afternoon,,
