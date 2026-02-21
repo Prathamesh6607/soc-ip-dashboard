@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=SOC IP Dashboard
+Comment=Launch Streamlit dashboard with ngrok tunnel
+Path=/home/prathameshpendkar/Desktop/soc_ip_dashboard
+Exec=/home/prathameshpendkar/Desktop/soc_ip_dashboard/run_dashboard.sh
+Terminal=true
+Categories=Development;
