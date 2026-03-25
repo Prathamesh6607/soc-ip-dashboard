@@ -4,11 +4,28 @@ from __future__ import annotations
 
 import csv
 import logging
-import re
 from ipaddress import ip_address, ip_network, AddressValueError
 from pathlib import Path
 
 logger = logging.getLogger(__name__)
+
+
+def classify_whitelist_entry(value: str) -> tuple[str, str] | None:
+    """Validate and normalize one whitelist value into (entry, entry_type)."""
+
+    text = value.strip()
+    if not text:
+        return None
+
+    try:
+        if "/" in text:
+            network_obj = ip_network(text, strict=False)
+            return str(network_obj), "CIDR"
+
+        ip_obj = ip_address(text)
+        return str(ip_obj), "IP"
+    except (AddressValueError, ValueError):
+        return None
 
 
 def load_whitelist_entries(whitelist_csv_path: Path) -> tuple[set[str], set[str]]:

@@ -87,7 +87,7 @@ def draw_architecture_diagram(path: Path) -> None:
         (11.6, 6.5, 3.0, 1.4, "Persistence Layer\ndatabase.py (SQLite)", "#EEF5FF"),
         (2.6, 3.8, 3.6, 1.4, "Config & Security\nconfig.py + env/config.ini", "#F6F9FF"),
         (7.0, 3.8, 3.6, 1.4, "Notification Layer\nemail_notifier + gmail_auth", "#F6F9FF"),
-        (11.4, 3.8, 3.0, 1.4, "External Integration\nAbuseIPDB + Gmail + ngrok", "#F6F9FF"),
+        (11.4, 3.8, 3.0, 1.4, "External Integration\nAbuseIPDB + Gmail", "#F6F9FF"),
     ]
 
     for x, y, w, h, txt, fc in layers:
@@ -174,7 +174,7 @@ def build_pdf(output_pdf: Path) -> None:
         "AbuseIPDB enrichment with retry/backoff and 429 handling",
         "SQLite persistence for scan results and detected threats",
         "Approval workflow with status updates and email notifications",
-        "Single-command launch and static ngrok public URL support",
+        "Single-command launch for local Streamlit dashboard",
     ]
     story.append(ListFlowable([ListItem(Paragraph(f, styles["Body"])) for f in feat], bulletType="bullet"))
 
@@ -185,8 +185,8 @@ def build_pdf(output_pdf: Path) -> None:
     story.append(Paragraph("6. Pros and Cons", styles["H1"]))
     data = [
         ["Pros", "Cons"],
-        ["High reduction in repetitive SOC effort", "Depends on external services (AbuseIPDB/ngrok/Gmail)"],
-        ["Consistent governance and auditability via SQLite + structured CSV", "Static ngrok domain may conflict if another session is active"],
+        ["High reduction in repetitive SOC effort", "Depends on external services (AbuseIPDB/Gmail)"],
+        ["Consistent governance and auditability via SQLite + structured CSV", "Requires network access for external APIs"],
         ["Improved decision context (score, country, ISP, path)", "Passive mode: no direct firewall automation"],
         ["Simple onboarding via one-click launcher", "CSV can be sensitive to concurrent manual edits"],
     ]

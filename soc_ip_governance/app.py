@@ -20,10 +20,13 @@ from config import CONFIG
 from database import (
     fetch_scan_results,
     fetch_detected_threats,
+    fetch_custom_whitelist_entries,
     init_database,
     update_approval_status,
     upsert_scan_result,
     upsert_detected_threat,
+    upsert_custom_whitelist_entry,
+    delete_custom_whitelist_entry,
     update_scan_result_path,
     clear_all_scan_results,
 )
@@ -44,6 +47,7 @@ from master_sheet import (
     delete_master_sheet_row,
 )
 from whitelist import (
+    classify_whitelist_entry,
     load_whitelist_entries,
     filter_whitelisted_ips,
 )
@@ -192,8 +196,15 @@ def process_raw_input(raw_text: str, threshold: int, progress_bar=None, status_t
 
     if status_text:
         status_text.text("Loading whitelist and master sheet...")
-    # Load and apply whitelist filtering
-    individual_ips, cidr_blocks = load_whitelist_entries(CONFIG.whitelist_sheet_path)
+    # Load and apply whitelist filtering (file + custom table)
+    file_individual_ips, file_cidr_blocks = load_whitelist_entries(CONFIG.whitelist_sheet_path)
+    custom_entries = fetch_custom_whitelist_entries(CONFIG.sqlite_path)
+    custom_individual_ips = {entry["entry"] for entry in custom_entries if entry.get("entry_type") == "IP"}
+    custom_cidr_blocks = {entry["entry"] for entry in custom_entries if entry.get("entry_type") == "CIDR"}
+
+    individual_ips = file_individual_ips | custom_individual_ips
+    cidr_blocks = file_cidr_blocks | custom_cidr_blocks
+
     non_whitelisted_ips, whitelisted_ips, whitelist_count = filter_whitelisted_ips(
         unique_valid_ips, individual_ips, cidr_blocks
     )
@@ -368,13 +379,40 @@ def render_tab_detected_threats() -> None:
         # Display AbuseIPDB table
         if abuseipdb_results:
             st.markdown(f"#### 🌐 AbuseIPDB Scanned IPs ({len(abuseipdb_results)} IPs)")
-            
+            scanned_by_ip_abuse = {row["ipAddress"]: row for row in abuseipdb_results}
+
+            bulk_col1, bulk_col2 = st.columns([3, 2])
+            with bulk_col1:
+                bulk_status_abuse_scan = st.selectbox(
+                    "Select All Approval Status (AbuseIPDB Scanned)",
+                    ["Pending", "Approved", "Rejected"],
+                    index=0,
+                    key=f"bulk_status_abuse_scan_{min_abuse_score}",
+                )
+            with bulk_col2:
+                if st.button("Apply to All", key=f"btn_bulk_abuse_scan_{min_abuse_score}"):
+                    updated_count = 0
+                    for ip_addr, base_row in scanned_by_ip_abuse.items():
+                        upsert_detected_threat(
+                            CONFIG.sqlite_path,
+                            {
+                                "ipAddress": ip_addr,
+                                "abuseConfidenceScore": int(base_row.get("abuseConfidenceScore", 0)),
+                                "countryCode": base_row.get("countryCode", ""),
+                                "isp": base_row.get("isp", ""),
+                                "PATH": str(base_row.get("PATH") or "").strip(),
+                                "Approval Status": bulk_status_abuse_scan,
+                            },
+                        )
+                        updated_count += 1
+                    st.success(f"Updated {updated_count} AbuseIPDB scanned IP(s) to {bulk_status_abuse_scan}.")
+                    st.rerun()
+
             abuseipdb_df = pd.DataFrame(abuseipdb_results)[["ipAddress", "abuseConfidenceScore", "countryCode", "isp", "PATH"]]
             abuseipdb_df["Approval Status"] = abuseipdb_df["ipAddress"].map(lambda ip: status_map.get(ip, "Pending"))
             
             original_path_map_abuse = {row["ipAddress"]: (row.get("PATH") or "") for row in abuseipdb_results}
             original_status_map_abuse = {row["ipAddress"]: status_map.get(row["ipAddress"], "Pending") for row in abuseipdb_results}
-            scanned_by_ip_abuse = {row["ipAddress"]: row for row in abuseipdb_results}
 
             edited_abuseipdb_df = st.data_editor(
                 abuseipdb_df,
@@ -423,14 +461,41 @@ def render_tab_detected_threats() -> None:
         # Display SOAR table
         if soar_results:
             st.markdown(f"#### 🔍 SOAR Logpush Detected IPs ({len(soar_results)} IPs)")
-            
+            scanned_by_ip_soar = {row["ipAddress"]: row for row in soar_results}
+
+            bulk_col1, bulk_col2 = st.columns([3, 2])
+            with bulk_col1:
+                bulk_status_soar_scan = st.selectbox(
+                    "Select All Approval Status (SOAR Scanned)",
+                    ["Pending", "Approved", "Rejected"],
+                    index=0,
+                    key=f"bulk_status_soar_scan_{min_abuse_score}",
+                )
+            with bulk_col2:
+                if st.button("Apply to All", key=f"btn_bulk_soar_scan_{min_abuse_score}"):
+                    updated_count = 0
+                    for ip_addr, base_row in scanned_by_ip_soar.items():
+                        upsert_detected_threat(
+                            CONFIG.sqlite_path,
+                            {
+                                "ipAddress": ip_addr,
+                                "abuseConfidenceScore": int(base_row.get("abuseConfidenceScore", 0)),
+                                "countryCode": "SOAR",
+                                "isp": base_row.get("isp", ""),
+                                "PATH": str(base_row.get("PATH") or "").strip(),
+                                "Approval Status": bulk_status_soar_scan,
+                            },
+                        )
+                        updated_count += 1
+                    st.success(f"Updated {updated_count} SOAR scanned IP(s) to {bulk_status_soar_scan}.")
+                    st.rerun()
+
             soar_df = pd.DataFrame(soar_results)[["ipAddress", "abuseConfidenceScore", "country", "isp", "PATH"]]
             soar_df.rename(columns={"abuseConfidenceScore": "Request Count"}, inplace=True)
             soar_df["Approval Status"] = soar_df["ipAddress"].map(lambda ip: status_map.get(ip, "Pending"))
             
             original_path_map_soar = {row["ipAddress"]: (row.get("PATH") or "") for row in soar_results}
             original_status_map_soar = {row["ipAddress"]: status_map.get(row["ipAddress"], "Pending") for row in soar_results}
-            scanned_by_ip_soar = {row["ipAddress"]: row for row in soar_results}
 
             edited_soar_df = st.data_editor(
                 soar_df,
@@ -513,6 +578,23 @@ def render_tab_detected_threats() -> None:
     # Display AbuseIPDB threats table
     if abuseipdb_threats:
         st.markdown(f"#### 🌐 AbuseIPDB Detected Threats ({len(abuseipdb_threats)} IPs)")
+
+        bulk_col1, bulk_col2 = st.columns([3, 2])
+        with bulk_col1:
+            bulk_status_abuse_threats = st.selectbox(
+                "Select All Approval Status (AbuseIPDB Threats)",
+                ["Pending", "Approved", "Rejected"],
+                index=0,
+                key="bulk_status_abuse_threats",
+            )
+        with bulk_col2:
+            if st.button("Apply to All", key="btn_bulk_abuse_threats"):
+                for threat in abuseipdb_threats:
+                    ip_addr = str(threat.get("ipAddress", "")).strip()
+                    if ip_addr:
+                        update_approval_status(CONFIG.sqlite_path, ip_addr, bulk_status_abuse_threats)
+                st.success(f"Updated {len(abuseipdb_threats)} AbuseIPDB threat IP(s) to {bulk_status_abuse_threats}.")
+                st.rerun()
         
         abuseipdb_df = pd.DataFrame(abuseipdb_threats)
         
@@ -558,6 +640,23 @@ def render_tab_detected_threats() -> None:
     # Display SOAR threats table
     if soar_threats:
         st.markdown(f"#### 🔍 SOAR Logpush Detected Threats ({len(soar_threats)} IPs)")
+
+        bulk_col1, bulk_col2 = st.columns([3, 2])
+        with bulk_col1:
+            bulk_status_soar_threats = st.selectbox(
+                "Select All Approval Status (SOAR Threats)",
+                ["Pending", "Approved", "Rejected"],
+                index=0,
+                key="bulk_status_soar_threats",
+            )
+        with bulk_col2:
+            if st.button("Apply to All", key="btn_bulk_soar_threats"):
+                for threat in soar_threats:
+                    ip_addr = str(threat.get("ipAddress", "")).strip()
+                    if ip_addr:
+                        update_approval_status(CONFIG.sqlite_path, ip_addr, bulk_status_soar_threats)
+                st.success(f"Updated {len(soar_threats)} SOAR threat IP(s) to {bulk_status_soar_threats}.")
+                st.rerun()
         
         soar_df = pd.DataFrame(soar_threats)
         
@@ -946,12 +1045,86 @@ def render_tab_whitelist() -> None:
     """Tab 4: Display whitelisted IPs and CIDR blocks."""
 
     st.subheader("Whitelisted IPs & CIDR Blocks")
-    st.caption(f"Source: {CONFIG.whitelist_sheet_path}")
+    st.caption(f"File source: {CONFIG.whitelist_sheet_path}")
     st.info("These IPs and CIDR blocks will NOT be sent to detected threats, preventing accidental blocking of trusted services.")
 
     individual_ips, cidr_blocks = load_whitelist_entries(CONFIG.whitelist_sheet_path)
+    custom_entries = fetch_custom_whitelist_entries(CONFIG.sqlite_path)
+    custom_ips = {entry["entry"] for entry in custom_entries if entry.get("entry_type") == "IP"}
+    custom_cidrs = {entry["entry"] for entry in custom_entries if entry.get("entry_type") == "CIDR"}
+    effective_ips = individual_ips | custom_ips
+    effective_cidrs = cidr_blocks | custom_cidrs
 
-    if not individual_ips and not cidr_blocks:
+    st.markdown("### Custom Whitelist Table")
+    input_col, action_col, remove_col = st.columns([4, 1, 4])
+    with input_col:
+        custom_whitelist_input = st.text_input(
+            "Add Custom IP or CIDR",
+            placeholder="Examples: 192.168.1.10 or 10.0.0.0/24",
+            key="custom_whitelist_input",
+        )
+    with action_col:
+        st.write("")
+        st.write("")
+        if st.button("Add", key="btn_add_custom_whitelist", type="primary"):
+            classified = classify_whitelist_entry(custom_whitelist_input)
+            if not classified:
+                st.error("Invalid value. Enter a valid IP address or CIDR block.")
+            else:
+                normalized_entry, entry_type = classified
+                upsert_custom_whitelist_entry(CONFIG.sqlite_path, normalized_entry, entry_type)
+                st.success(f"Added custom whitelist {entry_type}: {normalized_entry}")
+                st.rerun()
+    with remove_col:
+        custom_whitelist_remove_input = st.text_input(
+            "Remove Custom IP or CIDR",
+            placeholder="Enter exact value to remove",
+            key="custom_whitelist_remove_input",
+        )
+        if st.button("Remove", key="btn_remove_custom_whitelist"):
+            target = custom_whitelist_remove_input.strip()
+            if not target:
+                st.warning("Enter an IP/CIDR value to remove.")
+            elif delete_custom_whitelist_entry(CONFIG.sqlite_path, target):
+                st.success(f"Removed custom whitelist entry: {target}")
+                st.rerun()
+            else:
+                st.warning(f"No custom whitelist entry found for: {target}")
+
+    if custom_entries:
+        custom_df = pd.DataFrame(custom_entries)
+        custom_df.insert(0, "Select", False)
+        edited_custom_df = st.data_editor(
+            custom_df[["Select", "entry", "entry_type", "created_at"]],
+            width="stretch",
+            hide_index=True,
+            disabled=["entry", "entry_type", "created_at"],
+            column_config={
+                "Select": st.column_config.CheckboxColumn("Select", help="Select custom entries to delete", default=False),
+                "entry": st.column_config.TextColumn("Entry", width="large"),
+                "entry_type": st.column_config.TextColumn("Type", width="small"),
+                "created_at": st.column_config.TextColumn("Created At", width="medium"),
+            },
+            key="custom_whitelist_editor",
+        )
+
+        selected_custom_entries = [
+            str(entry).strip()
+            for entry in edited_custom_df.loc[edited_custom_df["Select"] == True, "entry"].tolist()
+            if str(entry).strip()
+        ]
+        if selected_custom_entries:
+            if st.button("Delete Selected Custom Entries", key="btn_delete_custom_whitelist"):
+                deleted_count = 0
+                for entry in selected_custom_entries:
+                    if delete_custom_whitelist_entry(CONFIG.sqlite_path, entry):
+                        deleted_count += 1
+                st.success(f"Deleted {deleted_count} custom whitelist entrie(s).")
+                st.rerun()
+    else:
+        st.caption("No custom whitelist entries yet.")
+
+    if not effective_ips and not effective_cidrs:
         st.warning("No whitelisted entries found. Check the whitelist file path.")
         return
 
@@ -959,31 +1132,33 @@ def render_tab_whitelist() -> None:
 
     with col1:
         st.markdown("### Individual Whitelisted IPs")
-        if individual_ips:
-            st.info(f"**Total: {len(individual_ips)} IPs**")
+        if effective_ips:
+            st.info(f"**Total: {len(effective_ips)} IPs** (file: {len(individual_ips)}, custom: {len(custom_ips)})")
             with st.expander("View all whitelisted IPs", expanded=False):
-                ips_list = sorted(list(individual_ips))
+                ips_list = sorted(list(effective_ips))
                 st.code("\n".join(ips_list), language="text")
         else:
             st.write("No individual IPs in whitelist.")
 
     with col2:
         st.markdown("### Whitelisted CIDR Blocks")
-        if cidr_blocks:
-            st.info(f"**Total: {len(cidr_blocks)} CIDR blocks**")
+        if effective_cidrs:
+            st.info(f"**Total: {len(effective_cidrs)} CIDR blocks** (file: {len(cidr_blocks)}, custom: {len(custom_cidrs)})")
             with st.expander("View all whitelisted CIDR blocks", expanded=False):
-                cidrs_list = sorted(list(cidr_blocks))
+                cidrs_list = sorted(list(effective_cidrs))
                 st.code("\n".join(cidrs_list), language="text")
         else:
             st.write("No CIDR blocks in whitelist.")
 
     st.divider()
     st.markdown("### Summary")
-    summary_col1, summary_col2 = st.columns(2)
+    summary_col1, summary_col2, summary_col3 = st.columns(3)
     with summary_col1:
-        st.metric("Individual IPs", len(individual_ips))
+        st.metric("Individual IPs", len(effective_ips))
     with summary_col2:
-        st.metric("CIDR Blocks", len(cidr_blocks))
+        st.metric("CIDR Blocks", len(effective_cidrs))
+    with summary_col3:
+        st.metric("Custom Entries", len(custom_entries))
 
 
 def analyze_logpush_sample(log_file_path: Path, max_lines: int = 10000) -> dict:

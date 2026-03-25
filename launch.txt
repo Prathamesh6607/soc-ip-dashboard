@@ -1,31 +1,49 @@
-SOC IP Dashboard - Launch Steps (with ngrok)
-===========================================
+SOC IP Dashboard - Nginx Hosting Steps
+======================================
 
 Project root:
 /home/prathameshpendkar/Desktop/soc_ip_dashboard
 
 -------------------------------------------
-0) Single-click launcher (recommended)
+0) One-time Nginx setup (recommended)
 -------------------------------------------
 
 # One-time: make launcher executable
 cd /home/prathameshpendkar/Desktop/soc_ip_dashboard
-chmod +x run_dashboard.sh
+chmod +x setup_nginx_host.sh run_dashboard_nginx.sh
 
-# Launch both Streamlit + ngrok in one command
-./run_dashboard.sh
+# Run setup as root (domain is optional; default is "_")
+sudo bash ./setup_nginx_host.sh localhost
 
 # Or double-click Linux launcher file
 # SOC-IP-Dashboard.desktop
 
 # This will:
-# - Start Streamlit on port 8501
-# - Start ngrok tunnel
-# - Print local and public URLs
-# - Stop Streamlit automatically when you press Ctrl+C
+# - Create systemd service: soc-ip-dashboard
+# - Configure nginx reverse proxy
+# - Host dashboard on port 80
 
 -------------------------------------------
-1) One-time setup
+1) Start / restart hosted dashboard
+-------------------------------------------
+
+cd /home/prathameshpendkar/Desktop/soc_ip_dashboard
+./run_dashboard_nginx.sh
+
+Open:
+http://localhost
+
+-------------------------------------------
+2) Manual service commands
+-------------------------------------------
+
+sudo systemctl status soc-ip-dashboard
+sudo systemctl restart soc-ip-dashboard
+sudo systemctl restart nginx
+sudo journalctl -u soc-ip-dashboard -f
+
+-------------------------------------------
+3) App dependency setup (if not done)
 -------------------------------------------
 
 # Go to project root
@@ -40,9 +58,6 @@ source venv/bin/activate
 # Install project dependencies
 pip install -r soc_ip_governance/requirements.txt
 
-# ngrok script uses pyngrok (install once)
-pip install pyngrok
-
 # Configure AbuseIPDB key (required)
 # Edit file: soc_ip_governance/config.ini
 # Set:
@@ -50,83 +65,17 @@ pip install pyngrok
 # api_key = YOUR_ABUSEIPDB_API_KEY
 
 -------------------------------------------
-2) Run the Streamlit app
+4) Quick troubleshooting
 -------------------------------------------
 
-cd /home/prathameshpendkar/Desktop/soc_ip_dashboard
-source venv/bin/activate
-python -m streamlit run soc_ip_governance/app.py --server.port 8501
-
-Local URL:
-http://localhost:8501
-
--------------------------------------------
-3) ngrok setup (one-time)
--------------------------------------------
-
-# Create ngrok account: https://dashboard.ngrok.com/
-# Copy your authtoken from dashboard
-# Verify your ngrok account email before using the token
-
-source /home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/bin/activate
-python -c "from pyngrok import ngrok; ngrok.set_auth_token('YOUR_NGROK_AUTHTOKEN')"
-
--------------------------------------------
-4) Start ngrok tunnel (every time you want public access)
--------------------------------------------
-
-# Keep Streamlit running on port 8501 in terminal-1.
-# In terminal-2:
-cd /home/prathameshpendkar/Desktop/soc_ip_dashboard
-source venv/bin/activate
-python soc_ip_governance/ngrok_tunnel.py
-
-It will print a PUBLIC SHAREABLE URL.
-Keep this terminal open to keep the public URL active.
-
-Static URL behavior:
-- Set custom static domain via env var:
-  NGROK_STATIC_DOMAIN=your-domain.ngrok-free.dev ./run_dashboard.sh
-- Or store it in file:
-  /home/prathameshpendkar/Desktop/soc_ip_dashboard/.ngrok_domain
-- If static domain is invalid/unavailable, launcher auto-falls back to a generated ngrok URL.
-
--------------------------------------------
-5) Stop services
--------------------------------------------
-
-- In Streamlit terminal: Ctrl + C
-- In ngrok terminal: Ctrl + C
-
--------------------------------------------
-6) Quick troubleshooting
--------------------------------------------
-
-- If port 8501 is busy:
+- Check Streamlit backend port:
   ss -ltnp | grep 8501
 
-- If pyngrok import error appears:
-  pip install pyngrok
+- Validate nginx config:
+  sudo nginx -t
 
-- If ngrok token issue appears, set token again:
-  python -c "from pyngrok import ngrok; ngrok.set_auth_token('YOUR_NGROK_AUTHTOKEN')"
+- If site is not reachable:
+  sudo systemctl status nginx soc-ip-dashboard
+  sudo journalctl -u soc-ip-dashboard -n 100
 
-- If you get ERR_NGROK_4018 (authentication failed):
-  1) Verify account: https://dashboard.ngrok.com/signup
-  2) Get token: https://dashboard.ngrok.com/get-started/your-authtoken
-  3) Set token:
-     python -c "from pyngrok import ngrok; ngrok.set_auth_token('YOUR_NGROK_AUTHTOKEN')"
 
-- If ngrok says endpoint is already online:
-  - Go to https://dashboard.ngrok.com/
-  - Stop old active endpoint/agent sessions
-  - Run ./run_dashboard.sh again
-
-- Static endpoint mode enabled:
-  - If ERR_NGROK_334 appears, this means same static domain is active in another ngrok session.
-  - Stop existing session at https://dashboard.ngrok.com/agents and rerun.
-
-- If static domain is wrong or expired:
-  - Set NGROK_STATIC_DOMAIN with a valid reserved ngrok domain.
-  - Or update /home/prathameshpendkar/Desktop/soc_ip_dashboard/.ngrok_domain.
-  - If not set, app still works with a generated public ngrok URL.

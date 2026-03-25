@@ -196,6 +196,7 @@ def append_to_master_sheet(
     isp: str = "",
     abusive_percentage: str = "",
     final_status: str = "Blocked",
+    selection_flag: str = "FALSE",
     email_send_status: str = "Pending",
 ) -> bool:
     """Append an approved IP to master sheet in 10-column dashboard format."""

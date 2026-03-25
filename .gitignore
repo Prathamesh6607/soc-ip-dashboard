@@ -19,7 +19,6 @@ venv/
 config.ini
 gmail_credentials.json
 gmail_token.json
-.ngrok_token
 
 # Local data outputs
 *.db

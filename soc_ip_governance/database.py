@@ -17,6 +17,7 @@ def init_database(db_path: Path) -> None:
                 ipAddress TEXT PRIMARY KEY,
                 abuseConfidenceScore INTEGER NOT NULL,
                 countryCode TEXT,
+                country TEXT,
                 isp TEXT,
                 path TEXT,
                 last_checked_at TEXT DEFAULT CURRENT_TIMESTAMP
@@ -29,9 +30,19 @@ def init_database(db_path: Path) -> None:
                 ipAddress TEXT PRIMARY KEY,
                 abuseConfidenceScore INTEGER NOT NULL,
                 countryCode TEXT,
+                country TEXT,
                 isp TEXT,
                 path TEXT,
                 approval_status TEXT DEFAULT 'Pending',
+                created_at TEXT DEFAULT CURRENT_TIMESTAMP
+            )
+            """
+        )
+        conn.execute(
+            """
+            CREATE TABLE IF NOT EXISTS custom_whitelist (
+                entry TEXT PRIMARY KEY,
+                entry_type TEXT NOT NULL CHECK(entry_type IN ('IP', 'CIDR')),
                 created_at TEXT DEFAULT CURRENT_TIMESTAMP
             )
             """
@@ -191,3 +202,51 @@ def clear_all_scan_results(db_path: Path) -> int:
         cursor = conn.execute("DELETE FROM scan_results")
         conn.commit()
         return cursor.rowcount
+
+
+def upsert_custom_whitelist_entry(db_path: Path, entry: str, entry_type: str) -> None:
+    """Insert or update a custom whitelist entry."""
+
+    with sqlite3.connect(db_path) as conn:
+        conn.execute(
+            """
+            INSERT INTO custom_whitelist (entry, entry_type)
+            VALUES (?, ?)
+            ON CONFLICT(entry)
+            DO UPDATE SET entry_type = excluded.entry_type
+            """,
+            (entry, entry_type),
+        )
+        conn.commit()
+
+
+def delete_custom_whitelist_entry(db_path: Path, entry: str) -> bool:
+    """Delete one custom whitelist entry by exact value."""
+
+    with sqlite3.connect(db_path) as conn:
+        cursor = conn.execute("DELETE FROM custom_whitelist WHERE entry = ?", (entry,))
+        conn.commit()
+        return cursor.rowcount > 0
+
+
+def fetch_custom_whitelist_entries(db_path: Path) -> list[dict[str, Any]]:
+    """Fetch all custom whitelist entries ordered by newest first."""
+
+    with sqlite3.connect(db_path) as conn:
+        conn.row_factory = sqlite3.Row
+        rows = conn.execute(
+            """
+            SELECT entry, entry_type, created_at
+            FROM custom_whitelist
+            ORDER BY datetime(created_at) DESC, entry ASC
+            """
+        ).fetchall()
+
+    return [
+        {
+            "entry": row["entry"],
+            "entry_type": row["entry_type"],
+            "created_at": row["created_at"],
+        }
+        for row in rows
+    ]

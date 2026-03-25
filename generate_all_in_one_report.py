@@ -95,7 +95,7 @@ def build_report(output_pdf: Path) -> None:
         "Threat approval workflow with individual and bulk actions",
         "Master sheet management with edit/delete support",
         "SQLite tracking for scan and threat records",
-        "Single-launch operation with Streamlit + ngrok",
+        "Single-launch operation with Streamlit",
     ]
     story.append(ListFlowable([ListItem(Paragraph(item, styles["Body"])) for item in features], bulletType="bullet"))
 
@@ -127,7 +127,7 @@ def build_report(output_pdf: Path) -> None:
     pros_cons = Table([
         ["Pros", "Cons"],
         ["Saves analyst time", "Depends on external APIs/services"],
-        ["Simple UI for day-to-day SOC work", "Static ngrok endpoint can conflict if active elsewhere"],
+        ["Simple UI for day-to-day SOC work", "Depends on external APIs/services"],
         ["Improved traceability and governance", "Still passive mode (not direct firewall automation)"],
         ["Lower risk of accidental trusted-IP blocking", "Spreadsheet-based master source needs disciplined handling"],
     ], colWidths=[3.3 * inch, 3.3 * inch])

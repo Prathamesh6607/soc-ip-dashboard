@@ -977,3 +977,12 @@ YYYY-MM-DD,[Name],[IP Address],"[E.g., Malicious Activity]",HH:MM AM/PM,,[Notes 
 15-03-2026,Shift Member Name,193.233.222.164,Quality Network US LLC,09:46 AM,Approved,Malicious Activity,34,Blocked
 15-03-2026,Shift Member Name,91.132.125.28,FINE GROUP SERVERS SOLUTIONS LLC,09:46 AM,Approved,Malicious Activity,21,Blocked
 15-03-2026,Shift Member Name,45.145.128.37,FINE GROUP SERVERS SOLUTIONS LLC,09:46 AM,Approved,Malicious Activity,20,Blocked
+25-03-2026,Shift Member Name,109.70.100.11,Malicious Activity,04:41 PM,Approved,Approved by SOC,100,Blocked,Pending
+25-03-2026,Shift Member Name,171.25.193.80,Malicious Activity,04:41 PM,Approved,Approved by SOC,100,Blocked,Pending
+25-03-2026,Shift Member Name,185.220.101.168,Malicious Activity,04:41 PM,Approved,Approved by SOC,100,Blocked,Pending
+25-03-2026,Shift Member Name,185.243.218.231,Malicious Activity,04:41 PM,Approved,Approved by SOC,100,Blocked,Pending
+25-03-2026,Shift Member Name,192.42.116.13,Malicious Activity,04:41 PM,Approved,Approved by SOC,100,Blocked,Pending
+25-03-2026,Shift Member Name,193.189.100.194,Malicious Activity,04:41 PM,Approved,Approved by SOC,100,Blocked,Pending
+25-03-2026,Shift Member Name,104.244.73.136,Malicious Activity,04:41 PM,Approved,Approved by SOC,92,Blocked,Pending
+25-03-2026,Shift Member Name,124.198.131.108,Malicious Activity,04:41 PM,Approved,Approved by SOC,92,Blocked,Pending
+25-03-2026,Shift Member Name,51.158.151.177,Malicious Activity,04:41 PM,Approved,Approved by SOC,36,Blocked,Pending
