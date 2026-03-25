@@ -881,6 +881,17 @@ def render_tab_detected_threats() -> None:
                         st.info(email_message)
                     else:
                         st.warning(f"⚠️ Added {len(added_ips)} IP(s) to master sheet but email failed: {email_message}")
+
+                # Auto-clear approved list by moving all currently approved IPs back to Pending
+                cleared_count = 0
+                for item in approved_threats:
+                    ip_addr = str(item.get("ipAddress", "")).strip()
+                    if not ip_addr:
+                        continue
+                    update_approval_status(CONFIG.sqlite_path, ip_addr, "Pending")
+                    cleared_count += 1
+                if cleared_count:
+                    st.info(f"🧹 Auto-cleared {cleared_count} IP(s) from Approved list.")
                 
                 if failed_ips:
                     st.warning(f"❌ Failed to add these IPs (already exist?): {', '.join(failed_ips)}")
