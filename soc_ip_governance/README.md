@@ -59,6 +59,32 @@ soc_ip_governance/
    streamlit run app.py
    ```
 
+## One-Time Endpoint Setup (Nginx + Systemd + Optional ngrok)
+
+Use the bootstrap script from the project root to configure the same setup on another endpoint.
+
+1. Go to project root:
+   ```bash
+   cd /home/prathameshpendkar/Desktop/soc_ip_dashboard
+   ```
+2. Run basic endpoint setup (dashboard + nginx):
+   ```bash
+   sudo bash setup_endpoint_once.sh --domain <LAN_IP_OR_HOSTNAME>
+   ```
+3. Run endpoint setup with static ngrok domain:
+   ```bash
+   sudo bash setup_endpoint_once.sh --enable-ngrok --ngrok-domain <YOUR_STATIC_NGROK_DOMAIN> --ngrok-token <YOUR_NGROK_TOKEN>
+   ```
+4. Verify services:
+   ```bash
+   sudo systemctl is-enabled soc-ip-dashboard nginx soc-ip-dashboard-ngrok
+   sudo systemctl is-active soc-ip-dashboard nginx soc-ip-dashboard-ngrok
+   ```
+
+Notes:
+- Replace placeholders with actual values for your endpoint.
+- Keep ngrok token private; do not hardcode real tokens in tracked files.
+
 ## Master Sheet Row Format
 
 Rows are appended in strict format:
