@@ -6,11 +6,13 @@ import configparser
 import os
 from dataclasses import dataclass
 from pathlib import Path
+from typing import Optional
 
 
 BASE_DIR = Path(__file__).resolve().parent
 DEFAULT_MASTER_SHEET = BASE_DIR.parent / "IP Blocking - Sheet6.csv"
 DEFAULT_WHITELIST_SHEET = BASE_DIR.parent / "ip_not_blocked.csv"
+DEFAULT_MASTER_QUESTIONNAIRE = BASE_DIR / "security_vendor_questionnaire_master.csv"
 CONFIG_INI_PATH = BASE_DIR / "config.ini"
 
 
@@ -34,6 +36,13 @@ def _env_or_ini(env_key: str, section: str, ini_key: str, default: str = "") -> 
     return _read_ini_value(section, ini_key, default)
 
 
+def _optional_path(value: str) -> Optional[Path]:
+    """Return a Path for non-empty values, otherwise None."""
+
+    normalized = value.strip()
+    return Path(normalized) if normalized else None
+
+
 @dataclass(frozen=True)
 class AppConfig:
     """Static application settings."""
@@ -50,9 +59,14 @@ class AppConfig:
     whitelist_sheet_path: Path = Path(
         _env_or_ini("WHITELIST_SHEET", "paths", "whitelist_sheet", str(DEFAULT_WHITELIST_SHEET))
     )
+    master_questionnaire_path: Optional[Path] = _optional_path(
+        _env_or_ini("MASTER_QUESTIONNAIRE_SHEET", "questionnaire", "master_sheet", "")
+    )
     sqlite_path: Path = Path(_env_or_ini("SOC_DB_PATH", "paths", "sqlite_db", str(BASE_DIR / "soc_ip_governance.db")))
     default_approver_name: str = _env_or_ini("SOC_APPROVER_NAME", "app", "default_approver_name", "SOC Analyst")
     default_reason: str = "Malicious Activity"
+    gemini_api_key: str = _env_or_ini("GEMINI_API_KEY", "gemini", "api_key", "")
+    gemini_model: str = _env_or_ini("GEMINI_MODEL", "gemini", "model", "gemini-2.0-flash")
     smtp_host: str = _env_or_ini("SMTP_HOST", "email", "smtp_host", "")
     smtp_port: int = int(_env_or_ini("SMTP_PORT", "email", "smtp_port", "587"))
     smtp_username: str = _env_or_ini("SMTP_USERNAME", "email", "smtp_username", "")

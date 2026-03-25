@@ -1,0 +1,342 @@
+Date,Shift Member Name,Blocked IP Address,Reason for Blocking,Time of Blocking,Approval Status,Remarks/Additional Notes,Abusive Percentage(AbuseIPDB),Status(Blocked / Pending)
+YYYY-MM-DD,[Name],[IP Address],"[E.g., Malicious Activity]",HH:MM AM/PM,,[Notes or follow-up actions],,
+03-02-2026,Prathamesh Pendkar,45.88.97.199,Internet Utilities Europe and Asia Limited,1:12:00 AM,Approved,NA,100,Blocked
+03-02-2026,Prathamesh Pendkar,130.12.182.149,Netiface LLC,1:12:00 AM,Approved,,80,Blocked
+03-02-2026,Prathamesh Pendkar,85.203.15.234,Falco Networks B.V.,1:12:00 AM,Approved,,65,Blocked
+03-02-2026,Prathamesh Pendkar,85.203.15.242,Falco Networks B.V.,1:12:00 AM,Approved,,59,Blocked
+03-02-2026,Prathamesh Pendkar,185.126.114.110,SERVER.UA LLC,1:12:00 AM,Approved,,57,Blocked
+03-03-2026,Prathamesh Pendkar,130.94.40.6,LIGHT NODE LIMITED,11:59:00 PM,Pending,,,Pending
+03-03-2026,Prathamesh Pendkar,3.139.242.79,Amazon Technologies Inc.,12:59:00 AM,Pending,,,Pending
+03-03-2026,Prathamesh Pendkar,85.203.15.197,Falco Networks B.V.,1:59:00 AM,Pending,,,Pending
+03-03-2026,Prathamesh Pendkar,85.203.15.97,Falco Networks B.V.,2:59:00 AM,Pending,,,Pending
+03-03-2026,Prathamesh Pendkar,81.199.26.23,Internet Utilities Europe and Asia Limited,3:59:00 AM,Pending,,,Pending
+03-03-2026,Prathamesh Pendkar,81.199.26.30,Internet Utilities Europe and Asia Limited,4:59:00 AM,Pending,,,Pending
+03-03-2026,Prathamesh Pendkar,85.203.15.192,Falco Networks B.V.,5:59:00 AM,Pending,,,Pending
+03-03-2026,Tanmay Kudale,20.98.161.145,Cloudflare IP,9:00:00 PM,Pending,,100,Pending
+03-03-2026,Tanmay Kudale,20.151.224.126,Cloudflare IP,9:00:00 PM,Pending,,100,Pending
+03-03-2026,Tanmay Kudale,51.89.115.255,Cloudflare IP,9:00:00 PM,Pending,,67,Pending
+03-03-2026,Tanmay Kudale,51.158.62.94,Cloudflare IP,9:00:00 PM,Pending,,63,Pending
+03-03-2026,Tanmay Kudale,157.230.43.50,Cloudflare IP,9:00:00 PM,Pending,,100,Pending
+03-04-2026,Harsh Navgale,20.220.232.240,Cloudflare IP,5:30:00 AM,Pending,,0,Pending
+03-04-2026,Harsh Navgale,20.193.139.7,Cloudflare IP,5:30:00 AM,Pending,,14,Pending
+03-04-2026,Harsh Navgale,20.107.201.194,Cloudflare IP,5:30:00 AM,Pending,,19,Pending
+03-04-2026,Harsh Navgale,20.220.232.101,Cloudflare IP,5:30:00 AM,Pending,,19,Pending
+03-04-2026,Harsh Navgale,20.151.11.236,Cloudflare IP,5:30:00 AM,Pending,,27,Pending
+03-04-2026,Harsh Navgale,20.63.41.168,Cloudflare IP,5:30:00 AM,Pending,,39,Pending
+03-04-2026,Harsh Navgale,20.171.9.142,Cloudflare IP,5:30:00 AM,Pending,,43,Pending
+03-04-2026,Harsh Navgale,20.104.206.150,Cloudflare IP,5:30:00 AM,Pending,,45,Pending
+03-04-2026,Harsh Navgale,20.43.120.29,Cloudflare IP,5:30:00 AM,Pending,,53,Pending
+03-04-2026,Harsh Navgale,20.204.24.246,Cloudflare IP,5:30:00 AM,Pending,,55,Pending
+03-04-2026,Harsh Navgale,20.193.233.247,Cloudflare IP,5:30:00 AM,Pending,,56,Pending
+03-04-2026,Harsh Navgale,20.43.120.27,Cloudflare IP,5:30:00 AM,Pending,,57,Pending
+03-04-2026,Harsh Navgale,20.235.75.218,Cloudflare IP,5:30:00 AM,Pending,,58,Pending
+03-04-2026,Harsh Navgale,40.69.66.178,Cloudflare IP,5:30:00 AM,Pending,,63,Pending
+03-04-2026,Harsh Navgale,20.169.78.182,Cloudflare IP,5:30:00 AM,Pending,,100,Pending
+03-04-2026,Harsh Navgale,20.193.233.251,Cloudflare IP,5:30:00 AM,Pending,,100,Pending
+03-04-2026,Harsh Navgale,20.185.59.59,Cloudflare IP,5:30:00 AM,Pending,,100,Pending
+03-04-2026,Harsh Navgale,20.235.75.221,Cloudflare IP,5:30:00 AM,Pending,,100,Pending
+03-04-2026,Harsh Navgale,20.169.78.150,Cloudflare IP,5:30:00 AM,Pending,,100,Pending
+03-04-2026,Harsh Navgale,40.77.167.126,Cloudflare IP,5:30:00 AM,Pending,,100,Pending
+03-04-2026,Harsh Navgale,20.194.1.7,Cloudflare IP,5:30:00 AM,Pending,,100,Pending
+03-04-2026,Harsh Navgale,20.169.78.146,Cloudflare IP,5:30:00 AM,Pending,,100,Pending
+03-04-2026,Harsh Navgale,20.204.24.247,Cloudflare IP,5:30:00 AM,Pending,,100,Pending
+03-04-2026,Harsh Navgale,68.218.30.126,Cloudflare IP,5:30:00 AM,Pending,,100,Pending
+03-04-2026,Harsh Navgale,52.231.49.56,Cloudflare IP,5:30:00 AM,Pending,,100,Pending
+03-04-2026,Harsh Navgale,20.227.140.39,Cloudflare IP,5:30:00 AM,Pending,,100,Pending
+03-04-2026,Harsh Navgale,20.169.78.162,Cloudflare IP,5:30:00 AM,Pending,,100,Pending
+03-04-2026,Harsh Navgale,172.182.226.215,Cloudflare IP,5:30:00 AM,Pending,,100,Pending
+03-04-2026,Harsh Navgale,20.227.140.44,Cloudflare IP,5:30:00 AM,Pending,,100,Pending
+03-04-2026,Harsh Navgale,20.169.78.197,Cloudflare IP,5:30:00 AM,Pending,,100,Pending
+03-04-2026,Harsh Navgale,20.169.78.167,Cloudflare IP,5:30:00 AM,Pending,,100,Pending
+03-04-2026,Harsh Navgale,20.193.233.242,Cloudflare IP,5:30:00 AM,Pending,,100,Pending
+03-04-2026,Harsh Navgale,13.76.115.243,Cloudflare IP,5:30:00 AM,Pending,,100,Pending
+03-04-2026,Harsh Navgale,13.76.115.254,Cloudflare IP,5:30:00 AM,Pending,,100,Pending
+03-04-2026,Harsh Navgale,13.76.115.240,Cloudflare IP,5:30:00 AM,Pending,,100,Pending
+03-04-2026,Harsh Navgale,20.169.78.137,Cloudflare IP,5:30:00 AM,Pending,,100,Pending
+03-05-2026,Harsh Navgale,157.230.43.50,Cloudflare IP,5:49:00 AM,Pending,,100,Pending
+03-05-2026,Harsh Navgale,51.38.104.193,Cloudflare IP,5:49:00 AM,Pending,,100,Pending
+03-05-2026,Harsh Navgale,20.171.9.142,Cloudflare IP,5:49:00 AM,Pending,,100,Pending
+03-05-2026,Harsh Navgale,15.235.168.173,Cloudflare IP,5:49:00 AM,Pending,,22,Pending
+03-05-2026,Harsh Navgale,144.91.119.214,Cloudflare IP,5:49:00 AM,Pending,,100,Pending
+03-05-2026,Harsh Navgale,20.83.117.85,Cloudflare IP,5:49:00 AM,Pending,,0,Pending
+03-05-2026,Harsh Navgale,20.112.75.236,Cloudflare IP,5:49:00 AM,Pending,,0,Pending
+03-05-2026,Harsh Navgale,20.59.58.151,Cloudflare IP,5:49:00 AM,Pending,,0,Pending
+03-05-2026,Harsh Navgale,20.94.193.199,Cloudflare IP,5:49:00 AM,Pending,,0,Pending
+03-05-2026,Harsh Navgale,20.59.27.255,Cloudflare IP,5:49:00 AM,Pending,,0,Pending
+03-05-2026,Harsh Navgale,20.189.184.171,Cloudflare IP,5:49:00 AM,Pending,,0,Pending
+03-05-2026,Harsh Navgale,40.125.41.35,Cloudflare IP,5:49:00 AM,Pending,,0,Pending
+03-05-2026,Harsh Navgale,172.182.210.211,Cloudflare IP,5:49:00 AM,Pending,,0,Pending
+03-05-2026,Harsh Navgale,104.210.56.226,Cloudflare IP,5:49:00 AM,Pending,,35,Pending
+03-05-2026,Harsh Navgale,52.225.87.192,Cloudflare IP,5:49:00 AM,Pending,,0,Pending
+03-05-2026,Harsh Navgale,20.171.9.142,Cloudflare IP,5:49:00 AM,Pending,,100,Pending
+03-05-2026,Harsh Navgale,104.210.56.224,Cloudflare IP,5:49:00 AM,Pending,,43,Pending
+03-05-2026,Harsh Navgale,128.199.79.39,Cloudflare IP,5:49:00 AM,Pending,,0,Pending
+03-05-2026,Harsh Navgale,157.230.242.32,Cloudflare IP,5:49:00 AM,Pending,,69,Pending
+03-05-2026,Harsh Navgale,165.232.166.92,Cloudflare IP,5:49:00 AM,Pending,,100,Pending
+03-05-2026,Harsh Navgale,139.59.109.79,Cloudflare IP,5:49:00 AM,Pending,,0,Pending
+03-05-2026,Harsh Navgale,3.7.225.76,Cloudflare IP,6:30:00 AM,Pending,,11,Pending
+03-05-2026,Harsh Navgale,43.153.64.163,Cloudflare IP,6:30:00 AM,Pending,,42,Pending
+03-05-2026,Harsh Navgale,43.153.5.160,Cloudflare IP,6:30:00 AM,Pending,,44,Pending
+03-05-2026,Harsh Navgale,43.159.132.216,Cloudflare IP,6:30:00 AM,Pending,,44,Pending
+03-05-2026,Tanmay Kudale,2a0b:f4c2::18,These are tor exit node ip,10:00:00 PM,Pending,,26,Pending
+03-05-2026,Tanmay Kudale,2a0d:c2c0:1:4::2,These are tor exit node ip,10:00:00 PM,Pending,,17,Pending
+03-05-2026,Tanmay Kudale,2a12:a800:11:1:124:198:132:13,These are tor exit node ip,10:00:00 PM,Pending,,29,Pending
+03-05-2026,Tanmay Kudale,2a0f:df00:0:255::197,These are tor exit node ip,10:00:00 PM,Pending,,35,Pending
+03-05-2026,Tanmay Kudale,2a03:e600:100::11,These are tor exit node ip,10:00:00 PM,Pending,,26,Pending
+03-06-2026,Harsh Navgale,3.7.225.76,Cloudflare IP,12:25:00 AM,Pending,,11,Pending
+03-06-2026,Harsh Navgale,20.151.11.238,Cloudflare IP,5:44:00 AM,Pending,,100,Pending
+03-06-2026,Harsh Navgale,31.134.5.28,Cloudflare IP,5:44:00 AM,Pending,,9,Pending
+03-06-2026,Harsh Navgale,185.213.83.225,Cloudflare IP,5:44:00 AM,Pending,,12,Pending
+03-06-2026,Harsh Navgale,165.140.118.35,Cloudflare IP,5:44:00 AM,Pending,,14,Pending
+03-06-2026,Tanmay Kudale,20.220.144.87,Cloudflare IP,5:45:00 PM,Pending,,100,Pending
+03-06-2026,Tanmay Kudale,203.175.125.130,Cloudflare IP,5:45:00 PM,Pending,,100,Pending
+03-06-2026,Tanmay Kudale,94.154.113.140,Cloudflare IP,5:45:00 PM,Pending,,3,Pending
+03-06-2026,Tanmay Kudale,103.186.30.21,Cloudflare IP,5:45:00 PM,Pending,,100,Pending
+03-07-2026,Tanmay Kudale,86.48.2.230,Cloudflare IP,2:48:00 PM,Pending,,100,Pending
+03-07-2026,Tanmay Kudale,159.223.83.57,Cloudflare IP,2:48:00 PM,Pending,,100,Pending
+03-08-2026,Prathamesh Pendkar,81.199.26.26,Internet Utilities Europe and Asia Limited,3:35:00 PM,Pending,,77,Pending
+03-08-2026,Prathamesh Pendkar,85.203.15.201,Falco Networks B.V.,3:35:00 PM,Pending,,75,Pending
+03-08-2026,Prathamesh Pendkar,85.203.15.115,Falco Networks B.V.,3:35:00 PM,Pending,,74,Pending
+03-08-2026,Prathamesh Pendkar,85.203.15.193,Falco Networks B.V.,3:35:00 PM,Pending,,72,Pending
+03-08-2026,Prathamesh Pendkar,85.203.15.196,Falco Networks B.V.,3:35:00 PM,Pending,,72,Pending
+03-08-2026,Prathamesh Pendkar,81.199.26.20,Internet Utilities Europe and Asia Limited,3:35:00 PM,Pending,,70,Pending
+03-08-2026,Prathamesh Pendkar,81.199.26.31,Internet Utilities Europe and Asia Limited,3:35:00 PM,Pending,,70,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.162,Falco Networks B.V.,3:33:00 AM,Pending,,36,Pending
+03-08-2026,Tejas Kulkarni,81.199.26.54,Internet Utilities Europe and Asia Limited,3:33:00 AM,Pending,,38,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.159,Falco Networks B.V.,3:33:00 AM,Pending,,40,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.224,Falco Networks B.V.,3:33:00 AM,Pending,,40,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.171,Falco Networks B.V.,3:33:00 AM,Pending,,40,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.154,Falco Networks B.V.,3:33:00 AM,Pending,,41,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.228,Falco Networks B.V.,3:33:00 AM,Pending,,41,Pending
+03-08-2026,Tejas Kulkarni,81.199.26.58,Internet Utilities Europe and Asia Limited,3:33:00 AM,Pending,,41,Pending
+03-08-2026,Tejas Kulkarni,81.199.26.62,Internet Utilities Europe and Asia Limited,3:33:00 AM,Pending,,42,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.102,Falco Networks B.V.,3:33:00 AM,Pending,,42,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.175,Falco Networks B.V.,3:33:00 AM,Pending,,42,Pending
+03-08-2026,Tejas Kulkarni,81.199.26.67,Internet Utilities Europe and Asia Limited,3:33:00 AM,Pending,,43,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.174,Falco Networks B.V.,3:33:00 AM,Pending,,43,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.221,Falco Networks B.V.,3:33:00 AM,Pending,,43,Pending
+03-08-2026,Tejas Kulkarni,81.199.26.65,Internet Utilities Europe and Asia Limited,3:33:00 AM,Pending,,44,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.160,Falco Networks B.V.,3:33:00 AM,Pending,,45,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.225,Falco Networks B.V.,3:33:00 AM,Pending,,45,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.99,Falco Networks B.V.,3:33:00 AM,Pending,,45,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.164,Falco Networks B.V.,3:33:00 AM,Pending,,46,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.156,Falco Networks B.V.,3:33:00 AM,Pending,,47,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.227,Falco Networks B.V.,3:33:00 AM,Pending,,47,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.168,Falco Networks B.V.,3:33:00 AM,Pending,,47,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.166,Falco Networks B.V.,3:33:00 AM,Pending,,49,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.152,Falco Networks B.V.,3:33:00 AM,Pending,,49,Pending
+03-08-2026,Tejas Kulkarni,81.199.26.55,Internet Utilities Europe and Asia Limited,3:33:00 AM,Pending,,50,Pending
+03-08-2026,Tejas Kulkarni,81.199.26.66,Internet Utilities Europe and Asia Limited,3:33:00 AM,Pending,,50,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.82,Falco Networks B.V.,3:33:00 AM,Pending,,50,Pending
+03-08-2026,Tejas Kulkarni,81.199.26.59,Internet Utilities Europe and Asia Limited,3:33:00 AM,Pending,,51,Pending
+03-08-2026,Tejas Kulkarni,81.199.26.57,Internet Utilities Europe and Asia Limited,3:33:00 AM,Pending,,51,Pending
+03-08-2026,Tejas Kulkarni,81.199.26.60,Internet Utilities Europe and Asia Limited,3:33:00 AM,Pending,,51,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.100,Falco Networks B.V.,3:33:00 AM,Pending,,52,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.150,Falco Networks B.V.,3:33:00 AM,Pending,,52,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.169,Falco Networks B.V.,3:33:00 AM,Pending,,52,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.157,Falco Networks B.V.,3:33:00 AM,Pending,,52,Pending
+03-08-2026,Tejas Kulkarni,81.199.26.53,Internet Utilities Europe and Asia Limited,3:33:00 AM,Pending,,52,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.232,Falco Networks B.V.,3:33:00 AM,Pending,,53,Pending
+03-08-2026,Tejas Kulkarni,81.199.26.64,Internet Utilities Europe and Asia Limited,3:33:00 AM,Pending,,53,Pending
+03-08-2026,Tejas Kulkarni,81.199.26.68,Internet Utilities Europe and Asia Limited,3:33:00 AM,Pending,,53,Pending
+03-08-2026,Tejas Kulkarni,81.199.26.69,Internet Utilities Europe and Asia Limited,3:33:00 AM,Pending,,54,Pending
+03-08-2026,Tejas Kulkarni,81.199.26.63,Internet Utilities Europe and Asia Limited,3:33:00 AM,Pending,,54,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.151,Falco Networks B.V.,3:33:00 AM,Pending,,55,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.173,Falco Networks B.V.,3:33:00 AM,Pending,,56,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.158,Falco Networks B.V.,3:33:00 AM,Pending,,56,Pending
+03-08-2026,Tejas Kulkarni,81.199.26.70,Internet Utilities Europe and Asia Limited,3:33:00 AM,Pending,,56,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.231,Falco Networks B.V.,3:33:00 AM,Pending,,56,Pending
+03-08-2026,Tejas Kulkarni,81.199.26.21,Internet Utilities Europe and Asia Limited,3:33:00 AM,Pending,,56,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.167,Falco Networks B.V.,3:33:00 AM,Pending,,57,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.114,Falco Networks B.V.,3:33:00 AM,Pending,,58,Pending
+03-08-2026,Tejas Kulkarni,81.199.26.24,Internet Utilities Europe and Asia Limited,3:33:00 AM,Pending,,58,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.153,Falco Networks B.V.,3:33:00 AM,Pending,,59,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.222,Falco Networks B.V.,3:33:00 AM,Pending,,59,Pending
+03-08-2026,Tejas Kulkarni,81.199.26.18,Internet Utilities Europe and Asia Limited,3:33:00 AM,Pending,,59,Pending
+03-08-2026,Tejas Kulkarni,81.199.26.61,Internet Utilities Europe and Asia Limited,3:33:00 AM,Pending,,60,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.77,Falco Networks B.V.,3:33:00 AM,Pending,,60,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.76,Falco Networks B.V.,3:33:00 AM,Pending,,60,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.220,Falco Networks B.V.,3:33:00 AM,Pending,,61,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.191,Falco Networks B.V.,3:33:00 AM,Pending,,61,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.172,Falco Networks B.V.,3:33:00 AM,Pending,,62,Pending
+03-08-2026,Tejas Kulkarni,81.199.26.56,Internet Utilities Europe and Asia Limited,3:33:00 AM,Pending,,62,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.64,Falco Networks B.V.,3:33:00 AM,Pending,,62,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.108,Falco Networks B.V.,3:33:00 AM,Pending,,63,Pending
+03-08-2026,Tejas Kulkarni,81.199.26.17,Internet Utilities Europe and Asia Limited,3:33:00 AM,Pending,,63,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.61,Falco Networks B.V.,3:33:00 AM,Pending,,63,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.60,Falco Networks B.V.,3:33:00 AM,Pending,,63,Pending
+03-08-2026,Tejas Kulkarni,81.199.26.27,Internet Utilities Europe and Asia Limited,3:33:00 AM,Pending,,63,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.91,Falco Networks B.V.,3:33:00 AM,Pending,,64,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.107,Falco Networks B.V.,3:33:00 AM,Pending,,64,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.198,Falco Networks B.V.,3:33:00 AM,Pending,,66,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.75,Falco Networks B.V.,3:33:00 AM,Pending,,66,Pending
+03-08-2026,Tejas Kulkarni,81.199.26.19,Internet Utilities Europe and Asia Limited,3:33:00 AM,Pending,,67,Pending
+03-08-2026,Tejas Kulkarni,81.199.26.34,Internet Utilities Europe and Asia Limited,3:33:00 AM,Pending,,67,Pending
+03-08-2026,Tejas Kulkarni,81.199.26.28,Internet Utilities Europe and Asia Limited,3:33:00 AM,Pending,,67,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.112,Falco Networks B.V.,3:33:00 AM,Pending,,67,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.74,Falco Networks B.V.,3:33:00 AM,Pending,,68,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.111,Falco Networks B.V.,3:33:00 AM,Pending,,68,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.195,Falco Networks B.V.,3:33:00 AM,Pending,,68,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.85,Falco Networks B.V.,3:33:00 AM,Pending,,69,Pending
+03-08-2026,Tejas Kulkarni,81.199.26.32,Internet Utilities Europe and Asia Limited,3:33:00 AM,Pending,,69,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.109,Falco Networks B.V.,3:33:00 AM,Pending,,69,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.106,Falco Networks B.V.,3:33:00 AM,Pending,,69,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.80,Falco Networks B.V.,3:33:00 AM,Pending,,69,Pending
+03-08-2026,Tejas Kulkarni,81.199.26.22,Internet Utilities Europe and Asia Limited,3:33:00 AM,Pending,,69,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.87,Falco Networks B.V.,3:33:00 AM,Pending,,70,Pending
+03-08-2026,Tejas Kulkarni,81.199.26.20,Internet Utilities Europe and Asia Limited,3:33:00 AM,Pending,,71,Pending
+03-08-2026,Tejas Kulkarni,81.199.26.33,Internet Utilities Europe and Asia Limited,3:33:00 AM,Pending,,72,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.202,Falco Networks B.V.,3:33:00 AM,Pending,,74,Pending
+03-08-2026,Tejas Kulkarni,81.199.26.25,Internet Utilities Europe and Asia Limited,3:33:00 AM,Pending,,75,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.193,Falco Networks B.V.,3:33:00 AM,Pending,,75,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.115,Falco Networks B.V.,3:33:00 AM,Pending,,75,Pending
+03-08-2026,Tejas Kulkarni,81.199.26.31,Internet Utilities Europe and Asia Limited,3:33:00 AM,Pending,,75,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.196,Falco Networks B.V.,3:33:00 AM,Pending,,76,Pending
+03-08-2026,Tejas Kulkarni,81.199.26.29,Internet Utilities Europe and Asia Limited,3:33:00 AM,Pending,,76,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.101,Falco Networks B.V.,3:33:00 AM,Pending,,77,Pending
+03-08-2026,Tejas Kulkarni,81.199.26.26,Internet Utilities Europe and Asia Limited,3:33:00 AM,Pending,,78,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.110,Falco Networks B.V.,3:33:00 AM,Pending,,78,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.201,Falco Networks B.V.,3:33:00 AM,Pending,,79,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.113,Falco Networks B.V.,3:33:00 AM,Pending,,79,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.98,Falco Networks B.V.,3:33:00 AM,Pending,,80,Pending
+03-08-2026,Tejas Kulkarni,85.203.15.94,Falco Networks B.V.,3:33:00 AM,Pending,,89,Pending
+03-08-2026,Tejas Kulkarni,157.15.40.6,139952 - TRIDATA-AS-ID PT Trisari Data Indonusa,3:33:00 AM,Pending,,100,Pending
+03-08-2026,Tejas Kulkarni,34.14.93.72,396982 - GOOGLE-CLOUD-PLATFORM - Google LLC,3:33:00 AM,Pending,,32,Pending
+03-09-2026,Tejas Kulkarni,219.91.178.126,18207 - YOU-INDIA-AP YOU Broadband & Cable India Ltd.,1:07:00 AM,Pending,,0,Pending
+03-09-2026,Tejas Kulkarni,182.70.71.239,"24560 - AIRTELBROADBAND-AS-AP Bharti Airtel Ltd., Telemedia Services",1:07:00 AM,Approved,,0,Blocked
+03-09-2026,Tejas Kulkarni,2405:201:1007:92c:2577:ce86:c1aa:3d00 ,55836 - RELIANCEJIO-IN Reliance Jio Infocomm Limited,1:07:00 AM,Pending,,0,Pending
+03-09-2026,Tejas Kulkarni,49.36.51.78,55836 - RELIANCEJIO-IN Reliance Jio Infocomm Limited,1:07:00 AM,Pending,,0,Pending
+03-09-2026,Tejas Kulkarni,223.233.80.143,"24560 - AIRTELBROADBAND-AS-AP Bharti Airtel Ltd., Telemedia Services
+",1:07:00 AM,Approved,,Reported  4 times,Blocked
+03-09-2026,Tejas Kulkarni,39.194.2.12,"23693 - TELKOMSEL-ASN-ID PT. Telekomunikasi Selular
+",1:07:00 AM,Approved,,45,Blocked
+03-09-2026,Tejas Kulkarni,115.241.231.12,55836 - RELIANCEJIO-IN Reliance Jio Infocomm Limited,1:07:00 AM,Pending,,0,Pending
+03-09-2026,Tejas Kulkarni,163.116.214.114,55256 - NETSKOPE - Netskope Inc,1:07:00 AM,Pending,,0,Pending
+03-09-2026,Tejas Kulkarni,163.116.214.122,55256 - NETSKOPE - Netskope Inc,1:07:00 AM,Pending,,0,Pending
+03-10-2026,Tejas Kulkarni,185.177.72.56,211590 - BUCKLOG,1:37:00 AM,Approved,,100,Blocked
+03-10-2026,Tejas Kulkarni,152.32.210.202,135377 - UCLOUD-HK-AS-AP UCLOUD INFORMATION TECHNOLOGY HK LIMITED,1:37:00 AM,Approved,,0,Blocked
+03-11-2026,Prathamesh Pendkar,64.64.108.64,LogicWeb Inc.,9:26:00 PM,Pending,,100,Pending
+03-11-2026,Prathamesh Pendkar,2.57.170.91,"VPN Consumer Cosenza, Italy",9:26:00 PM,Pending,,69,Pending
+03-11-2026,Prathamesh Pendkar,2.57.170.85,"VPN Consumer Cosenza, Italy",9:26:00 PM,Pending,,68,Pending
+03-11-2026,Prathamesh Pendkar,2.57.170.95,"VPN Consumer Cosenza, Italy",9:26:00 PM,Pending,,66,Pending
+03-11-2026,Prathamesh Pendkar,2.57.170.110,"VPN Consumer Cosenza, Italy",9:26:00 PM,Pending,,64,Pending
+03-13-2026,Harsh Navgale,178.128.55.10,"DigitalOcean, LLC",4:52:00 AM,Pending,,100,Pending
+03-13-2026,Harsh Navgale,159.65.145.34,"DigitalOcean, LLC",4:52:00 AM,Pending,,1,Pending
+03-13-2026,Harsh Navgale,128.199.79.39,"DigitalOcean, LLC",4:52:00 AM,Pending,,0,Pending
+03-13-2026,Harsh Navgale,109.71.252.88,Datalix,4:52:00 AM,Pending,,98,Pending
+03-13-2026,Harsh Navgale,91.107.240.215,Hetzner Online GmbH,4:52:00 AM,Pending,,31,Pending
+03-13-2026,Harsh Navgale,106.214.179.71,Bharti Airtel Limited,4:52:00 AM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,95.123.214.136,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,92.186.196.161,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,92.178.3.54,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,91.245.207.66,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,90.164.137.14,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,88.98.97.138,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,88.22.145.198,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,87.221.255.250,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,86.127.228.158,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,83.57.5.181,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,83.43.56.120,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,81.40.161.51,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,81.35.103.189,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,81.202.251.219,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,80.30.63.87,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,79.150.108.122,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,79.147.26.232,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,79.117.193.188,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,79.117.146.47,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,79.116.235.153,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,62.42.161.89,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,47.58.34.213,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,37.35.244.255,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,37.223.236.223,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,37.223.129.12,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,37.222.236.26,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,37.14.93.74,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,37.134.92.149,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,37.11.199.27,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,2a0c:5a86:f503:fd00:5590:842f:dfcb:320a,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,2a0c:5a86:7202:5300:4564:c73:b411:47c5,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,2a0c:5a86:3a01:800:c176:642d:af53:3451,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,2a0c:5a85:cd06:ac00:285e:6f80:a0d3:9f07,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,2a0c:5a84:c702:af00:b099:8334:5b3:5d46,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,2a0c:5a80:9400:7e00:9506:3f14:cded:17cc,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,213.37.64.182,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,193.39.219.2,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,188.79.21.58,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,185.72.113.176,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,185.44.234.192,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,185.210.73.211,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,185.210.17.57,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,185.20.192.214,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,185.114.67.27,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,176.98.213.154,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,159.147.100.13,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,137.101.77.144,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,109.205.140.4,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,109.205.134.33,Cloudflare IP,10:00:00 PM,Pending,,0,Pending
+03-13-2026,Tanmay Kudale,45.136.25.222,Cloudflare IP,10:00:00 PM,Pending,,15,Pending
+03-13-2026,Tanmay Kudale,31.134.13.253,Cloudflare IP,10:00:00 PM,Pending,,13,Pending
+03-13-2026,Tanmay Kudale,217.145.225.72,Cloudflare IP,10:00:00 PM,Pending,,4,Pending
+03-13-2026,Tanmay Kudale,193.233.218.63,Cloudflare IP,10:00:00 PM,Pending,,34,Pending
+03-13-2026,Tanmay Kudale,193.202.16.144,Cloudflare IP,10:00:00 PM,Pending,,12,Pending
+03-13-2026,Tanmay Kudale,140.235.0.63,Cloudflare IP,10:00:00 PM,Pending,,4,Pending
+03-14-2026,Harsh Navgale,122.180.244.204,Cloudflare IP,6:05:00 AM,Pending,,0,Pending
+03-14-2026,Harsh Navgale,103.158.121.28,Cloudflare IP,6:05:00 AM,Pending,,100,Pending
+03-14-2026,Tanmay Kudale,27.109.115.131,Cloudflare IP,10:00:00 PM,Pending,,33,Pending
+03-14-2026,Tanmay Kudale,20.116.61.192,Cloudflare IP,10:00:00 PM,Pending,,100,Pending
+03-14-2026,Tanmay Kudale,64.42.180.16,Cloudflare IP,10:00:00 PM,Pending,,19,Pending
+03-14-2026,Tanmay Kudale,27.109.115.131,Cloudflare IP,10:00:00 PM,Pending,,29,Pending
+03-14-2026,Tanmay Kudale,152.32.245.186,Cloudflare IP,10:00:00 PM,Pending,,100,Pending
+03-14-2026,Tanmay Kudale,140.235.170.244,Cloudflare IP,10:00:00 PM,Pending,,34,Pending
+03-14-2026,Tanmay Kudale,31.134.11.221,Cloudflare IP,10:00:00 PM,Pending,,32,Pending
+03-14-2026,Tanmay Kudale,167.253.16.138,Cloudflare IP,10:00:00 PM,Pending,,15,Pending
+03-14-2026,Tanmay Kudale,185.77.220.247,Cloudflare IP,10:00:00 PM,Pending,,23,Pending
+03-14-2026,Tanmay Kudale,31.134.9.197,Cloudflare IP,10:00:00 PM,Pending,,21,Pending
+03-14-2026,Tanmay Kudale,178.128.121.17,Cloudflare IP,10:00:00 PM,Pending,,100,Pending
+03-16-2926,Tejas Kulkarni,122.169.31.240,Cloudflare IP,4:24:00 AM,Pending,,0,Pending
+03-16-2926,Tejas Kulkarni,122.170.231.131,Cloudflare IP,4:24:00 AM,Pending,,0,Pending
+03-16-2926,Tejas Kulkarni,122.169.31.33,Cloudflare IP,4:24:00 AM,Pending,,0,Pending
+03-16-2926,Tejas Kulkarni,103.171.211.40,Cloudflare IP,4:57:00 AM,Pending,,3,Pending
+03-17-2026,Harsh Navgale,4.204.226.21,Cloudflare IP,2:40:00 PM,Pending,,100,Pending
+03-17-2026,Harsh Navgale,52.231.139.203,Cloudflare IP,2:40:00 PM,Pending,,0,Pending
+03-17-2026,Harsh Navgale,166.88.178.234,Cloudflare IP,2:40:00 PM,Pending,,31,Pending
+03-17-2026,Harsh Navgale,15.204.34.10,Cloudflare IP,2:40:00 PM,Pending,,100,Pending
+03-17-2026,Harsh Navgale,20.234.20.103,Cloudflare IP,2:40:00 PM,Pending,,100,Pending
+03-17-2026,Harsh Navgale,38.47.35.2,Cloudflare IP,2:40:00 PM,Pending,,58,Pending
+03-17-2026,Harsh Navgale,34.14.102.7,Cloudflare IP,2:40:00 PM,Pending,,0,Pending
+03-17-2026,Harsh Navgale,157.66.56.175,Cloudflare IP,2:40:00 PM,Pending,,75,Pending
+03-17-2026,Tanmay Kudale,52.138.22.173,Cloudflare IP,5:00:00 PM,Pending,,100,Pending
+03-17-2026,Tanmay Kudale,45.145.131.84,Cloudflare IP,5:00:00 PM,Pending,,24,Pending
+03-17-2026,Tanmay Kudale,83.97.119.145,Cloudflare IP,5:00:00 PM,Pending,,14,Pending
+03-17-2026,Tanmay Kudale,38.60.216.247,Cloudflare IP,5:00:00 PM,Pending,,22,Pending
+03-17-2026,Tanmay Kudale,52.138.22.173,Cloudflare IP,5:00:00 PM,Pending,,100,Pending
+03-17-2026,Tanmay Kudale,159.146.26.127,Cloudflare IP,5:00:00 PM,Pending,,3,Pending
+03-17-2026,Tanmay Kudale,111.90.182.104,Cloudflare IP,5:00:00 PM,Pending,,100,Pending
+03-17-2026,Tanmay Kudale,52.138.22.173,Cloudflare IP,5:00:00 PM,Pending,,100,Pending
+03-18-2026,Tanmay Kudale,172.83.255.244,Cloudflare IP,4:28:00 PM,Pending,,12,Pending
+03-18-2026,Tanmay Kudale,185.61.219.189,Cloudflare IP,4:28:00 PM,Pending,,16,Pending
+03-18-2026,Tanmay Kudale,185.94.32.219,Cloudflare IP,4:28:00 PM,Pending,,22,Pending
+03-18-2026,Tanmay Kudale,185.61.217.84,Cloudflare IP,4:28:00 PM,Pending,,16,Pending
+03-18-2026,Tanmay Kudale,45.148.233.50,Cloudflare IP,4:28:00 PM,Pending,,0,Pending
+03-18-2026,Tanmay Kudale,146.19.90.187,Cloudflare IP,4:28:00 PM,Pending,,31,Pending
+03-18-2026,Tanmay Kudale,130.49.11.113,Cloudflare IP,4:28:00 PM,Pending,,0,Pending
+03-18-2026,Tanmay Kudale,27.109.115.130,Cloudflare IP,4:28:00 PM,Pending,,57,Pending
+03-18-2026,Tanmay Kudale,146.19.90.187,Cloudflare IP,4:28:00 PM,Pending,,31,Pending
+03-18-2026,Tanmay Kudale,130.49.11.113 ,Cloudflare IP,4:28:00 PM,Pending,,0,Pending
+03-18-2026,Tanmay Kudale,216.81.248.44,Cloudflare IP,4:28:00 PM,Pending,,100,Pending
+03-19-2026,Puniyat Jangir,116.74.181.203,Cloudflare IP,4:28:00 PM,Pending,,0,Pending
+03-19-2026,Puniyat Jangir,36.83.114.137,Cloudflare IP,1:28:00 PM,Pending,,100,Pending
+03-19-2026,Puniyat Jangir,15.207.117.225,Cloudflare IP,1:28:00 PM,Pending,,0,Pending
+03-19-2026,Puniyat Jangir,2a06:98c0:3600::103,Cloudflare IP,1:28:00 PM,Pending,,"This IP was reported 7,986 times",Pending
+03-19-2026,Puniyat Jangir,159.223.38.38,Cloudflare IP,1:28:00 PM,Pending,,35,Pending
+03-19-2026,Puniyat Jangir,178.128.115.135,Cloudflare IP,1:28:00 PM,Pending,,21,Pending
+03-19-2026,Tanmay Kudale,192.109.200.13 ,Cloudflare IP,8:43:00 PM,Pending,,100,Pending
+03-19-2026,Tanmay Kudale,192.109.200.28,Cloudflare IP,8:43:00 PM,Pending,,89,Pending
+03-19-2026,Tanmay Kudale,167.253.48.238,Cloudflare IP,8:43:00 PM,Pending,,24,Pending
+03-19-2026,Tanmay Kudale,138.226.237.45,Cloudflare IP,8:43:00 PM,Pending,,74,Pending
+03-19-2026,Tanmay Kudale,2602:fa59:3:52c::1,Cloudflare IP,8:43:00 PM,Pending,,100,Pending
+03-19-2026,Tanmay Kudale,51.89.43.80,Cloudflare IP,8:43:00 PM,Pending,,100,Pending
+03-19-2026,Tanmay Kudale,119.235.221.127,Cloudflare IP,8:43:00 PM,Pending,,100,Pending
+03-19-2026,Tanmay Kudale,98.89.254.180,Cloudflare IP,8:43:00 PM,Pending,,100,Pending
+03-19-2026,Tanmay Kudale,44.195.201.244,Cloudflare IP,8:43:00 PM,Pending,,100,Pending

@@ -33,8 +33,22 @@ cleanup() {
 }
 trap cleanup EXIT INT TERM
 
+# Kill any existing Streamlit processes on port 8501
+echo "Checking for existing Streamlit processes..."
+if lsof -ti:$PORT >/dev/null 2>&1; then
+  echo "Port $PORT is in use. Stopping existing processes..."
+  pkill -9 -f "streamlit.*8501" 2>/dev/null || true
+  lsof -ti:$PORT | xargs kill -9 2>/dev/null || true
+  sleep 2
+fi
+
 echo "Starting Streamlit on port $PORT..."
-"$VENV_PYTHON" -m streamlit run "$APP_PATH" --server.port "$PORT" --server.headless true > "$ROOT_DIR/.streamlit_launch.log" 2>&1 &
+"$VENV_PYTHON" -m streamlit run "$APP_PATH" \
+  --server.port "$PORT" \
+  --server.headless true \
+  --server.enableCORS false \
+  --server.enableXsrfProtection false \
+  > "$ROOT_DIR/.streamlit_launch.log" 2>&1 &
 STREAMLIT_PID=$!
 
 sleep 3

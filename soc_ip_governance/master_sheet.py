@@ -13,16 +13,126 @@ logger = logging.getLogger(__name__)
 
 
 MASTER_COLUMNS = [
-    "YYYY-MM-DD",
-    "Name",
-    "IP Address",
-    "Reason",
-    "HH:MM AM/PM",
-    "",
-    "Notes",
-    " ",
-    "  ",
+    "Date",
+    "Shift Member Name",
+    "Blocked IP Address",
+    "Reason for Blocking",
+    "Time of Blocking",
+    "Approval Status",
+    "Remarks/Additional Notes",
+    "Abusive Percentage(AbuseIPDB)",
+    "Status(Blocked / Pending)",
+    "Email Send Status",
 ]
+
+
+APPROVAL_STATUSES = {"approved", "pending", "rejected"}
+
+
+def _looks_like_time(value: str) -> bool:
+    """Return True for common time strings like 09:46 AM."""
+
+    text = value.strip().upper()
+    return ":" in text and ("AM" in text or "PM" in text)
+
+
+def _looks_like_reason(value: str) -> bool:
+    """Heuristic to identify reason text."""
+
+    text = value.strip().lower()
+    if not text:
+        return False
+    reason_keywords = (
+        "malicious",
+        "activity",
+        "abuse",
+        "attack",
+        "scan",
+        "scanner",
+        "phishing",
+        "bruteforce",
+        "brute force",
+        "ddos",
+        "bot",
+    )
+    return any(keyword in text for keyword in reason_keywords)
+
+
+def normalize_master_sheet_row(row: list[str]) -> list[str]:
+    """Normalize a CSV row into 10-column master sheet display schema.
+
+    Target schema:
+    [Date, Shift Member Name, Blocked IP Address, Reason for Blocking,
+     Time of Blocking, Approval Status, Remarks/Additional Notes,
+     Abusive Percentage(AbuseIPDB), Status(Blocked / Pending), Email Send Status]
+    """
+
+    values = [str(cell).strip() for cell in row]
+
+    if values and values[0].strip().lower() in {"false", "true"}:
+        values = values[1:]
+
+    if len(values) >= 10:
+        first_ten = values[:10]
+        approval = first_ten[5].strip().lower()
+
+        # Legacy 10-col format (after dropping FALSE) with ISP in col[3] and reason in col[6].
+        if (
+            approval in APPROVAL_STATUSES
+            and _looks_like_time(first_ten[4])
+            and not _looks_like_reason(first_ten[3])
+            and _looks_like_reason(first_ten[6])
+        ):
+            return [
+                first_ten[0],
+                first_ten[1],
+                first_ten[2],
+                first_ten[6],
+                first_ten[4],
+                first_ten[5],
+                first_ten[3],
+                first_ten[7],
+                first_ten[8],
+                first_ten[9] or "NA",
+            ]
+
+        if not first_ten[9]:
+            first_ten[9] = "NA"
+
+        return first_ten
+
+    if len(values) == 9:
+        # Variant A: [Date, Name, IP, Reason, Time, Approval, Notes, Abuse, Status]
+        # Variant B: [Date, Name, IP, ISP, Time, Approval, Reason, Abuse, Status]
+        if values[5].strip().lower() in APPROVAL_STATUSES and _looks_like_time(values[4]):
+            if _looks_like_reason(values[3]) or not values[6]:
+                return [values[0], values[1], values[2], values[3], values[4], values[5], values[6], values[7], values[8], "NA"]
+            return [values[0], values[1], values[2], values[6], values[4], values[5], values[3], values[7], values[8], "NA"]
+
+    padded = (values + [""] * 10)[:10]
+    if not padded[6]:
+        padded[6] = "NA"
+    if not padded[9]:
+        padded[9] = "NA"
+    return padded
+
+
+def _find_ip_index(row: list[str]) -> int | None:
+    """Locate IP address column index in a row across supported sheet formats."""
+
+    candidate_indices = [3, 2]
+    for index in candidate_indices:
+        if index < len(row):
+            value = row[index].strip()
+            if is_valid_ipv4(value) or is_valid_ipv6(value):
+                return index
+
+    for index, value in enumerate(row):
+        ip_value = value.strip()
+        if is_valid_ipv4(ip_value) or is_valid_ipv6(ip_value):
+            return index
+
+    return None
 
 
 def load_master_blocked_ips(master_csv_path: Path) -> set[str]:
@@ -40,9 +150,10 @@ def load_master_blocked_ips(master_csv_path: Path) -> set[str]:
             for row in reader:
                 if len(row) < 3:
                     continue
-                ip_value = row[2].strip()
-                if is_valid_ipv4(ip_value) or is_valid_ipv6(ip_value):
-                    blocked_ips.add(ip_value)
+                ip_index = _find_ip_index(row)
+                if ip_index is None:
+                    continue
+                blocked_ips.add(row[ip_index].strip())
     except Exception:
         logger.exception("Failed to load master blocked IPs from %s", master_csv_path)
 
@@ -79,13 +190,15 @@ def append_to_master_sheet(
     ip_address: str,
     notes: str,
     shift: str = "Morning",
-    reason: str = "Malicious Activity",
+    reason: str = "High Abuse Rate",
+    approval_status: str = "Approved",
+    country: str = "",
+    isp: str = "",
+    abusive_percentage: str = "",
+    final_status: str = "Blocked",
+    email_send_status: str = "Pending",
 ) -> bool:
-    """Append an approved IP to master sheet in strict format.
-
-    Row format:
-    YYYY-MM-DD,[Name],[IP Address],"Malicious Activity",HH:MM AM/PM,,[Notes | Shift: SHIFT],,
-    """
+    """Append an approved IP to master sheet in 10-column dashboard format."""
 
     blocked_ips = load_master_blocked_ips(master_csv_path)
     if ip_address in blocked_ips:
@@ -95,17 +208,17 @@ def append_to_master_sheet(
     master_csv_path.parent.mkdir(parents=True, exist_ok=True)
 
     now = datetime.now()
-    notes_with_shift = f"{notes.strip() if notes else 'Approved by SOC'} | Shift: {shift}"
     row = [
-        now.strftime("%Y-%m-%d"),
+        now.strftime("%d-%m-%Y"),
         name.strip() or "SOC Analyst",
         ip_address,
-        reason,
+        reason.strip() or "Malicious Activity",
         now.strftime("%I:%M %p"),
-        "",
-        notes_with_shift,
-        "",
-        "",
+        approval_status,
+        notes.strip() if notes.strip() else "NA",
+        str(abusive_percentage).strip() if str(abusive_percentage).strip() else "NA",
+        final_status,
+        email_send_status.strip() or "Pending",
     ]
 
     try:
@@ -136,11 +249,12 @@ def update_master_sheet_row(
         updated = False
 
         for row in rows:
-            if len(row) >= 3 and row[2].strip() == ip_address:
-                row[1] = name.strip() or "SOC Analyst"
-                row[3] = reason.strip() or "Malicious Activity"
-                if len(row) > 6:
-                    row[6] = notes.strip() or "Updated by SOC"
+            normalized = normalize_master_sheet_row(row)
+            if normalized[2].strip() == ip_address:
+                normalized[1] = name.strip() or "SOC Analyst"
+                normalized[3] = reason.strip() or "High Abuse Rate"
+                normalized[6] = notes.strip() or "NA"
+                row[:] = normalized
                 updated = True
                 break
 
@@ -167,7 +281,13 @@ def delete_master_sheet_row(master_csv_path: Path, ip_address: str) -> bool:
     try:
         rows = read_master_sheet_rows(master_csv_path)
         original_count = len(rows)
-        rows = [row for row in rows if len(row) < 3 or row[2].strip() != ip_address]
+        filtered_rows: list[list[str]] = []
+        for row in rows:
+            normalized = normalize_master_sheet_row(row)
+            if normalized[2].strip() == ip_address:
+                continue
+            filtered_rows.append(row)
+        rows = filtered_rows
 
         if len(rows) == original_count:
             logger.warning("IP %s not found in master sheet", ip_address)
@@ -180,3 +300,38 @@ def delete_master_sheet_row(master_csv_path: Path, ip_address: str) -> bool:
     except Exception:
         logger.exception("Failed to delete IP %s from master sheet", ip_address)
         return False
+
+
+def update_email_send_status(master_csv_path: Path, ip_addresses: list[str], email_status: str) -> int:
+    """Update Email Send Status column for provided IP addresses.
+
+    Returns number of rows updated.
+    """
+
+    if not master_csv_path.exists() or not ip_addresses:
+        return 0
+
+    normalized_targets = {ip.strip() for ip in ip_addresses if ip.strip()}
+    if not normalized_targets:
+        return 0
+
+    try:
+        rows = read_master_sheet_rows(master_csv_path)
+        updated_count = 0
+
+        for row in rows:
+            normalized = normalize_master_sheet_row(row)
+            if normalized[2].strip() in normalized_targets:
+                normalized[9] = email_status.strip() or "NA"
+                row[:] = normalized
+                updated_count += 1
+
+        if updated_count:
+            with master_csv_path.open("w", encoding="utf-8", newline="") as csv_file:
+                writer = csv.writer(csv_file, quoting=csv.QUOTE_MINIMAL)
+                writer.writerows(rows)
+
+        return updated_count
+    except Exception:
+        logger.exception("Failed to update email send status for %d IPs", len(normalized_targets))
+        return 0

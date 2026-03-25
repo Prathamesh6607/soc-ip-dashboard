@@ -49,7 +49,7 @@ def build_approval_html(
             f"<td>{index}</td>"
             f"<td>{item.get('ipAddress', '')}</td>"
             f"<td>{item.get('abuseConfidenceScore', '')}</td>"
-            f"<td>{item.get('countryCode', '')}</td>"
+            f"<td>{item.get('country', '')}</td>"
             f"<td>{item.get('isp', '')}</td>"
             f"<td>{item.get('PATH', '')}</td>"
             f"<td>{item.get('Reason', 'Malicious Activity')}</td>"

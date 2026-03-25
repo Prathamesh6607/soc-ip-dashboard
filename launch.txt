@@ -84,8 +84,12 @@ python soc_ip_governance/ngrok_tunnel.py
 It will print a PUBLIC SHAREABLE URL.
 Keep this terminal open to keep the public URL active.
 
-Static URL configured:
-https://watchful-blakely-undetestably.ngrok-free.dev/
+Static URL behavior:
+- Set custom static domain via env var:
+  NGROK_STATIC_DOMAIN=your-domain.ngrok-free.dev ./run_dashboard.sh
+- Or store it in file:
+  /home/prathameshpendkar/Desktop/soc_ip_dashboard/.ngrok_domain
+- If static domain is invalid/unavailable, launcher auto-falls back to a generated ngrok URL.
 
 -------------------------------------------
 5) Stop services
@@ -121,3 +125,8 @@ https://watchful-blakely-undetestably.ngrok-free.dev/
 - Static endpoint mode enabled:
   - If ERR_NGROK_334 appears, this means same static domain is active in another ngrok session.
   - Stop existing session at https://dashboard.ngrok.com/agents and rerun.
+
+- If static domain is wrong or expired:
+  - Set NGROK_STATIC_DOMAIN with a valid reserved ngrok domain.
+  - Or update /home/prathameshpendkar/Desktop/soc_ip_dashboard/.ngrok_domain.
+  - If not set, app still works with a generated public ngrok URL.

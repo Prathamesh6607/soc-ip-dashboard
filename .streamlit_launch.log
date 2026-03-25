@@ -2,39 +2,73 @@
   You can now view your Streamlit app in your browser.
 
   Local URL: http://localhost:8501
-  Network URL: http://192.168.1.15:8501
-  External URL: http://223.233.82.50:8501
+  Network URL: http://192.168.227.82:8501
+  External URL: http://114.143.247.102:8501
 
-/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/google/api_core/_python_version_support.py:275: FutureWarning: You are using a Python version (3.10.12) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
-  warnings.warn(message, FutureWarning)
-2026-02-21 18:51:47,953 INFO googleapiclient.discovery_cache - file_cache is only supported with oauth2client<4.0.0
-2026-02-21 18:51:48,198 INFO whitelist - Loaded whitelist: 75 individual IPs, 1963 CIDR blocks
-2026-02-21 18:52:01,686 INFO googleapiclient.discovery_cache - file_cache is only supported with oauth2client<4.0.0
-2026-02-21 18:52:17,616 INFO google_auth_oauthlib.flow - "GET /?state=KwIy9YkBB8R3Yg0V9Hpn8P4WfjbA0k&code=4/0AfrIepASpAdmGdug8Ka_OGk6yYHYLBsoZhCMqpo2MTSA4Wt-cvJrEUNVvyGHZtzx-bjLHQ&scope=email%20https://www.googleapis.com/auth/gmail.send%20https://www.googleapis.com/auth/userinfo.email%20openid&authuser=1&prompt=consent HTTP/1.1" 200 65
-2026-02-21 18:52:17,847 INFO googleapiclient.discovery_cache - file_cache is only supported with oauth2client<4.0.0
-2026-02-21 18:52:18,094 INFO googleapiclient.discovery_cache - file_cache is only supported with oauth2client<4.0.0
-2026-02-21 18:52:18,294 INFO whitelist - Loaded whitelist: 75 individual IPs, 1963 CIDR blocks
-Please visit this URL to authorize this application: https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=52127213449-d84vurei6nqbos20v4bfvesgb8o9h30k.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A33089%2F&scope=openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fgmail.send&state=KwIy9YkBB8R3Yg0V9Hpn8P4WfjbA0k&access_type=offline
   Stopping...
-  Stopping...
-Exception ignored in: <module 'threading' from '/usr/lib/python3.10/threading.py'>
 Traceback (most recent call last):
-  File "/usr/lib/python3.10/threading.py", line 1537, in _shutdown
-    atexit_call()
-  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 31, in _python_exit
-    t.join()
-  File "/usr/lib/python3.10/threading.py", line 1096, in join
-    self._wait_for_tstate_lock()
-  File "/usr/lib/python3.10/threading.py", line 1116, in _wait_for_tstate_lock
-    if lock.acquire(block, timeout):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/streamlit/__main__.py", line 20, in <module>
+    main(prog_name="streamlit")
+  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/click/core.py", line 1485, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/click/core.py", line 1406, in main
+    rv = self.invoke(ctx)
+  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/click/core.py", line 1873, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/click/core.py", line 1269, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/click/core.py", line 824, in invoke
+    return callback(*args, **kwargs)
+  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/streamlit/web/cli.py", line 251, in main_run
+    _main_run(path_str, args, flag_options=kwargs)
+  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/streamlit/web/cli.py", line 325, in _main_run
+    bootstrap.run(main_script_path, is_hello, args, flag_options)
+  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/streamlit/web/bootstrap.py", line 463, in run
+    asyncio.run(main())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1871, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/usr/lib/python3.10/selectors.py", line 469, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
   File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/streamlit/web/bootstrap.py", line 43, in signal_handler
     server.stop()
-  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/streamlit/web/server/server.py", line 535, in stop
-    self._runtime.stop()
-  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/streamlit/runtime/runtime.py", line 355, in stop
-    async_objs.eventloop.call_soon_threadsafe(stop_on_eventloop)
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 798, in call_soon_threadsafe
-    self._check_closed()
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 515, in _check_closed
-    raise RuntimeError('Event loop is closed')
-RuntimeError: Event loop is closed
+  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/streamlit/web/server/server.py", line 529, in stop
+    cli_util.print_to_cli("  Stopping...", fg="blue")
+  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/streamlit/cli_util.py", line 34, in print_to_cli
+    click.secho(message, **kwargs)
+  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/click/termui.py", line 690, in secho
+    return echo(message, file=file, nl=nl, err=err, color=color)
+  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/click/utils.py", line 322, in echo
+    file.flush()
+  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/streamlit/web/bootstrap.py", line 43, in signal_handler
+    server.stop()
+  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/streamlit/web/server/server.py", line 529, in stop
+    cli_util.print_to_cli("  Stopping...", fg="blue")
+  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/streamlit/cli_util.py", line 34, in print_to_cli
+    click.secho(message, **kwargs)
+  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/click/termui.py", line 690, in secho
+    return echo(message, file=file, nl=nl, err=err, color=color)
+  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/click/utils.py", line 314, in echo
+    out = strip_ansi(out)
+  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/click/_compat.py", line 489, in strip_ansi
+    return _ansi_re.sub("", value)
+  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/streamlit/web/bootstrap.py", line 43, in signal_handler
+    server.stop()
+  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/streamlit/web/server/server.py", line 529, in stop
+    cli_util.print_to_cli("  Stopping...", fg="blue")
+  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/streamlit/cli_util.py", line 34, in print_to_cli
+    click.secho(message, **kwargs)
+  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/click/termui.py", line 690, in secho
+    return echo(message, file=file, nl=nl, err=err, color=color)
+  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/click/utils.py", line 322, in echo
+    file.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='<stdout>'>

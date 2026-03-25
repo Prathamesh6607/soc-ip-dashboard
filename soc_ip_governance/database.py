@@ -45,12 +45,13 @@ def upsert_scan_result(db_path: Path, record: dict[str, Any]) -> None:
     with sqlite3.connect(db_path) as conn:
         conn.execute(
             """
-            INSERT INTO scan_results (ipAddress, abuseConfidenceScore, countryCode, isp, path)
-            VALUES (?, ?, ?, ?, ?)
+            INSERT INTO scan_results (ipAddress, abuseConfidenceScore, countryCode, country, isp, path)
+            VALUES (?, ?, ?, ?, ?, ?)
             ON CONFLICT(ipAddress)
             DO UPDATE SET
                 abuseConfidenceScore = excluded.abuseConfidenceScore,
                 countryCode = excluded.countryCode,
+                country = excluded.country,
                 isp = excluded.isp,
                 path = excluded.path,
                 last_checked_at = CURRENT_TIMESTAMP
@@ -59,6 +60,7 @@ def upsert_scan_result(db_path: Path, record: dict[str, Any]) -> None:
                 record.get("ipAddress", ""),
                 int(record.get("abuseConfidenceScore", 0)),
                 record.get("countryCode", ""),
+                record.get("country", ""),
                 record.get("isp", ""),
                 record.get("PATH", ""),
             ),
@@ -72,12 +74,13 @@ def upsert_detected_threat(db_path: Path, record: dict[str, Any]) -> None:
     with sqlite3.connect(db_path) as conn:
         conn.execute(
             """
-            INSERT INTO detected_threats (ipAddress, abuseConfidenceScore, countryCode, isp, path, approval_status)
-            VALUES (?, ?, ?, ?, ?, COALESCE(?, 'Pending'))
+            INSERT INTO detected_threats (ipAddress, abuseConfidenceScore, countryCode, country, isp, path, approval_status)
+            VALUES (?, ?, ?, ?, ?, ?, COALESCE(?, 'Pending'))
             ON CONFLICT(ipAddress)
             DO UPDATE SET
                 abuseConfidenceScore = excluded.abuseConfidenceScore,
                 countryCode = excluded.countryCode,
+                country = excluded.country,
                 isp = excluded.isp,
                 path = excluded.path,
                 approval_status = excluded.approval_status
@@ -86,6 +89,7 @@ def upsert_detected_threat(db_path: Path, record: dict[str, Any]) -> None:
                 record.get("ipAddress", ""),
                 int(record.get("abuseConfidenceScore", 0)),
                 record.get("countryCode", ""),
+                record.get("country", ""),
                 record.get("isp", ""),
                 record.get("PATH", ""),
                 record.get("Approval Status", "Pending"),
@@ -112,7 +116,7 @@ def fetch_detected_threats(db_path: Path) -> list[dict[str, Any]]:
         conn.row_factory = sqlite3.Row
         rows = conn.execute(
             """
-            SELECT ipAddress, abuseConfidenceScore, countryCode, isp, path, approval_status
+            SELECT ipAddress, abuseConfidenceScore, countryCode, country, isp, path, approval_status
             FROM detected_threats
             ORDER BY abuseConfidenceScore DESC, ipAddress ASC
             """
@@ -125,6 +129,7 @@ def fetch_detected_threats(db_path: Path) -> list[dict[str, Any]]:
                 "ipAddress": row["ipAddress"],
                 "abuseConfidenceScore": row["abuseConfidenceScore"],
                 "countryCode": row["countryCode"],
+                "country": row["country"] or "",
                 "isp": row["isp"],
                 "PATH": row["path"] or "",
                 "Approval Status": row["approval_status"] or "Pending",
@@ -140,7 +145,7 @@ def fetch_scan_results(db_path: Path, min_score: int = 20) -> list[dict[str, Any
         conn.row_factory = sqlite3.Row
         rows = conn.execute(
             """
-            SELECT ipAddress, abuseConfidenceScore, countryCode, isp, path
+            SELECT ipAddress, abuseConfidenceScore, countryCode, country, isp, path
             FROM scan_results
             WHERE abuseConfidenceScore >= ?
             ORDER BY abuseConfidenceScore DESC, ipAddress ASC
@@ -155,6 +160,7 @@ def fetch_scan_results(db_path: Path, min_score: int = 20) -> list[dict[str, Any
                 "ipAddress": row["ipAddress"],
                 "abuseConfidenceScore": row["abuseConfidenceScore"],
                 "countryCode": row["countryCode"],
+                "country": row["country"] or "",
                 "isp": row["isp"],
                 "PATH": row["path"] or "",
             }

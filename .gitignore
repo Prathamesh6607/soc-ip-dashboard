@@ -26,5 +26,11 @@ gmail_token.json
 *.sqlite
 *.sqlite3
 
+# SOAR module runtime files
+soar_decisions.log
+soar_runtime.log
+blocked_state.json
+.soar_module.pid
+
 # OS
 .DS_Store
