@@ -64,7 +64,10 @@ def authenticate_gmail(credentials_file: Path, token_file: Path) -> tuple[bool, 
 
     try:
         flow = InstalledAppFlow.from_client_secrets_file(str(credentials_file), SCOPES)
-        creds = flow.run_local_server(port=0)
+        try:
+            creds = flow.run_local_server(port=0)
+        except Exception:
+            creds = flow.run_console()
         token_file.write_text(creds.to_json(), encoding="utf-8")
 
         service = build("oauth2", "v2", credentials=creds)

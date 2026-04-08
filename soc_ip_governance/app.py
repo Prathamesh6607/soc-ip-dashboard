@@ -8,8 +8,10 @@ import os
 import subprocess
 import sys
 import time
+import csv
 from collections import Counter, defaultdict
 from datetime import datetime
+from io import StringIO
 from pathlib import Path
 
 import pandas as pd
@@ -40,7 +42,9 @@ from email_notifier import (
 )
 from master_sheet import (
     append_to_master_sheet,
+    build_incremental_sync_plan,
     filter_already_blocked,
+    incremental_sync_master_sheet,
     load_master_blocked_ips,
     read_master_sheet_rows,
     update_master_sheet_row,
@@ -578,23 +582,6 @@ def render_tab_detected_threats() -> None:
     # Display AbuseIPDB threats table
     if abuseipdb_threats:
         st.markdown(f"#### 🌐 AbuseIPDB Detected Threats ({len(abuseipdb_threats)} IPs)")
-
-        bulk_col1, bulk_col2 = st.columns([3, 2])
-        with bulk_col1:
-            bulk_status_abuse_threats = st.selectbox(
-                "Select All Approval Status (AbuseIPDB Threats)",
-                ["Pending", "Approved", "Rejected"],
-                index=0,
-                key="bulk_status_abuse_threats",
-            )
-        with bulk_col2:
-            if st.button("Apply to All", key="btn_bulk_abuse_threats"):
-                for threat in abuseipdb_threats:
-                    ip_addr = str(threat.get("ipAddress", "")).strip()
-                    if ip_addr:
-                        update_approval_status(CONFIG.sqlite_path, ip_addr, bulk_status_abuse_threats)
-                st.success(f"Updated {len(abuseipdb_threats)} AbuseIPDB threat IP(s) to {bulk_status_abuse_threats}.")
-                st.rerun()
         
         abuseipdb_df = pd.DataFrame(abuseipdb_threats)
         
@@ -640,23 +627,6 @@ def render_tab_detected_threats() -> None:
     # Display SOAR threats table
     if soar_threats:
         st.markdown(f"#### 🔍 SOAR Logpush Detected Threats ({len(soar_threats)} IPs)")
-
-        bulk_col1, bulk_col2 = st.columns([3, 2])
-        with bulk_col1:
-            bulk_status_soar_threats = st.selectbox(
-                "Select All Approval Status (SOAR Threats)",
-                ["Pending", "Approved", "Rejected"],
-                index=0,
-                key="bulk_status_soar_threats",
-            )
-        with bulk_col2:
-            if st.button("Apply to All", key="btn_bulk_soar_threats"):
-                for threat in soar_threats:
-                    ip_addr = str(threat.get("ipAddress", "")).strip()
-                    if ip_addr:
-                        update_approval_status(CONFIG.sqlite_path, ip_addr, bulk_status_soar_threats)
-                st.success(f"Updated {len(soar_threats)} SOAR threat IP(s) to {bulk_status_soar_threats}.")
-                st.rerun()
         
         soar_df = pd.DataFrame(soar_threats)
         
@@ -703,12 +673,33 @@ def render_tab_detected_threats() -> None:
     st.divider()
     st.markdown("### Approval Actions")
 
-    sender_email = st.session_state.get("authenticated_email", "")
+    sender_email = get_authenticated_email(CONFIG.gmail_token_file) or ""
+    st.session_state.authenticated_email = sender_email
     receiver_email = CONFIG.approval_receiver_email
     monitoring_list = parse_email_list(CONFIG.monitoring_emails)
 
     if sender_email:
         st.caption(f"Authenticated sender: {sender_email} | Receiver: {receiver_email}")
+    else:
+        st.info("Gmail authentication is required only when sending email notifications.")
+
+    auth_col1, auth_col2 = st.columns([2, 6])
+    with auth_col1:
+        if st.button("Authenticate Gmail for Email", key="btn_auth_gmail_email"):
+            success, message, _email = authenticate_gmail(
+                credentials_file=CONFIG.gmail_credentials_file,
+                token_file=CONFIG.gmail_token_file,
+            )
+            if success:
+                st.success(message)
+                st.rerun()
+            st.error(message)
+    with auth_col2:
+        if sender_email and st.button("Logout Gmail", key="btn_logout_gmail_email"):
+            clear_authentication(CONFIG.gmail_token_file)
+            st.session_state.pop("authenticated_email", None)
+            st.success("Logged out from Gmail.")
+            st.rerun()
 
     col1, col2, col3, col4 = st.columns(4)
     with col1:
@@ -733,6 +724,10 @@ def render_tab_detected_threats() -> None:
     test_col1, test_col2 = st.columns([2, 5])
     with test_col1:
         if st.button("Send Test Email", key="btn_send_test_email"):
+            if not sender_email:
+                st.warning("Authenticate Gmail first, then retry sending test email.")
+                return
+
             sample_record = {
                 "ipAddress": threats[0].get("ipAddress", "0.0.0.0"),
                 "abuseConfidenceScore": threats[0].get("abuseConfidenceScore", 0),
@@ -852,6 +847,10 @@ def render_tab_detected_threats() -> None:
                 
                 # Prepare bulk email with all added IPs
                 if added_ips:
+                    if not sender_email:
+                        st.warning("Authenticate Gmail first, then retry sending approval email.")
+                        st.rerun()
+
                     subject = build_approval_subject(shift=shift, block_date=datetime.now())
                     html_body = build_approval_html(
                         approver_name=approver_name,
@@ -914,21 +913,91 @@ def render_tab_master_sheet() -> None:
     st.subheader("Master Blocking Sheet")
     st.caption(f"Source: {CONFIG.master_sheet_path}")
 
+    st.markdown("### Incremental Sync via Drag & Drop")
+    uploaded_master_sheet = st.file_uploader(
+        "Drop latest master blocking CSV",
+        type=["csv"],
+        key="master_sheet_incremental_uploader",
+        help="Compares current master sheet with uploaded file and applies only incremental add/update/delete changes.",
+    )
+
+    if uploaded_master_sheet is not None:
+        try:
+            uploaded_text = uploaded_master_sheet.getvalue().decode("utf-8-sig", errors="ignore")
+            uploaded_rows = [row for row in csv.reader(StringIO(uploaded_text)) if row]
+
+            current_rows_for_sync = read_master_sheet_rows(Path(CONFIG.master_sheet_path))
+            sync_plan = build_incremental_sync_plan(current_rows_for_sync, uploaded_rows)
+
+            m1, m2, m3 = st.columns(3)
+            m1.metric("To Add", sync_plan["added_count"])
+            m2.metric("To Update", sync_plan["updated_count"])
+            m3.metric("To Remove", sync_plan["removed_count"])
+            if int(sync_plan.get("format_changed", 0)):
+                st.info("Detected format/header change in uploaded master sheet.")
+
+            with st.expander("Preview incremental changes"):
+                added_ips = sync_plan["added_ips"]
+                updated_ips = sync_plan["updated_ips"]
+                removed_ips = sync_plan["removed_ips"]
+
+                st.write(f"Add ({len(added_ips)}):")
+                st.code("\n".join(added_ips[:200]) if added_ips else "None", language="text")
+
+                st.write(f"Update ({len(updated_ips)}):")
+                st.code("\n".join(updated_ips[:200]) if updated_ips else "None", language="text")
+
+                st.write(f"Remove ({len(removed_ips)}):")
+                st.code("\n".join(removed_ips[:200]) if removed_ips else "None", language="text")
+
+            has_changes = (
+                int(sync_plan["added_count"]) > 0
+                or int(sync_plan["updated_count"]) > 0
+                or int(sync_plan["removed_count"]) > 0
+                or int(sync_plan.get("format_changed", 0)) > 0
+            )
+
+            if st.button(
+                "Apply Incremental Sync",
+                key="btn_apply_master_incremental_sync",
+                type="primary",
+                disabled=not has_changes,
+            ):
+                result = incremental_sync_master_sheet(Path(CONFIG.master_sheet_path), uploaded_rows)
+                st.success(
+                    f"Incremental sync completed. Added: {result['added_count']}, Updated: {result['updated_count']}, Removed: {result['removed_count']}"
+                )
+                st.rerun()
+
+            if not has_changes:
+                st.info("No incremental differences found between current and uploaded master sheet.")
+        except Exception as exc:
+            st.error(f"Failed to parse uploaded CSV: {exc}")
+
+    st.divider()
+
     rows = read_master_sheet_rows(Path(CONFIG.master_sheet_path))
 
     if not rows:
         st.info("Master sheet is empty or not found.")
         return
 
-    normalized_rows: list[list[str]] = []
-    for row in rows:
-        adjusted = (row + ["", "", "", ""])[:10]
-        normalized_rows.append(adjusted)
+    def _is_header_row_local(row: list[str]) -> bool:
+        normalized = [str(cell).strip().lower() for cell in row if str(cell).strip()]
+        return "blocked ip address" in normalized
 
-    df = pd.DataFrame(
-        normalized_rows,
-        columns=[
-            "FALSE",
+    def _is_template_row_local(row: list[str]) -> bool:
+        normalized = [str(cell).strip().lower() for cell in row]
+        return any("[ip address]" in cell for cell in normalized)
+
+    header_row: list[str] | None = None
+    for row in rows:
+        if _is_header_row_local(row):
+            header_row = [str(cell).strip() for cell in row]
+            break
+
+    if not header_row:
+        header_row = [
             "Date",
             "Shift Member Name",
             "Blocked IP Address",
@@ -938,27 +1007,44 @@ def render_tab_master_sheet() -> None:
             "Remarks/Additional Notes",
             "Abusive Percentage(AbuseIPDB)",
             "Status(Blocked / Pending)",
-        ],
-    )
+        ]
+
+    col_count = len(header_row)
+    data_rows: list[list[str]] = []
+    for row in rows:
+        if _is_header_row_local(row) or _is_template_row_local(row):
+            continue
+        adjusted = (row + ([""] * col_count))[:col_count]
+        data_rows.append(adjusted)
+
+    if not data_rows:
+        st.info("Master sheet has only header/template rows.")
+        return
+
+    df = pd.DataFrame(data_rows, columns=header_row)
+
+    ip_column = "Blocked IP Address"
+    if ip_column not in df.columns:
+        fallback = None
+        for column in df.columns:
+            if "ip" in str(column).strip().lower() and "block" in str(column).strip().lower():
+                fallback = column
+                break
+        if fallback is None:
+            st.error("Could not identify Blocked IP column in master sheet.")
+            return
+        ip_column = fallback
+
     selection_df = df.copy()
     selection_df.insert(0, "Select", False)
+
+    disabled_columns = [column for column in selection_df.columns if column != "Select"]
 
     edited_master_df = st.data_editor(
         selection_df,
         width="stretch",
         hide_index=True,
-        disabled=[
-            "FALSE",
-            "Date",
-            "Shift Member Name",
-            "Blocked IP Address",
-            "Reason for Blocking",
-            "Time of Blocking",
-            "Approval Status",
-            "Remarks/Additional Notes",
-            "Abusive Percentage(AbuseIPDB)",
-            "Status(Blocked / Pending)",
-        ],
+        disabled=disabled_columns,
         column_config={
             "Select": st.column_config.CheckboxColumn(
                 "Select",
@@ -973,7 +1059,7 @@ def render_tab_master_sheet() -> None:
     st.markdown("### Edit or Delete Entries")
     selected_ips = [
         str(ip).strip()
-        for ip in edited_master_df.loc[edited_master_df["Select"] == True, "Blocked IP Address"].tolist()
+        for ip in edited_master_df.loc[edited_master_df["Select"] == True, ip_column].tolist()
         if str(ip).strip()
         and str(ip).strip() not in {"Blocked IP Address", "[IP Address]"}
     ]
@@ -1660,35 +1746,7 @@ def main() -> None:
     """, unsafe_allow_html=True)
 
     authenticated_email = get_authenticated_email(CONFIG.gmail_token_file)
-
-    if not authenticated_email:
-        st.warning("Gmail authentication is required before accessing the dashboard.")
-        st.info(
-            "Click Authenticate with Gmail. After successful sign-in, the same Gmail ID will be used as sender email."
-        )
-        if st.button("Authenticate with Gmail", type="primary"):
-            success, message, email = authenticate_gmail(
-                credentials_file=CONFIG.gmail_credentials_file,
-                token_file=CONFIG.gmail_token_file,
-            )
-            if success and email:
-                st.session_state.authenticated_email = email
-                st.success(message)
-                st.rerun()
-            else:
-                st.error(message)
-        st.stop()
-
-    st.session_state.authenticated_email = authenticated_email
-
-    header_col1, header_col2 = st.columns([8, 2])
-    with header_col1:
-        st.caption(f"Authenticated as: {authenticated_email}")
-    with header_col2:
-        if st.button("Logout Gmail"):
-            clear_authentication(CONFIG.gmail_token_file)
-            st.session_state.pop("authenticated_email", None)
-            st.rerun()
+    st.session_state.authenticated_email = authenticated_email or ""
 
     if not CONFIG.abuseipdb_api_key:
         st.warning(

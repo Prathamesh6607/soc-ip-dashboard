@@ -227,7 +227,10 @@ def _send_via_gmail_api(
             creds.refresh(Request())
         else:
             flow = InstalledAppFlow.from_client_secrets_file(str(credentials_file), scopes)
-            creds = flow.run_local_server(port=0)
+            try:
+                creds = flow.run_local_server(port=0)
+            except Exception:
+                creds = flow.run_console()
         token_path.write_text(creds.to_json(), encoding="utf-8")
 
     try:
