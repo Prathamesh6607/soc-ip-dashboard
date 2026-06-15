@@ -1,74 +1,266 @@
+2026-06-16 02:42:41.485 Uvicorn server started on 0.0.0.0:8501
 
   You can now view your Streamlit app in your browser.
 
   Local URL: http://localhost:8501
-  Network URL: http://192.168.227.82:8501
-  External URL: http://114.143.247.102:8501
+  Network URL: http://172.30.248.0:8501
+  External URL: http://58.84.62.28:8501
 
+2026-06-16 02:42:49.661 Uncaught app execution
+Traceback (most recent call last):
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 789, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/soc_ip_governance/app.py", line 43, in <module>
+    from master_sheet import (
+    ...<8 lines>...
+    )
+ImportError: cannot import name 'build_incremental_sync_plan' from 'master_sheet' (/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/soc_ip_governance/master_sheet.py)
+2026-06-16 02:45:02.027 Uncaught app execution
+Traceback (most recent call last):
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 789, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/soc_ip_governance/app.py", line 43, in <module>
+    from master_sheet import (
+    ...<8 lines>...
+    )
+ImportError: cannot import name 'build_incremental_sync_plan' from 'master_sheet' (/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/soc_ip_governance/master_sheet.py)
+  Stopping...
   Stopping...
 Traceback (most recent call last):
-  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
-    exec(code, run_globals)
-  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/streamlit/__main__.py", line 20, in <module>
-    main(prog_name="streamlit")
-  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/click/core.py", line 1485, in __call__
-    return self.main(*args, **kwargs)
-  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/click/core.py", line 1406, in main
-    rv = self.invoke(ctx)
-  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/click/core.py", line 1873, in invoke
-    return _process_result(sub_ctx.command.invoke(sub_ctx))
-  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/click/core.py", line 1269, in invoke
-    return ctx.invoke(self.callback, **ctx.params)
-  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/click/core.py", line 824, in invoke
-    return callback(*args, **kwargs)
-  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/streamlit/web/cli.py", line 251, in main_run
-    _main_run(path_str, args, flag_options=kwargs)
-  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/streamlit/web/cli.py", line 325, in _main_run
-    bootstrap.run(main_script_path, is_hello, args, flag_options)
-  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/streamlit/web/bootstrap.py", line 463, in run
-    asyncio.run(main())
-  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
-    return loop.run_until_complete(main)
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+  File "/usr/lib/python3.13/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.13/asyncio/base_events.py", line 712, in run_until_complete
     self.run_forever()
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/asyncio/base_events.py", line 683, in run_forever
     self._run_once()
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1871, in _run_once
+    ~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/asyncio/base_events.py", line 2012, in _run_once
     event_list = self._selector.select(timeout)
-  File "/usr/lib/python3.10/selectors.py", line 469, in select
+  File "/usr/lib/python3.13/selectors.py", line 452, in select
     fd_event_list = self._selector.poll(timeout, max_ev)
-  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/streamlit/web/bootstrap.py", line 43, in signal_handler
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/streamlit/web/bootstrap.py", line 43, in signal_handler
     server.stop()
-  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/streamlit/web/server/server.py", line 529, in stop
+    ~~~~~~~~~~~^^
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/streamlit/web/server/server.py", line 120, in stop
     cli_util.print_to_cli("  Stopping...", fg="blue")
-  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/streamlit/cli_util.py", line 34, in print_to_cli
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/streamlit/cli_util.py", line 34, in print_to_cli
     click.secho(message, **kwargs)
-  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/click/termui.py", line 690, in secho
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/click/termui.py", line 748, in secho
     return echo(message, file=file, nl=nl, err=err, color=color)
-  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/click/utils.py", line 322, in echo
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/click/utils.py", line 334, in echo
     file.flush()
-  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/streamlit/web/bootstrap.py", line 43, in signal_handler
+    ~~~~~~~~~~^^
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/streamlit/web/bootstrap.py", line 43, in signal_handler
     server.stop()
-  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/streamlit/web/server/server.py", line 529, in stop
+    ~~~~~~~~~~~^^
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/streamlit/web/server/server.py", line 120, in stop
     cli_util.print_to_cli("  Stopping...", fg="blue")
-  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/streamlit/cli_util.py", line 34, in print_to_cli
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/streamlit/cli_util.py", line 34, in print_to_cli
     click.secho(message, **kwargs)
-  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/click/termui.py", line 690, in secho
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/click/termui.py", line 748, in secho
     return echo(message, file=file, nl=nl, err=err, color=color)
-  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/click/utils.py", line 314, in echo
-    out = strip_ansi(out)
-  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/click/_compat.py", line 489, in strip_ansi
-    return _ansi_re.sub("", value)
-  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/streamlit/web/bootstrap.py", line 43, in signal_handler
-    server.stop()
-  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/streamlit/web/server/server.py", line 529, in stop
-    cli_util.print_to_cli("  Stopping...", fg="blue")
-  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/streamlit/cli_util.py", line 34, in print_to_cli
-    click.secho(message, **kwargs)
-  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/click/termui.py", line 690, in secho
-    return echo(message, file=file, nl=nl, err=err, color=color)
-  File "/home/prathameshpendkar/Desktop/soc_ip_dashboard/venv/lib/python3.10/site-packages/click/utils.py", line 322, in echo
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/click/utils.py", line 334, in echo
     file.flush()
+    ~~~~~~~~~~^^
+RuntimeError: reentrant call inside <_io.BufferedWriter name='<stdout>'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/starlette/routing.py", line 645, in lifespan
+    await receive()
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/uvicorn/lifespan/on.py", line 137, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/asyncio/queues.py", line 186, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.13/asyncio/base_events.py", line 712, in run_until_complete
+    self.run_forever()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/asyncio/base_events.py", line 683, in run_forever
+    self._run_once()
+    ~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/asyncio/base_events.py", line 2012, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/usr/lib/python3.13/selectors.py", line 452, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/streamlit/web/bootstrap.py", line 43, in signal_handler
+    server.stop()
+    ~~~~~~~~~~~^^
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/streamlit/web/server/server.py", line 120, in stop
+    cli_util.print_to_cli("  Stopping...", fg="blue")
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/streamlit/cli_util.py", line 34, in print_to_cli
+    click.secho(message, **kwargs)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/click/termui.py", line 748, in secho
+    return echo(message, file=file, nl=nl, err=err, color=color)
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/click/utils.py", line 334, in echo
+    file.flush()
+    ~~~~~~~~~~^^
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/streamlit/web/bootstrap.py", line 43, in signal_handler
+    server.stop()
+    ~~~~~~~~~~~^^
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/streamlit/web/server/server.py", line 120, in stop
+    cli_util.print_to_cli("  Stopping...", fg="blue")
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/streamlit/cli_util.py", line 34, in print_to_cli
+    click.secho(message, **kwargs)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/click/termui.py", line 748, in secho
+    return echo(message, file=file, nl=nl, err=err, color=color)
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/click/utils.py", line 334, in echo
+    file.flush()
+    ~~~~~~~~~~^^
+RuntimeError: reentrant call inside <_io.BufferedWriter name='<stdout>'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/uvicorn/protocols/websockets/websockets_sansio_impl.py", line 343, in run_asgi
+    result = await self.app(self.scope, self.receive, self.send)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 62, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/starlette/applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/streamlit/web/server/starlette/starlette_path_security_middleware.py", line 145, in __call__
+    await self.app(scope, receive, send)
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/starlette/middleware/sessions.py", line 88, in __call__
+    await self.app(scope, receive, send_wrapper)
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/streamlit/web/server/starlette/starlette_gzip_middleware.py", line 144, in __call__
+    await super().__call__(scope, receive, send)
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/streamlit/web/server/starlette/starlette_gzip_middleware.py", line 119, in __call__
+    await self.app(scope, receive, send)
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/starlette/routing.py", line 350, in handle
+    await self.app(scope, receive, send)
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/starlette/routing.py", line 83, in app
+    await wrap_app_handling_exceptions(app, session)(scope, receive, send)
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/starlette/routing.py", line 81, in app
+    await func(session)
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/streamlit/web/server/starlette/starlette_websocket.py", line 457, in _websocket_endpoint
+    data = await websocket.receive_bytes()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/starlette/websockets.py", line 126, in receive_bytes
+    message = await self.receive()
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/starlette/websockets.py", line 47, in receive
+    message = await self._receive()
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/uvicorn/protocols/websockets/websockets_sansio_impl.py", line 473, in receive
+    message = await self.queue.get()
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/asyncio/queues.py", line 186, in get
+    await getter
+asyncio.exceptions.CancelledError
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/streamlit/__main__.py", line 20, in <module>
+    main(prog_name="streamlit")
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/click/core.py", line 1524, in __call__
+    return self.main(*args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/click/core.py", line 1445, in main
+    rv = self.invoke(ctx)
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/click/core.py", line 1912, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/click/core.py", line 1308, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/click/core.py", line 877, in invoke
+    return callback(*args, **kwargs)
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/streamlit/web/cli.py", line 251, in main_run
+    _main_run(path_str, args, flag_options=kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/streamlit/web/cli.py", line 325, in _main_run
+    bootstrap.run(main_script_path, is_hello, args, flag_options)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/streamlit/web/bootstrap.py", line 428, in run
+    asyncio.run(main())
+    ~~~~~~~~~~~^^^^^^^^
+  File "/usr/lib/python3.13/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.13/asyncio/base_events.py", line 712, in run_until_complete
+    self.run_forever()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/asyncio/base_events.py", line 683, in run_forever
+    self._run_once()
+    ~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/asyncio/base_events.py", line 2012, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/usr/lib/python3.13/selectors.py", line 452, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/streamlit/web/bootstrap.py", line 43, in signal_handler
+    server.stop()
+    ~~~~~~~~~~~^^
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/streamlit/web/server/server.py", line 120, in stop
+    cli_util.print_to_cli("  Stopping...", fg="blue")
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/streamlit/cli_util.py", line 34, in print_to_cli
+    click.secho(message, **kwargs)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/click/termui.py", line 748, in secho
+    return echo(message, file=file, nl=nl, err=err, color=color)
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/click/utils.py", line 334, in echo
+    file.flush()
+    ~~~~~~~~~~^^
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/streamlit/web/bootstrap.py", line 43, in signal_handler
+    server.stop()
+    ~~~~~~~~~~~^^
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/streamlit/web/server/server.py", line 120, in stop
+    cli_util.print_to_cli("  Stopping...", fg="blue")
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/streamlit/cli_util.py", line 34, in print_to_cli
+    click.secho(message, **kwargs)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/click/termui.py", line 748, in secho
+    return echo(message, file=file, nl=nl, err=err, color=color)
+  File "/mnt/c/Users/prath/OneDrive/Documents/IP/soc-ip-dashboard/venv/lib/python3.13/site-packages/click/utils.py", line 334, in echo
+    file.flush()
+    ~~~~~~~~~~^^
 RuntimeError: reentrant call inside <_io.BufferedWriter name='<stdout>'>

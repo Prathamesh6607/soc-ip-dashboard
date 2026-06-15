@@ -6,6 +6,7 @@ import csv
 import logging
 from datetime import datetime
 from pathlib import Path
+from typing import Any
 
 from ip_validator import is_valid_ipv4, is_valid_ipv6
 
@@ -336,3 +337,60 @@ def update_email_send_status(master_csv_path: Path, ip_addresses: list[str], ema
     except Exception:
         logger.exception("Failed to update email send status for %d IPs", len(normalized_targets))
         return 0
+
+
+def build_incremental_sync_plan(current_rows: list[list[str]], uploaded_rows: list[list[str]]) -> dict[str, Any]:
+    """Build a plan for incremental sync of master sheet."""
+    current_ips = {}
+    for r in current_rows:
+        ip_idx = _find_ip_index(r)
+        if ip_idx is not None:
+            current_ips[r[ip_idx].strip()] = r
+
+    uploaded_ips = {}
+    for r in uploaded_rows:
+        ip_idx = _find_ip_index(r)
+        if ip_idx is not None:
+            uploaded_ips[r[ip_idx].strip()] = r
+
+    added = []
+    updated = []
+    removed = []
+
+    for ip, row in uploaded_ips.items():
+        if ip not in current_ips:
+            added.append(ip)
+        elif current_ips[ip] != row:
+            updated.append(ip)
+
+    for ip in current_ips:
+        if ip not in uploaded_ips:
+            removed.append(ip)
+
+    format_changed = 1 if (current_rows and uploaded_rows and current_rows[0] != uploaded_rows[0]) else 0
+
+    return {
+        "added_count": len(added),
+        "updated_count": len(updated),
+        "removed_count": len(removed),
+        "format_changed": format_changed,
+        "added_ips": added,
+        "updated_ips": updated,
+        "removed_ips": removed,
+    }
+
+
+def incremental_sync_master_sheet(master_csv_path: Path, uploaded_rows: list[list[str]]) -> dict[str, int]:
+    """Apply incremental sync to master sheet."""
+    plan = build_incremental_sync_plan(read_master_sheet_rows(master_csv_path), uploaded_rows)
+
+    master_csv_path.parent.mkdir(parents=True, exist_ok=True)
+    with master_csv_path.open("w", encoding="utf-8", newline="") as csv_file:
+        writer = csv.writer(csv_file, quoting=csv.QUOTE_MINIMAL)
+        writer.writerows(uploaded_rows)
+
+    return {
+        "added_count": plan["added_count"],
+        "updated_count": plan["updated_count"],
+        "removed_count": plan["removed_count"],
+    }

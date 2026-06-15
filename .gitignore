@@ -1,35 +1,18 @@
 # Python
 __pycache__/
 *.py[cod]
-*.pyo
-*.pyd
-*.egg-info/
-
-# Virtual environments
+*$py.class
 venv/
-.venv/
+env/
 
-# Local editor settings
-.vscode/
+# Databases & Logs
+*.db
+*.sqlite3
+*.log
 
-# Streamlit
-.streamlit/
-
-# Secrets / local config
+# Secrets & Configs
 config.ini
+.env
 gmail_credentials.json
 gmail_token.json
-
-# Local data outputs
-*.db
-*.sqlite
-*.sqlite3
-
-# SOAR module runtime files
-soar_decisions.log
-soar_runtime.log
 blocked_state.json
-.soar_module.pid
-
-# OS
-.DS_Store

@@ -1,0 +1,634 @@
+Date,Shift Member Name,Blocked IP Address,ASN,Time of Blocking,Approval Status,Remarks/Additional Notes,Abusive Percentage(AbuseIPDB),Status(Blocked / Pending)
+YYYY-MM-DD,[Name],[IP Address],"[E.g., Malicious Activity]",HH:MM AM/PM,,[Notes or follow-up actions],,
+06-01-2026,Paramjeet Singh Rajpurohit,185.199.157.6,62240 - Clouvider,1:06:00 PM,Approved,,69,Blocked
+06-01-2026,Paramjeet Singh Rajpurohit,185.199.157.3,62240 - Clouvider,1:06:00 PM,Approved,,59,Blocked
+06-01-2026,Paramjeet Singh Rajpurohit,185.199.157.5,62240 - Clouvider,1:06:00 PM,Approved,,68,Blocked
+06-01-2026,Paramjeet Singh Rajpurohit,185.199.157.8,62240 - Clouvider,1:06:00 PM,Approved,,83,Blocked
+06-01-2026,Paramjeet Singh Rajpurohit,185.199.157.9,62240 - Clouvider,1:06:00 PM,Approved,,70,Blocked
+06-01-2026,Paramjeet Singh Rajpurohit,185.199.157.10,62240 - Clouvider,1:06:00 PM,Approved,,78,Blocked
+06-01-2026,Paramjeet Singh Rajpurohit,185.199.157.7,62240 - Clouvider,1:06:00 PM,Approved,,66,Blocked
+06-01-2026,Paramjeet Singh Rajpurohit,185.199.157.11,62240 - Clouvider,1:06:00 PM,Approved,,62,Blocked
+06-01-2026,Paramjeet Singh Rajpurohit,185.199.157.4,62240 - Clouvider,1:06:00 PM,Approved,,67,Blocked
+06-01-2026,Paramjeet Singh Rajpurohit,86.48.10.107,136787 - PacketHub S.A.,3:45:00 PM,Approved,,0,Blocked
+06-01-2026,Paramjeet Singh Rajpurohit,85.215.117.93,"8560 - IONOS SE
+",3:45:00 PM,Approved,,100,Blocked
+06-01-2026,Paramjeet Singh Rajpurohit,84.239.49.225,44679 - INVITE Systems SRL,3:45:00 PM,Approved,,0,Blocked
+06-01-2026,Paramjeet Singh Rajpurohit,182.189.93.188,149844 - Connect Communication,3:45:00 PM,Approved,,0,Blocked
+06-01-2026,Paramjeet Singh Rajpurohit,101.47.23.214,150436 - Byteplus Pte. Ltd.,3:45:00 PM,Approved,,100,Blocked
+06-01-2026,Paramjeet Singh Rajpurohit,143.198.181.59,"14061 - DigitalOcean, LLC",3:45:00 PM,Approved,,83,Blocked
+06-01-2026,Paramjeet Singh Rajpurohit,54.152.198.76,"14618 - Amazon.com, Inc.",3:45:00 PM,Approved,,43,Blocked
+06-01-2026,Paramjeet Singh Rajpurohit,176.65.139.236,214472 - Offshore LC,3:45:00 PM,Approved,,100,Blocked
+06-01-2026,Paramjeet Singh Rajpurohit,167.99.68.242,"14061 - DigitalOcean, LLC",3:45:00 PM,Approved,,58,Blocked
+06-01-2026,Paramjeet Singh Rajpurohit,45.148.10.204,48090 - TECHOFF SRV LIMITED,3:45:00 PM,Approved,,100,Blocked
+06-02-2026,Paramjeet Singh Rajpurohit,20.151.12.206,8075 - Microsoft Corporation,5:28:00 PM,Approved,,100,Blocked
+06-02-2026,Paramjeet Singh Rajpurohit,20.104.24.244,8075 - Microsoft Corporation,6:28:00 PM,Approved,,100,Blocked
+06-02-2026,Paramjeet Singh Rajpurohit,49.47.240.23,55836 - Reliance Jio Infocomm Limited,7:28:00 PM,Approved,,0,Blocked
+06-03-2026,Shivangi Soni,38.54.64.58,138915 - Kaopu Cloud HK Limited,7:28:00 PM,Pending,,3,Pending
+06-03-2026,Paramjeet Singh Rajpurohit,45.157.54.9,210413 - SmartLink for Internet Services LTD,11:52:00 AM,Approved,,100,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,176.65.139.234,214472 - Offshore LC,11:52:00 AM,Approved,,100,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,3.26.42.117,"16509 - Amazon.com, Inc.",11:52:00 AM,Approved,,0,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,32.193.59.0,"14618 - Amazon.com, Inc.
+",11:52:00 AM,Approved,,33,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,20.198.126.159,8075 - Microsoft Corporation,4:13:00 PM,Approved,,100,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,20.116.59.164,8075 - Microsoft Corporation,4:13:00 PM,Approved,,100,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.122,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,40,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.120,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,49,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.130,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,45,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.160,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,50,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.117,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,45,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.56,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,30,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.138,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,38,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.131,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,38,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.167,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,44,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.142,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,46,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.118,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,58,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.165,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,57,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.139,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,25,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.163,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,49,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.156,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,43,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.159,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,57,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.157,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,43,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.148,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,45,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.145,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,30,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.166,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,48,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.147,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,43,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.146,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,49,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.149,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,45,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.143,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,45,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.132,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,43,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.162,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,46,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.168,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,47,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.141,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,52,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.135,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,49,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.158,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,44,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.140,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,43,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.129,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,62,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.116,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,57,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.153,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,49,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.134,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,52,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.151,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,50,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.119,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,52,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.144,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,40,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.55,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,47,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.164,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,50,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.137,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,40,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.123,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,43,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.161,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,54,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.136,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,48,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.170,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,46,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.152,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,48,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.150,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,45,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.133,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,47,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.155,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,47,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.169,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,57,Blocked
+06-03-2026,Paramjeet Singh Rajpurohit,2.57.170.154,206092 - F.N.S. HOLDINGS LIMITED,4:13:00 PM,Approved,,59,Blocked
+06-03-2026,Harsh Navgale,82.197.193.14,206092 - F.N.S. HOLDINGS LIMITED,7:48:00 PM,Pending,,41,Pending
+06-03-2026,Harsh Navgale,82.197.193.98,206092 - F.N.S. HOLDINGS LIMITED,7:48:00 PM,Pending,,55,Pending
+06-03-2026,Harsh Navgale,82.197.193.232,206092 - F.N.S. HOLDINGS LIMITED,7:48:00 PM,Pending,,39,Pending
+06-03-2026,Harsh Navgale,185.132.187.204,206092 - F.N.S. HOLDINGS LIMITED,7:48:00 PM,Pending,,50,Pending
+06-03-2026,Harsh Navgale,185.132.187.151,206092 - F.N.S. HOLDINGS LIMITED,7:48:00 PM,Pending,,40,Pending
+06-03-2026,Harsh Navgale,185.132.187.100,206092 - F.N.S. HOLDINGS LIMITED,7:48:00 PM,Pending,,47,Pending
+06-03-2026,Harsh Navgale,185.132.187.251,206092 - F.N.S. HOLDINGS LIMITED,7:48:00 PM,Pending,,55,Pending
+06-03-2026,Harsh Navgale,82.197.193.215,206092 - F.N.S. HOLDINGS LIMITED,7:48:00 PM,Pending,,54,Pending
+06-03-2026,Harsh Navgale,185.132.187.242,206092 - F.N.S. HOLDINGS LIMITED,7:48:00 PM,Pending,,54,Pending
+06-03-2026,Harsh Navgale,185.132.187.101,206092 - F.N.S. HOLDINGS LIMITED,7:48:00 PM,Pending,,54,Pending
+06-03-2026,Harsh Navgale,185.132.187.150,206092 - F.N.S. HOLDINGS LIMITED,7:48:00 PM,Pending,,63,Pending
+06-03-2026,Harsh Navgale,185.132.187.236,206092 - F.N.S. HOLDINGS LIMITED,7:48:00 PM,Pending,,77,Pending
+06-03-2026,Harsh Navgale,185.132.187.175,206092 - F.N.S. HOLDINGS LIMITED,7:48:00 PM,Pending,,51,Pending
+06-03-2026,Harsh Navgale,185.132.187.165,206092 - F.N.S. HOLDINGS LIMITED,7:48:00 PM,Pending,,60,Pending
+06-03-2026,Harsh Navgale,82.197.193.190,206092 - F.N.S. HOLDINGS LIMITED,7:48:00 PM,Pending,,42,Pending
+06-03-2026,Harsh Navgale,82.197.193.251,206092 - F.N.S. HOLDINGS LIMITED,7:48:00 PM,Pending,,47,Pending
+06-03-2026,Harsh Navgale,2.57.170.50,206092 - F.N.S. HOLDINGS LIMITED,7:48:00 PM,Pending,,17,Pending
+06-03-2026,Harsh Navgale,82.197.193.78,206092 - F.N.S. HOLDINGS LIMITED,7:48:00 PM,Pending,,57,Pending
+06-03-2026,Harsh Navgale,82.197.193.153,206092 - F.N.S. HOLDINGS LIMITED,7:48:00 PM,Pending,,55,Pending
+06-03-2026,Harsh Navgale,82.197.193.136,206092 - F.N.S. HOLDINGS LIMITED,7:48:00 PM,Pending,,51,Pending
+06-03-2026,Harsh Navgale,185.132.187.215,206092 - F.N.S. HOLDINGS LIMITED,7:48:00 PM,Pending,,54,Pending
+06-03-2026,Harsh Navgale,82.197.193.134,206092 - F.N.S. HOLDINGS LIMITED,7:48:00 PM,Pending,,64,Pending
+06-03-2026,Harsh Navgale,82.197.193.145,206092 - F.N.S. HOLDINGS LIMITED,7:48:00 PM,Pending,,52,Pending
+06-03-2026,Harsh Navgale,185.132.187.152,206092 - F.N.S. HOLDINGS LIMITED,7:48:00 PM,Pending,,46,Pending
+06-03-2026,Harsh Navgale,185.132.187.177,206092 - F.N.S. HOLDINGS LIMITED,7:48:00 PM,Pending,,44,Pending
+06-03-2026,Harsh Navgale,2.57.170.23,206092 - F.N.S. HOLDINGS LIMITED,7:48:00 PM,Pending,,16,Pending
+06-03-2026,Harsh Navgale,82.197.193.246,206092 - F.N.S. HOLDINGS LIMITED,7:48:00 PM,Pending,,63,Pending
+06-03-2026,Harsh Navgale,185.132.187.102,206092 - F.N.S. HOLDINGS LIMITED,7:48:00 PM,Pending,,45,Pending
+06-03-2026,Harsh Navgale,185.132.187.203,206092 - F.N.S. HOLDINGS LIMITED,7:48:00 PM,Pending,,55,Pending
+06-03-2026,Harsh Navgale,82.197.193.31,206092 - F.N.S. HOLDINGS LIMITED,7:48:00 PM,Pending,,52,Pending
+06-03-2026,Harsh Navgale,185.132.187.156,206092 - F.N.S. HOLDINGS LIMITED,7:48:00 PM,Pending,,50,Pending
+06-03-2026,Harsh Navgale,82.197.193.49,206092 - F.N.S. HOLDINGS LIMITED,7:48:00 PM,Pending,,45,Pending
+06-03-2026,Harsh Navgale,185.132.187.49,206092 - F.N.S. HOLDINGS LIMITED,7:48:00 PM,Pending,,46,Pending
+06-03-2026,Harsh Navgale,82.197.193.205,206092 - F.N.S. HOLDINGS LIMITED,7:48:00 PM,Pending,,54,Pending
+06-03-2026,Harsh Navgale,185.132.187.218,206092 - F.N.S. HOLDINGS LIMITED,7:48:00 PM,Pending,,57,Pending
+06-03-2026,Harsh Navgale,82.197.193.95,206092 - F.N.S. HOLDINGS LIMITED,7:48:00 PM,Pending,,53,Pending
+06-03-2026,Harsh Navgale,82.197.193.143,206092 - F.N.S. HOLDINGS LIMITED,7:48:00 PM,Pending,,56,Pending
+06-03-2026,Harsh Navgale,185.132.187.238,206092 - F.N.S. HOLDINGS LIMITED,7:48:00 PM,Pending,,45,Pending
+06-03-2026,Harsh Navgale,2.57.170.10,206092 - F.N.S. HOLDINGS LIMITED,7:48:00 PM,Pending,,22,Pending
+06-03-2026,Harsh Navgale,185.132.187.219,206092 - F.N.S. HOLDINGS LIMITED,7:48:00 PM,Pending,,53,Pending
+06-03-2026,Harsh Navgale,82.197.193.74,206092 - F.N.S. HOLDINGS LIMITED,7:48:00 PM,Pending,,51,Pending
+06-03-2026,Harsh Navgale,185.132.187.240,206092 - F.N.S. HOLDINGS LIMITED,7:48:00 PM,Pending,,44,Pending
+06-03-2026,Harsh Navgale,185.132.187.232,206092 - F.N.S. HOLDINGS LIMITED,7:48:00 PM,Pending,,40,Pending
+06-03-2026,Harsh Navgale,2a02:c207:2316:3590::1,51167 - Contabo GmbH,7:48:00 PM,Pending,,0,Pending
+06-03-2026,Harsh Navgale,167.86.108.35,51167 - Contabo GmbH,7:48:00 PM,Pending,,15,Pending
+06-03-2026,Harsh Navgale,194.180.176.96,51167 - Contabo GmbH,7:48:00 PM,Pending,,19,Pending
+06-03-2026,Harsh Navgale,95.111.233.82,51167 - Contabo GmbH,7:48:00 PM,Pending,,14,Pending
+06-03-2026,Harsh Navgale,173.212.223.149,51167 - Contabo GmbH,7:48:00 PM,Pending,,2,Pending
+06-03-2026,Harsh Navgale,2a02:c207:2316:3580::1,51167 - Contabo GmbH,7:48:00 PM,Pending,,0,Pending
+06-03-2026,Harsh Navgale,144.91.117.173,51167 - Contabo GmbH,7:48:00 PM,Pending,,10,Pending
+06-03-2026,Harsh Navgale,161.97.132.208,51167 - Contabo GmbH,7:48:00 PM,Pending,,11,Pending
+06-03-2026,Harsh Navgale,2a02:c207:2316:3613::1,51167 - Contabo GmbH,7:48:00 PM,Pending,,0,Pending
+06-03-2026,Harsh Navgale,2a02:c207:2316:3605::1,51167 - Contabo GmbH,7:48:00 PM,Pending,,0,Pending
+06-03-2026,Harsh Navgale,207.180.240.176,51167 - Contabo GmbH,7:48:00 PM,Pending,,22,Pending
+06-03-2026,Harsh Navgale,2a02:c207:2316:3586::1,51167 - Contabo GmbH,7:48:00 PM,Pending,,0,Pending
+06-03-2026,Harsh Navgale,2a02:c207:2316:3600::1,51167 - Contabo GmbH,7:48:00 PM,Pending,,0,Pending
+06-03-2026,Harsh Navgale,2a02:c207:2316:3578::1,51167 - Contabo GmbH,7:48:00 PM,Pending,,0,Pending
+06-03-2026,Harsh Navgale,2a02:c207:2316:3627::1,51167 - Contabo GmbH,7:48:00 PM,Pending,,0,Pending
+06-03-2026,Harsh Navgale,167.86.108.36,51167 - Contabo GmbH,7:48:00 PM,Pending,,15,Pending
+06-03-2026,Harsh Navgale,44.241.177.106,"16509 - Amazon.com, Inc.",7:48:00 PM,Pending,,0,Pending
+06-03-2026,Harsh Navgale,100.22.169.194,"16509 - Amazon.com, Inc.",7:48:00 PM,Pending,,0,Pending
+06-03-2026,Harsh Navgale,44.229.198.117,"16509 - Amazon.com, Inc.",7:48:00 PM,Pending,,0,Pending
+06-04-2026,Paramjeet Singh Rajpurohit,185.199.157.14,62240 - Clouvider,9:45:00 AM,Approved,,25,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,185.199.157.21,62240 - Clouvider,9:45:00 AM,Approved,,17,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,185.199.157.20,62240 - Clouvider,9:45:00 AM,Approved,,18,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,185.199.157.16,62240 - Clouvider,9:45:00 AM,Approved,,12,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,185.199.157.15,62240 - Clouvider,9:45:00 AM,Approved,,17,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,185.199.157.19,62240 - Clouvider,9:45:00 AM,Approved,,0,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,185.199.157.13,62240 - Clouvider,9:45:00 AM,Approved,,19,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,185.199.157.18,62240 - Clouvider,9:45:00 AM,Approved,,7,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,185.199.157.17,62240 - Clouvider,9:45:00 AM,Approved,,11,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,185.132.187.235,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,63,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,185.132.187.43,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,48,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,82.197.193.49,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,46,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,185.132.187.174,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,54,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,185.132.187.230,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,64,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,185.132.187.219,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,69,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,185.132.187.203,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,61,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,82.197.193.134,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,73,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,185.132.187.41,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,51,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,82.197.193.246,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,74,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,82.197.193.190,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,60,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,185.132.187.238,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,57,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,185.132.187.49,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,47,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,82.197.193.60,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,56,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,185.132.187.102,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,56,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,185.132.187.165,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,70,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,185.132.187.151,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,52,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,185.132.187.240,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,45,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,82.197.193.136,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,72,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,185.132.187.236,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,78,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,185.132.187.158,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,53,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,185.132.187.152,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,46,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,82.197.193.95,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,64,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,185.132.187.242,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,60,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,185.132.187.232,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,41,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,185.132.187.100,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,53,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,185.132.187.251,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,65,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,82.197.193.74,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,58,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,82.197.193.205,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,59,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,185.132.187.101,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,61,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,82.197.193.153,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,72,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,82.197.193.199,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,49,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,82.197.193.31,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,58,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,185.132.187.150,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,68,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,185.132.187.44,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,52,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,82.197.193.191,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,72,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,82.197.193.78,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,68,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,185.132.187.218,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,63,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,82.197.193.215,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,54,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,82.197.193.143,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,66,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,185.132.187.204,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,61,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,82.197.193.14,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,56,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,185.132.187.215,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,61,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,185.132.187.96,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,50,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,185.132.187.177,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,55,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,82.197.193.81,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,75,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,185.132.187.156,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,62,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,82.197.193.145,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,57,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,185.132.187.175,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,71,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,82.197.193.232,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,56,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,82.197.193.98,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,71,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,82.197.193.251,206092 - F.N.S. HOLDINGS LIMITED,10:30:00 AM,Approved,,54,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,185.199.157.12,62248 - Clouvider,10:30:00 AM,Approved,,14,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,140.245.69.89,31898 - Oracle Corporation,11:02:00 AM,Approved,,100,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,4.213.99.137,8075 - Microsoft Corporation,11:02:00 AM,Approved,,100,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,2602:fb54:1400::28,22295 - Advin Services LLC,11:02:00 AM,Approved,,100,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,192.109.200.215,51396 - Pfcloud UG,11:02:00 AM,Approved,,100,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,65.52.170.96,8075 - Microsoft Corporation,11:02:00 AM,Approved,,100,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,43.173.132.97,"132203 - Tencent Building, Kejizhongyi Avenue",11:02:00 AM,Approved,,22,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,103.166.92.197,138839 - PT Adidaya Infocom Lestari,11:02:00 AM,Approved,,13,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,44.229.198.117,"16509 - Amazon.com, Inc.",11:02:00 AM,Approved,,0,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,54.211.108.114,"14618 - Amazon.com, Inc.",11:02:00 AM,Approved,,36,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,44.220.226.85,"14618 - Amazon.com, Inc.",11:02:00 AM,Approved,,40,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,54.226.9.66,"14618 - Amazon.com, Inc.",11:02:00 AM,Approved,,40,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,157.119.40.23,132335 - LEAPSWITCH NETWORKS PRIVATE LIMITED,11:02:00 AM,Approved,,13,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,157.119.40.250,132336 - LEAPSWITCH NETWORKS PRIVATE LIMITED,11:02:00 AM,Approved,,3,Blocked
+06-04-2026,Paramjeet Singh Rajpurohit,157.119.40.40,132337 - LEAPSWITCH NETWORKS PRIVATE LIMITED,11:02:00 AM,Approved,,14,Blocked
+06-05-2026,Paramjeet Singh Rajpurohit,173.239.196.61,206092 - F.N.S. HOLDINGS LIMITED,9:29:00 AM,Approved,,0,Blocked
+06-05-2026,Paramjeet Singh Rajpurohit,173.239.196.59,206092 - F.N.S. HOLDINGS LIMITED,9:29:00 AM,Approved,,0,Blocked
+06-05-2026,Paramjeet Singh Rajpurohit,173.239.196.63,206092 - F.N.S. HOLDINGS LIMITED,9:29:00 AM,Approved,,0,Blocked
+06-05-2026,Paramjeet Singh Rajpurohit,173.239.196.62,206092 - F.N.S. HOLDINGS LIMITED,9:29:00 AM,Approved,,0,Blocked
+06-05-2026,Paramjeet Singh Rajpurohit,173.239.196.57,206092 - F.N.S. HOLDINGS LIMITED,9:29:00 AM,Approved,,0,Blocked
+06-05-2026,Paramjeet Singh Rajpurohit,173.239.196.56,206092 - F.N.S. HOLDINGS LIMITED,9:29:00 AM,Approved,,0,Blocked
+06-05-2026,Paramjeet Singh Rajpurohit,178.162.201.130,28753 - Leaseweb Deutschland GmbH,4:08:00 PM,Approved,,100,Blocked
+06-05-2026,Paramjeet Singh Rajpurohit,101.128.100.65,135478 - PT. Cyberindo Aditama,4:08:00 PM,Approved,,0,Blocked
+06-05-2026,Paramjeet Singh Rajpurohit,173.239.196.55,206092 - F.N.S. HOLDINGS LIMITED,4:08:00 PM,Approved,,0,Blocked
+06-05-2026,Paramjeet Singh Rajpurohit,173.239.196.50,206092 - F.N.S. HOLDINGS LIMITED,4:08:00 PM,Approved,,0,Blocked
+06-05-2026,Paramjeet Singh Rajpurohit,173.239.196.49,206092 - F.N.S. HOLDINGS LIMITED,4:08:00 PM,Approved,,0,Blocked
+06-05-2026,Paramjeet Singh Rajpurohit,173.239.196.54,206092 - F.N.S. HOLDINGS LIMITED,4:08:00 PM,Approved,,0,Blocked
+06-05-2026,Paramjeet Singh Rajpurohit,173.239.196.48,206092 - F.N.S. HOLDINGS LIMITED,4:08:00 PM,Approved,,0,Blocked
+06-05-2026,Paramjeet Singh Rajpurohit,173.239.196.53,206092 - F.N.S. HOLDINGS LIMITED,4:08:00 PM,Approved,,0,Blocked
+06-05-2026,Paramjeet Singh Rajpurohit,173.239.196.52,206092 - F.N.S. HOLDINGS LIMITED,4:08:00 PM,Approved,,0,Blocked
+06-05-2026,Paramjeet Singh Rajpurohit,173.239.196.51,206092 - F.N.S. HOLDINGS LIMITED,4:08:00 PM,Approved,,0,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,185.192.71.31,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,43,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,91.230.225.13,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,38,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,185.192.71.36,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,46,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,91.230.225.21,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,32,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,185.192.71.37,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,36,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,91.230.225.15,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,37,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,91.230.225.20,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,36,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,91.230.225.200,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,37,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,91.230.225.204,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,41,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,185.192.71.38,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,36,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,91.230.225.18,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,40,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,185.92.25.114,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,36,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,91.230.225.197,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,37,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,185.192.71.28,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,43,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,185.192.71.22,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,31,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,185.192.71.40,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,44,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,185.192.71.27,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,34,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,91.230.225.206,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,34,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,91.230.225.10,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,35,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,91.230.225.14,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,40,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,185.192.71.25,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,38,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,185.192.71.32,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,33,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,185.192.71.35,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,37,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,185.192.71.29,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,36,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,185.192.71.24,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,41,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,91.230.225.202,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,39,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,91.230.225.24,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,37,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,185.192.71.34,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,47,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,91.230.225.195,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,41,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,185.192.71.23,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,37,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,91.230.225.208,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,41,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,91.230.225.22,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,42,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,91.230.225.207,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,40,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,91.230.225.199,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,38,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,91.230.225.12,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,35,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,185.192.71.21,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,43,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,91.230.225.205,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,42,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,91.230.225.198,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,33,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,91.230.225.209,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,36,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,91.230.225.17,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,37,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,185.192.71.26,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,41,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,91.230.225.19,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,46,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,185.192.71.30,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,44,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,91.230.225.23,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,31,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,91.230.225.16,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,30,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,185.192.71.33,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,36,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,91.230.225.11,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,37,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,91.230.225.196,206092 - F.N.S. HOLDINGS LIMITED,12:20:00 AM,Approved,,40,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,85.203.15.186,62240 - Clouvider,3:56:00 AM,Approved,,37,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,81.199.26.13,62240 - Clouvider,3:56:00 AM,Approved,,36,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,81.199.26.8,62240 - Clouvider,3:56:00 AM,Approved,,35,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,85.203.15.250,62240 - Clouvider,3:56:00 AM,Approved,,36,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,85.203.15.104,62240 - Clouvider,3:56:00 AM,Approved,,38,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,85.203.15.28,62240 - Clouvider,3:56:00 AM,Approved,,38,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,85.203.15.71,62240 - Clouvider,3:56:00 AM,Approved,,31,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,81.199.26.15,62240 - Clouvider,3:56:00 AM,Approved,,31,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,85.203.15.45,62240 - Clouvider,3:56:00 AM,Approved,,43,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,85.203.15.42,62240 - Clouvider,3:56:00 AM,Approved,,37,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,81.199.26.16,62240 - Clouvider,3:56:00 AM,Approved,,38,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,81.199.26.3,62240 - Clouvider,3:56:00 AM,Approved,,39,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,85.203.15.176,62240 - Clouvider,3:56:00 AM,Approved,,35,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,85.203.15.55,62240 - Clouvider,3:56:00 AM,Approved,,37,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,85.203.15.177,62240 - Clouvider,3:56:00 AM,Approved,,36,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,81.199.26.10,62240 - Clouvider,3:56:00 AM,Approved,,36,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,85.203.15.12,62240 - Clouvider,3:56:00 AM,Approved,,33,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,85.203.15.22,62240 - Clouvider,3:56:00 AM,Approved,,37,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,85.203.15.58,62240 - Clouvider,3:56:00 AM,Approved,,36,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,85.203.15.34,62240 - Clouvider,3:56:00 AM,Approved,,36,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,85.203.15.188,62240 - Clouvider,3:56:00 AM,Approved,,39,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,85.203.15.189,62240 - Clouvider,3:56:00 AM,Approved,,34,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,81.199.26.14,62240 - Clouvider,3:56:00 AM,Approved,,27,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,81.199.26.9,62240 - Clouvider,3:56:00 AM,Approved,,35,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,85.203.15.8,62240 - Clouvider,3:56:00 AM,Approved,,38,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,81.199.26.6,62240 - Clouvider,3:56:00 AM,Approved,,34,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,81.199.26.2,62240 - Clouvider,3:56:00 AM,Approved,,32,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,85.203.15.30,62240 - Clouvider,3:56:00 AM,Approved,,31,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,85.203.15.40,62240 - Clouvider,3:56:00 AM,Approved,,34,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,81.199.26.12,62240 - Clouvider,3:56:00 AM,Approved,,34,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,85.203.15.182,62240 - Clouvider,3:56:00 AM,Approved,,47,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,85.203.15.43,62240 - Clouvider,3:56:00 AM,Approved,,37,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,85.203.15.27,62240 - Clouvider,3:56:00 AM,Approved,,34,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,85.203.15.24,62240 - Clouvider,3:56:00 AM,Approved,,34,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,85.203.15.35,62240 - Clouvider,3:56:00 AM,Approved,,33,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,85.203.15.44,62240 - Clouvider,3:56:00 AM,Approved,,31,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,85.203.15.103,62240 - Clouvider,3:56:00 AM,Approved,,34,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,85.203.15.183,62240 - Clouvider,3:56:00 AM,Approved,,38,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,85.203.15.252,62240 - Clouvider,3:56:00 AM,Approved,,34,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,85.203.15.253,62240 - Clouvider,3:56:00 AM,Approved,,37,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,85.203.15.48,62240 - Clouvider,3:56:00 AM,Approved,,44,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,81.199.26.7,62240 - Clouvider,3:56:00 AM,Approved,,36,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,85.203.15.180,62240 - Clouvider,3:56:00 AM,Approved,,32,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,81.199.26.11,62240 - Clouvider,3:56:00 AM,Approved,,35,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,85.203.15.7,62240 - Clouvider,3:56:00 AM,Approved,,41,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,85.203.15.181,62240 - Clouvider,3:56:00 AM,Approved,,32,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,85.203.15.23,62240 - Clouvider,3:56:00 AM,Approved,,35,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,85.203.15.5,62240 - Clouvider,3:56:00 AM,Approved,,34,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,81.199.26.4,62240 - Clouvider,3:56:00 AM,Approved,,27,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,85.203.15.105,62240 - Clouvider,3:56:00 AM,Approved,,37,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,81.199.26.5,62240 - Clouvider,3:56:00 AM,Approved,,39,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,85.203.15.37,62240 - Clouvider,3:56:00 AM,Approved,,33,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,185.241.208.20,210558 - 1337 Services GmbH,8:33:00 AM,Approved,,100,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,51.68.236.87,16276 - OVH SAS,8:33:00 AM,Approved,,100,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,51.89.39.36,16276 - OVH SAS,8:33:00 AM,Approved,,100,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,34.122.16.212,396982 - Google LLC,8:33:00 AM,Approved,,100,Blocked
+06-07-2026,Paramjeet Singh Rajpurohit,40.87.20.23,8075 - Microsoft Corporation,8:33:00 AM,Approved,,100,Blocked
+06-09-2026,Harsh Navgale,82.197.202.238,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,23,Pending
+06-09-2026,Harsh Navgale,85.206.241.172,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,26,Pending
+06-09-2026,Harsh Navgale,82.197.202.121,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,16,Pending
+06-09-2026,Harsh Navgale,82.197.202.144,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,4,Pending
+06-09-2026,Harsh Navgale,82.197.202.153,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,4,Pending
+06-09-2026,Harsh Navgale,82.197.202.240,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,1,Pending
+06-09-2026,Harsh Navgale,82.197.202.117,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,4,Pending
+06-09-2026,Harsh Navgale,82.197.202.192,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,82.197.202.147,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,4,Pending
+06-09-2026,Harsh Navgale,82.197.202.229,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,82.197.202.109,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,82.197.202.131,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,82.197.202.186,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,2,Pending
+06-09-2026,Harsh Navgale,82.197.202.204,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,4,Pending
+06-09-2026,Harsh Navgale,82.197.202.50,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,82.197.202.89,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,16,Pending
+06-09-2026,Harsh Navgale,82.197.202.12,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,22,Pending
+06-09-2026,Harsh Navgale,82.197.202.250,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,16,Pending
+06-09-2026,Harsh Navgale,82.197.202.155,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,3,Pending
+06-09-2026,Harsh Navgale,82.197.202.215,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,1,Pending
+06-09-2026,Harsh Navgale,82.197.202.116,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,24,Pending
+06-09-2026,Harsh Navgale,82.197.202.119,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,16,Pending
+06-09-2026,Harsh Navgale,82.197.202.182,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,4,Pending
+06-09-2026,Harsh Navgale,85.206.241.173,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,26,Pending
+06-09-2026,Harsh Navgale,82.197.202.4,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,82.197.202.58,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,4,Pending
+06-09-2026,Harsh Navgale,82.197.202.95,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,24,Pending
+06-09-2026,Harsh Navgale,82.197.202.150,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,1,Pending
+06-09-2026,Harsh Navgale,82.197.202.6,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,82.197.202.34,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,82.197.202.124,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,82.197.202.22,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,82.197.202.217,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,82.197.202.91,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,82.197.202.104,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,82.197.202.175,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,82.197.202.23,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,82.197.202.79,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,82.197.202.154,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,1,Pending
+06-09-2026,Harsh Navgale,82.197.202.37,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,82.197.202.248,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,82.197.202.184,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,82.197.202.59,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,82.197.202.102,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,82.197.202.127,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,82.197.202.70,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,82.197.202.172,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,82.197.202.235,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,82.197.202.232,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,82.197.202.15,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,82.197.202.146,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,82.197.202.45,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,82.197.202.163,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,82.197.202.5,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,82.197.202.181,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,82.197.202.166,"61272 - Informacines sistemos ir technologijos, UAB",6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,51.161.164.162,16276 - OVH SAS,6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,5.39.65.21,16276 - OVH SAS,6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,51.68.113.221,16276 - OVH SAS,6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,213.32.74.44,16276 - OVH SAS,6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,213.32.76.104,16276 - OVH SAS,6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,51.161.8.142,16276 - OVH SAS,6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,149.202.165.31,16276 - OVH SAS,6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,197.56.165.22,8452 - TE-AS,6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,156.197.251.99,8452 - TE-AS,6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,41.235.85.44,8452 - TE-AS,6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,41.235.163.147,8452 - TE-AS,6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,197.63.161.89,8452 - TE-AS,6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,41.234.220.162,8452 - TE-AS,6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,41.233.102.173,8452 - TE-AS,6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,197.63.11.89,8452 - TE-AS,6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,41.233.217.14,8452 - TE-AS,6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,41.235.188.54,8452 - TE-AS,6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,197.42.18.235,8452 - TE-AS,6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,156.207.73.185,8452 - TE-AS,6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,156.211.190.218,8452 - TE-AS,6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,197.59.14.34,8452 - TE-AS,6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,156.209.178.0,8452 - TE-AS,6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,185.220.101.9,60729 - Stiftung Erneuerbare Freiheit,6:30:00 AM,Pending,,100,Pending
+06-09-2026,Harsh Navgale,193.189.100.205,41281 - KeFF Networks Ltd,6:30:00 AM,Pending,,100,Pending
+06-09-2026,Harsh Navgale,43.252.215.241,46015 - Exa Bytes Network Sdn.Bhd.,6:30:00 AM,Pending,,100,Pending
+06-09-2026,Harsh Navgale,106.215.164.153,"24560 - Bharti Airtel Ltd., Telemedia Services",6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,200.115.48.184,52428 - ASOCIACION REGIONAL DE COOPERATIVAS DE SERVICIOS PUBLICOS,6:30:00 AM,Pending,,9,Pending
+06-09-2026,Harsh Navgale,5.31.177.224,15802 - Emirates Integrated Telecommunications Company PJSC,6:30:00 AM,Pending,,3,Pending
+06-09-2026,Harsh Navgale,177.75.111.137,28146 - MHNET TELECOM,6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,154.241.71.112,36947 - Telecom Algeria,6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,14.235.79.59,45899 - VNPT Corp,6:30:00 AM,Pending,,2,Pending
+06-09-2026,Harsh Navgale,187.73.203.99,45899 - VNPT Corp,6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,103.237.39.211,132298 - Antaranga Dot Com Ltd,6:30:00 AM,Pending,,28,Pending
+06-09-2026,Harsh Navgale,187.180.162.52,28573 - Claro NXT Telecomunicacoes Ltda,6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,181.61.209.157,10620 - Telmex Colombia S.A.,6:30:00 AM,Pending,,0,Pending
+06-09-2026,Harsh Navgale,181.177.19.63,264642 - TELESISTEMA S.R.L.,6:30:00 AM,Pending,,7,Pending
+06-09-2026,Harsh Navgale,181.115.171.158,6568 - EMPRESA NACIONAL DE TELECOMUNICACIONES SOCIEDAD ANONIMA,6:30:00 AM,Pending,,39,Pending
+06-09-2026,Harsh Navgale,91.227.77.251,62005 - BlueVPS OU,6:30:00 AM,Pending,,0,Pending
+06-09-2026,Puniyat Jangir,68.183.238.4,"DigitalOcean, LLC",2:30:00 PM,Blocked,,16,Pending
+06-09-2026,Puniyat Jangir,130.250.191.194,IN HOSTERDADDYPVTLTD,2:30:00 PM,Blocked,,0,Pending
+06-09-2026,Puniyat Jangir,2a02:4780:12:ffe::1,HOSTINGER IN,2:30:00 PM,Blocked,,23,Pending
+06-09-2026,Paramjeet Singh Rajpurohit,185.177.72.68,211590 - Bucklog SARL,3:35:00 PM,Approved,,100,Blocked
+06-09-2026,Paramjeet Singh Rajpurohit,173.239.196.122,206092 - F.N.S. HOLDINGS LIMITED,3:35:00 PM,Approved,,0,Blocked
+06-09-2026,Paramjeet Singh Rajpurohit,173.239.196.119,206092 - F.N.S. HOLDINGS LIMITED,3:35:00 PM,Approved,,0,Blocked
+06-09-2026,Paramjeet Singh Rajpurohit,173.239.196.120,206092 - F.N.S. HOLDINGS LIMITED,3:35:00 PM,Approved,,0,Blocked
+06-09-2026,Paramjeet Singh Rajpurohit,173.239.196.123,206092 - F.N.S. HOLDINGS LIMITED,3:35:00 PM,Approved,,0,Blocked
+06-09-2026,Paramjeet Singh Rajpurohit,173.239.196.118,206092 - F.N.S. HOLDINGS LIMITED,3:35:00 PM,Approved,,0,Blocked
+06-09-2026,Paramjeet Singh Rajpurohit,173.239.196.121,206092 - F.N.S. HOLDINGS LIMITED,3:35:00 PM,Approved,,0,Blocked
+06-09-2026,Paramjeet Singh Rajpurohit,27.59.79.240,45609 - Bharti Airtel Ltd. AS for GPRS Service,10:11:00 PM,Pending,,16,Pending
+06-09-2026,Paramjeet Singh Rajpurohit,130.250.191.194,215117 - HosterDaddy Private Limited,10:11:00 PM,Pending,,0,Pending
+06-09-2026,Paramjeet Singh Rajpurohit,196.196.106.68,"41564 - Orion Network Limited
+
+",10:11:00 PM,Pending,,0,Pending
+06-09-2026,Paramjeet Singh Rajpurohit,196.196.106.67,"41564 - Orion Network Limited
+
+",10:11:00 PM,Pending,,0,Pending
+06-09-2026,Paramjeet Singh Rajpurohit,196.196.106.69,"41564 - Orion Network Limited
+
+",10:11:00 PM,Pending,,0,Pending
+06-09-2026,Paramjeet Singh Rajpurohit,196.196.106.70,"41564 - Orion Network Limited
+
+",10:11:00 PM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,158.158.76.105,8075 - Microsoft Corporation,9:03:00 AM,Pending,,100,Pending
+06-11-2026,Harsh Navgale,172.212.179.199,8075 - Microsoft Corporation,9:03:00 AM,Pending,,100,Pending
+06-11-2026,Harsh Navgale,132.196.92.64,8075 - Microsoft Corporation,9:03:00 AM,Pending,,100,Pending
+06-11-2026,Harsh Navgale,62.164.177.222,215929 - Data Campus Limited,9:03:00 AM,Pending,,100,Pending
+06-11-2026,Harsh Navgale,62.164.177.223,215929 - Data Campus Limited,9:03:00 AM,Pending,,100,Pending
+06-11-2026,Harsh Navgale,46.151.182.34,205759 - Ghosty Networks LLC,9:03:00 AM,Pending,,100,Pending
+06-11-2026,Harsh Navgale,62.164.177.224,215929 - Data Campus Limited,9:03:00 AM,Pending,,100,Pending
+06-11-2026,Harsh Navgale,2400:8901::2000:fff:fe2e:1ff5,63949 - Akamai Connected Cloud,9:03:00 AM,Pending,,100,Pending
+06-11-2026,Harsh Navgale,190.44.74.231,22047 - VTR BANDA ANCHA S.A.,9:03:00 AM,Pending,,12,Pending
+06-11-2026,Harsh Navgale,106.215.175.97,"24560 - Bharti Airtel Ltd., Telemedia Services",9:03:00 AM,Pending,,18,Pending
+06-11-2026,Harsh Navgale,154.121.134.197,327712 - Telecom Algeria,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,190.80.231.147,6400 - Compañía Dominicana de Teléfonos S. A.,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,181.115.172.36,6568 - EMPRESA NACIONAL DE TELECOMUNICACIONES SOCIEDAD ANONIMA,9:03:00 AM,Pending,,45,Pending
+06-11-2026,Harsh Navgale,181.115.171.88,6568 - EMPRESA NACIONAL DE TELECOMUNICACIONES SOCIEDAD ANONIMA,9:03:00 AM,Pending,,29,Pending
+06-11-2026,Harsh Navgale,181.61.204.25,10620 - Telmex Colombia S.A.,9:03:00 AM,Pending,,27,Pending
+06-11-2026,Harsh Navgale,181.72.30.43,6535 - Telmex Servicios Empresariales S.A.,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,181.57.39.193,10620 - Telmex Colombia S.A.,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,38.250.157.112,270068 - DESARROLLO DE INFRAESTRUCTURA DE TELECOMUNICACIONES PERU S.A.C. (INFRATEL),9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,116.111.185.64,24086 - Viettel Corporation,9:03:00 AM,Pending,,8,Pending
+06-11-2026,Harsh Navgale,5.29.19.36,12849 - Hot-Net internet services Ltd.,9:03:00 AM,Pending,,3,Pending
+06-11-2026,Harsh Navgale,189.61.134.30,28573 - Claro NXT Telecomunicacoes Ltda,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,103.164.235.202,141916 - PT Bantani Media Utama,9:03:00 AM,Pending,,12,Pending
+06-11-2026,Harsh Navgale,179.154.172.97,28573 - Claro NXT Telecomunicacoes Ltda,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,103.155.88.130,141152 - BATAAN SPACE CABLE NETWORK INC,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,186.26.94.211,274386 - NOSSO WI-FI LTDA,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,45.169.29.70,268093 - DIRECTNET TELECOM LTDA,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,103.3.220.159,139994 - PT XL Axiata Tbk,9:03:00 AM,Pending,,1,Pending
+06-11-2026,Harsh Navgale,61.73.9.189,4766 - Korea Telecom,9:03:00 AM,Pending,,19,Pending
+06-11-2026,Harsh Navgale,179.6.109.83,12252 - America Movil Peru S.A.C.,9:03:00 AM,Pending,,18,Pending
+06-11-2026,Harsh Navgale,111.94.15.47,23700 - Linknet-Fastnet ASN,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,14.191.109.229,45899 - VNPT Corp,9:03:00 AM,Pending,,11,Pending
+06-11-2026,Harsh Navgale,154.243.52.60,36947 - Telecom Algeria,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,163.47.32.110,23688 - Link3 Technologies Ltd.,9:03:00 AM,Pending,,25,Pending
+06-11-2026,Harsh Navgale,190.137.36.196,7303 - Telecom Argentina S.A.,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,196.75.37.159,7303 - Telecom Argentina S.A.,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,37.77.56.136,206804 - EstNOC OU,9:03:00 AM,Pending,,11,Pending
+06-11-2026,Harsh Navgale,37.77.56.142,206804 - EstNOC OU,9:03:00 AM,Pending,,19,Pending
+06-11-2026,Harsh Navgale,37.77.56.141,206804 - EstNOC OU,9:03:00 AM,Pending,,19,Pending
+06-11-2026,Harsh Navgale,37.77.56.140,206804 - EstNOC OU,9:03:00 AM,Pending,,25,Pending
+06-11-2026,Harsh Navgale,37.77.56.133,206804 - EstNOC OU,9:03:00 AM,Pending,,19,Pending
+06-11-2026,Harsh Navgale,37.77.56.138,206804 - EstNOC OU,9:03:00 AM,Pending,,12,Pending
+06-11-2026,Harsh Navgale,37.77.56.131,206804 - EstNOC OU,9:03:00 AM,Pending,,2,Pending
+06-11-2026,Harsh Navgale,37.77.56.132,206804 - EstNOC OU,9:03:00 AM,Pending,,12,Pending
+06-11-2026,Harsh Navgale,37.77.56.139,206804 - EstNOC OU,9:03:00 AM,Pending,,19,Pending
+06-11-2026,Harsh Navgale,37.77.56.134,206804 - EstNOC OU,9:03:00 AM,Pending,,19,Pending
+06-11-2026,Harsh Navgale,37.77.56.137,206804 - EstNOC OU,9:03:00 AM,Pending,,25,Pending
+06-11-2026,Harsh Navgale,37.77.56.135,206804 - EstNOC OU,9:03:00 AM,Pending,,12,Pending
+06-11-2026,Harsh Navgale,38.54.97.102,138915 - Kaopu Cloud HK Limited,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,38.60.252.162,138915 - Kaopu Cloud HK Limited,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,38.54.93.121,138915 - Kaopu Cloud HK Limited,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,38.60.194.165,138915 - Kaopu Cloud HK Limited,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,38.60.246.38,138915 - Kaopu Cloud HK Limited,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,38.54.93.86,138915 - Kaopu Cloud HK Limited,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,154.223.16.175,138915 - Kaopu Cloud HK Limited,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,102.44.209.51,8452 - TE-AS,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,197.42.26.51,8452 - TE-AS,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,41.235.138.239,8452 - TE-AS,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,156.197.84.152,8452 - TE-AS,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,41.232.129.193,8452 - TE-AS,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,41.40.199.38,8452 - TE-AS,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,154.178.223.62,8452 - TE-AS,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,197.63.115.167,8452 - TE-AS,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,156.217.117.10,8452 - TE-AS,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,41.235.99.130,8452 - TE-AS,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,197.42.9.122,8452 - TE-AS,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,197.56.138.113,8452 - TE-AS,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,41.235.12.151,8452 - TE-AS,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,155.212.243.101,62005 - BlueVPS OU,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,95.153.31.7,1257 - Tele2 Sverige AB,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,95.153.31.11,1257 - Tele2 Sverige AB,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,95.153.31.4,1257 - Tele2 Sverige AB,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,95.153.31.8,1257 - Tele2 Sverige AB,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,95.153.31.12,1257 - Tele2 Sverige AB,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,95.153.31.10,1257 - Tele2 Sverige AB,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,95.153.31.5,1257 - Tele2 Sverige AB,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,95.153.31.9,1257 - Tele2 Sverige AB,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,95.153.31.6,1257 - Tele2 Sverige AB,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,95.153.31.3,1257 - Tele2 Sverige AB,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,95.153.31.13,1257 - Tele2 Sverige AB,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,95.153.31.14,1257 - Tele2 Sverige AB,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,51.159.152.114,12876 - Scaleway SAS,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,51.159.154.215,12876 - Scaleway SAS,9:03:00 AM,Pending,,2,Pending
+06-11-2026,Harsh Navgale,163.172.132.124,12876 - Scaleway SAS,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,51.15.224.221,12876 - Scaleway SAS,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,51.159.140.155,12876 - Scaleway SAS,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,151.115.38.107,12876 - Scaleway SAS,9:03:00 AM,Pending,,33,Pending
+06-11-2026,Harsh Navgale,62.210.237.196,12876 - Scaleway SAS,9:03:00 AM,Pending,,0,Pending
+06-11-2026,Harsh Navgale,151.115.85.83,12876 - Scaleway SAS,9:03:00 AM,Pending,,0,Pending
+06-12-2026,Tanmay Kudale,216.48.189.224,Cloudflare,11:00:00 AM,Pending,,0,Pending
+06-12-2026,Tanmay Kudale,52.138.33.112,Cloudflare,11:00:00 AM,Pending,,100,Pending
+06-12-2026,Tanmay Kudale,158.158.76.1,Cloudflare,11:00:00 AM,Pending,,100,Pending
+06-12-2026,Tanmay Kudale,2400:6180:0:d2:0:2:f049:9000,Cloudflare,11:00:00 AM,Pending,,36,Pending
+06-12-2026,Tanmay Kudale,195.178.110.31,Cloudflare,11:00:00 AM,Pending,,100,Pending
+06-12-2026,Tanmay Kudale,2400:6180:0:d2:0:2:f04f:0,Cloudflare,11:00:00 AM,Pending,,23,Pending
+06-13-2026,Tanmay Kudale,179.6.167.148,Cloudflare,7:00:00 AM,Pending,,30,Pending
+06-13-2026,Tanmay Kudale,190.242.27.243,Cloudflare,7:00:00 AM,Pending,,1 Times,Pending
+06-13-2026,Tanmay Kudale,177.22.101.162,Cloudflare,7:00:00 AM,Pending,,3,Pending
+06-13-2026,Tanmay Kudale,197.90.92.109,Cloudflare,7:00:00 AM,Pending,,0,Pending
+06-13-2026,Tanmay Kudale,181.104.51.101,Cloudflare,7:00:00 AM,Pending,,3 Times,Pending
+06-13-2026,Tanmay Kudale,152.204.140.183,Cloudflare,7:00:00 AM,Pending,,0,Pending
+06-13-2026,Tanmay Kudale,125.235.237.43,Cloudflare,7:00:00 AM,Pending,,0,Pending
+06-13-2026,Tanmay Kudale,200.86.34.179,Cloudflare,7:00:00 AM,Pending,,0,Pending
+06-13-2026,Tanmay Kudale,190.232.219.153,Cloudflare,7:00:00 AM,Pending,,0,Pending
+06-13-2026,Tanmay Kudale,177.4.18.83,Cloudflare,7:00:00 AM,Pending,,0,Pending
+06-13-2026,Tanmay Kudale,167.60.65.107,Cloudflare,7:00:00 AM,Pending,,0,Pending
+06-13-2026,Tanmay Kudale,177.130.242.31,Cloudflare,7:00:00 AM,Pending,,0,Pending
+06-13-2026,Tanmay Kudale,186.232.58.7,Cloudflare,7:00:00 AM,Pending,,0,Pending
+06-13-2026,Tanmay Kudale,152.169.96.181,Cloudflare,7:00:00 AM,Pending,,1,Pending
+06-13-2026,Tanmay Kudale,200.253.51.66,Cloudflare,7:00:00 AM,Pending,,11,Pending
+06-13-2026,Tanmay Kudale,171.97.84.18,Cloudflare,7:00:00 AM,Pending,,3,Pending
+06-13-2026,Tanmay Kudale,177.128.195.36,Cloudflare,7:00:00 AM,Pending,,0,Pending
+06-13-2026,Tanmay Kudale,177.128.195.36,Cloudflare,7:00:00 AM,Pending,,0,Pending
+06-13-2026,Tanmay Kudale,201.193.49.170,Cloudflare,7:00:00 AM,Pending,,16,Pending
+06-13-2026,Tanmay Kudale,45.164.44.170,Cloudflare,7:00:00 AM,Pending,,0,Pending
+06-13-2026,Tanmay Kudale,177.10.154.201,Cloudflare,7:00:00 AM,Pending,,24,Pending
+06-13-2026,Tanmay Kudale,190.21.48.154,Cloudflare,7:00:00 AM,Pending,,4,Pending
+06-13-2026,Tanmay Kudale,181.115.172.16,Cloudflare,7:00:00 AM,Pending,,67,Pending
+06-13-2026,Tanmay Kudale,102.249.65.34,Cloudflare,7:00:00 AM,Pending,,0,Pending
+06-13-2026,Tanmay Kudale,197.17.35.170,Cloudflare,7:00:00 AM,Pending,,31,Pending
+06-13-2026,Tanmay Kudale,173.239.196.42,Cloudflare,7:00:00 AM,Pending,,2,Pending
+06-13-2026,Tanmay Kudale,173.239.196.40,Cloudflare,7:00:00 AM,Pending,,12,Pending
+06-13-2026,Tanmay Kudale,173.239.196.41,Cloudflare,7:00:00 AM,Pending,,0,Pending
+06-13-2026,Tanmay Kudale,173.239.196.44,Cloudflare,7:00:00 AM,Pending,,2,Pending
+06-13-2026,Tanmay Kudale,173.239.196.46,Cloudflare,7:00:00 AM,Pending,,2,Pending
+06-13-2026,Tanmay Kudale,173.239.196.47,Cloudflare,7:00:00 AM,Pending,,2,Pending
+06-13-2026,Tanmay Kudale,173.239.196.43,Cloudflare,7:00:00 AM,Pending,,15,Pending
+06-13-2026,Tanmay Kudale,173.239.196.45,Cloudflare,7:00:00 AM,Pending,,0,Pending
+06-15-2026,Tanmay Kudale,20.220.150.55,Cloudflare,7:00:00 AM,Pending,,100,Pending
+06-15-2026,Tanmay Kudale,2a02:c207:2304:1678::1,Cloudflare,7:00:00 AM,Pending,,84,Pending
+06-15-2026,Tanmay Kudale,173.212.200.52,Cloudflare,7:00:00 AM,Pending,,100,Pending
+06-14-2026,Puniyat Jangir,173.239.196.131,Cloudflare,10:00:00 AM,Blocked,,0,Blocked
+06-14-2026,Puniyat Jangir,173.239.196.134,Cloudflare,11:00:00 AM,Blocked,,0,Blocked
+06-14-2026,Puniyat Jangir,173.239.196.132,Cloudflare,12:00:00 PM,Blocked,,0,Blocked
+06-14-2026,Puniyat Jangir,173.239.196.136,Cloudflare,1:00:00 PM,Blocked,,0,Blocked
+06-14-2026,Puniyat Jangir,173.239.196.135,Cloudflare,2:00:00 PM,Blocked,,0,Blocked
+06-14-2026,Puniyat Jangir,173.239.196.130,Cloudflare,3:00:00 PM,Blocked,,0,Blocked
+06-14-2026,Puniyat Jangir,173.239.196.133,Cloudflare,4:00:00 PM,Blocked,,0,Blocked
+06-14-2026,Puniyat Jangir,173.239.196.129,Cloudflare,5:00:00 PM,Blocked,,0,Blocked
+06-16-2026,Prathamesh Pendkar,84.32.49.221,MOD Mission Critical,3:00:00 PM,Pending,,0,Pending
+06-16-2026,Prathamesh Pendkar,194.164.107.6,AS50219 Valence Technology Co.,3:00:00 PM,Pending,,100,Pending
+06-16-2026,Prathamesh Pendkar,159.65.25.124,"AS14061 DigitalOcean, LLC",3:00:00 PM,Pending,,13,Pending
+06-16-2026,Prathamesh Pendkar,20.217.83.47,Microsoft Corporation,3:00:00 PM,Pending,,100,Pending
+06-16-2026,Prathamesh Pendkar,159.65.53.32,"DigitalOcean, LLC",3:00:00 PM,Pending,,46,Pending
+06-16-2026,Prathamesh Pendkar,191.253.47.105,SERRA GERAL SOLUCOES PARA INTERNET LTDA,3:00:00 PM,Pending,,27,Pending
+06-16-2026,Prathamesh Pendkar,109.107.231.254,Umniah Lil-Hawatef Al-Mutanaqelah Co.,3:00:00 PM,Pending,,21,Pending
+06-16-2026,Prathamesh Pendkar,104.28.163.7,"Cloudflare, Inc.",3:00:00 PM,Pending,,14,Pending
+06-16-2026,Prathamesh Pendkar,190.138.185.93,Apolo -Gold-Telecom-Per,3:00:00 PM,Pending,,36,Pending
+06-16-2026,Prathamesh Pendkar,138.84.113.146,"Globe Telecom (GMCR,INC)",3:00:00 PM,Pending,,31,Pending
+06-16-2026,Prathamesh Pendkar,179.6.105.186,America Movil Peru S.A.C.,3:00:00 PM,Pending,,1,Pending
+06-16-2026,Prathamesh Pendkar,222.252.10.232,Hanoi Post and Telecom Company,3:00:00 PM,Pending,,25,Pending
+06-16-2026,Prathamesh Pendkar,177.91.72.158,CORPORATIVA TELECOMUNICACOES EIRELI ME,3:00:00 PM,Pending,,0,Pending
+06-16-2026,Prathamesh Pendkar,102.130.16.42,Internet NS (Pty) Ltd an Network Solution Provider in South Africa,3:00:00 PM,Pending,,22,Pending
+06-16-2026,Prathamesh Pendkar,197.14.218.16,ATI - Agence Tunisienne Internet,3:00:00 PM,Pending,,0,Pending
+06-16-2026,Prathamesh Pendkar,154.245.35.3,Telecom Algeria,3:00:00 PM,Pending,,0,Pending
+06-16-2026,Prathamesh Pendkar,109.107.231.14,Umniah Lil-Hawatef Al-Mutanaqelah Co.,3:00:00 PM,Pending,,23,Pending
+06-16-2026,Prathamesh Pendkar,187.2.46.169,Claro NXT Telecomunicacoes Ltda,3:00:00 PM,Pending,,0,Pending
+06-16-2026,Prathamesh Pendkar,157.85.211.81,"PT XLSMART Telecom Sejahtera, TBK",3:00:00 PM,Pending,,52,Pending
+06-16-2026,Prathamesh Pendkar,102.50.249.95,Office National des Postes et Telecommunications ONPT (Maroc Telecom) / IAM,3:00:00 PM,Pending,,19,Pending
+06-16-2026,Prathamesh Pendkar,179.42.34.171,COMBO BRASIL INFORMATICA LTDA,3:00:00 PM,Pending,,3,Pending
+06-16-2026,Prathamesh Pendkar,190.90.17.236,ConexiÃ³n Digital Express SAS,3:00:00 PM,Pending,,11,Pending
+06-16-2026,Prathamesh Pendkar,5.111.182.119,"Etihad Etisalat, a joint stock company",3:00:00 PM,Pending,,0,Pending
+06-16-2026,Prathamesh Pendkar,114.10.39.85,IOH B2B,3:00:00 PM,Pending,,2,Pending
+06-16-2026,Prathamesh Pendkar,27.72.112.99,Viettel Group,3:00:00 PM,Pending,,33,Pending
+06-16-2026,Prathamesh Pendkar,202.74.245.146,"Aamra Networks Limited, Internet Service Provider.",3:00:00 PM,Pending,,7,Pending
+06-16-2026,Prathamesh Pendkar,103.150.40.4,Mirpur DOHS Digital Network,3:00:00 PM,Pending,,0,Pending
+06-16-2026,Prathamesh Pendkar,189.90.97.180,Life Tecnologia Ltda.,3:00:00 PM,Pending,,2,Pending
+06-16-2026,Prathamesh Pendkar,190.190.20.62,Telecom Argentina S.A.,3:00:00 PM,Pending,,1,Pending
+06-16-2026,Prathamesh Pendkar,186.80.38.38,Telmex Colombia S.A.,3:00:00 PM,Pending,,28,Pending
+06-16-2026,Prathamesh Pendkar,103.51.122.62,PT Abadi Lentera Wahana Indonesia,3:00:00 PM,Pending,,32,Pending
+06-16-2026,Prathamesh Pendkar,131.100.225.123,Meta Servers Tecnologia e Telecomunicacaoes Ltda,3:00:00 PM,Pending,,12,Pending
+06-16-2026,Prathamesh Pendkar,181.94.112.151,Telecom Argentina S.A.,3:00:00 PM,Pending,,4,Pending
+06-16-2026,Prathamesh Pendkar,38.250.157.64,WoW Tel SAC,3:00:00 PM,Pending,,0,Pending
+06-16-2026,Prathamesh Pendkar,103.15.245.2,Summit Communications Limited,3:00:00 PM,Pending,,20,Pending
