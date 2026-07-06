@@ -47,7 +47,7 @@ def _optional_path(value: str) -> Optional[Path]:
 class AppConfig:
     """Static application settings."""
 
-    abuseipdb_api_key: str = _env_or_ini("ABUSEIPDB_API_KEY", "abuseipdb", "api_key", "")
+    abuseipdb_api_key: str = "e6ab9972fbecbbabebfb35bb87152efd1a0ad62e7bbeeae8159910cbada93601706ac3b2379e9edd"
     abuseipdb_url: str = "https://api.abuseipdb.com/api/v2/check"
     confidence_threshold: int = int(_env_or_ini("ABUSEIPDB_THRESHOLD", "abuseipdb", "threshold", "8"))
     timeout_seconds: int = int(_env_or_ini("ABUSEIPDB_TIMEOUT", "abuseipdb", "timeout_seconds", "15"))
